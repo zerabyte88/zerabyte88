@@ -1,7 +1,7 @@
 <div align="center">
 
   <!-- 1. HEADER -->
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:050814,35:0f172a,70:2e1065,100:050814&height=220&section=header&text=✦%20MENDING%20BUKA%20FACEBOOK%20✦&fontSize=38&fontAlignY=40&desc=★%20NANDA%20ALREZEL%20★&descSize=14&descAlignY=62&animation=twinkling&fontColor=ffffff" width="100%" alt="Header" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:050814,35:0f172a,70:2e1065,100:050814&height=220&section=header&text=✦%20MENDING%20BUKA%20FACEBOOK%20✦&fontSize=38&fontAlignY=40&desc=★%20NANDA%20ALREZEL%20RIFANIE★&descSize=14&descAlignY=62&animation=twinkling&fontColor=ffffff" width="100%" alt="Header" />
 
   <!-- 2. ANIMASI MENGETIK -->
   <a href="https://github.com/zerabyte88">
