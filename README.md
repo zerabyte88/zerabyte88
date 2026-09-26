@@ -17,16 +17,10 @@
 
   <!-- 4. BADGE KONTAK & SOSIAL MEDIA -->
   <p align="center">
-    <a href="mailto:zerabyte890@gmail.com" target="_blank">
-      <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
-    </a>
     <a href="https://github.com/zerabyte88" target="_blank">
       <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
     </a>
-    <a href="https://www.linkedin.com" target="_blank">
-      <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-    </a>
-    <a href="https://www.instagram.com" target="_blank">
+    <a href="https://www.instagram.com/nanda.rifanie" target="_blank">
       <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
     </a>
   </p>
@@ -35,42 +29,40 @@
 
 ---
 
-### � Tentang Saya
+### � About Me
 
 ```javascript
 const developer = {
     username: "zerabyte88",
-    status: "Selalu belajar & terus berkembang 🚀",
-    skills: ["Web Development", "Mobile Apps", "UI/UX Design"],
-    quote: "Mengubah secangkir kopi menjadi baris kode yang berguna ☕"
+    status: "Lagi Rajin",
+    skills: ["Web Development", "UI/UX Design"],
 };
 ```
 
-- 🔭 **Sedang Mengerjakan**: Proyek web & aplikasi modern
-- 🌱 **Sedang Mempelajari**: Framework terbaru & clean architecture
-- 💬 **Tanya Saya Tentang**: JavaScript, Web Tech, pemrograman umum
-- ⚡ **Fun Fact**: Lebih produktif ngoding waktu malam hari!
+- 🔭 **Sedang Mengerjakan**: Proyek web HS15
+- 🌱 **Sedang Mempelajari**: Framework Flutter & Dart
+- ⚡ **Fun Fact**: Ngoding kalau niat, mending scroll fesnuk
 
 ---
 
-### 🛠️ Keahlian & Teknologi
+### 🛠️ Expertise & Technology
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,javascript,typescript,react,nextjs,nodejs,flutter,dart,python,tailwind,bootstrap,git,github,vscode,figma" alt="Tech Stack" />
+  <img src="https://skillicons.dev/icons?i=html,css,javascript.flutter,dart,git,github,vscode" alt="Tech Stack" />
 </div>
 
 <br/>
 
 ---
 
-### 📊 Statistik GitHub
+### 📊 GitHub Statistics
 
 <div align="center">
 
-  <!-- Streak Stats (Aktif & Berjalan Lancar) -->
+  <!-- Streak Stats -->
   <img src="https://streak-stats.demolab.com?user=zerabyte88&theme=tokyonight&hide_border=true" alt="Streak GitHub" width="49%" />
 
-  <!-- Statistik Umum (Server Cepat & Stabil) -->
+  <!-- Statistik Umum -->
   <img src="https://github-readme-stats-fast.vercel.app/api?username=zerabyte88&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="Statistik GitHub" width="49%" />
 
   <br/><br/>
@@ -82,7 +74,7 @@ const developer = {
 
 ---
 
-### 🐍 Jalur Aktivitas Kontribusi
+### 🐍 contributions
 
 <div align="center">
   <picture>
