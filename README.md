@@ -21,18 +21,49 @@
 
 ---
 
-### About Me
+## 🚀 About Me
 
-Halo!👋, Perkenalkan saya **Nanda Alrezel Rifanie**. Saya seorang Web Developer dan UI/UX Designer yang antusias dalam merancang serta membangun website yang modern, interaktif, dan ramah pengguna. Saat ini saya juga sedang aktif mengeksplorasi teknologi baru dan mendalami pembuatan aplikasi mobile dengan Flutter & Dart.
+Halo! 👋 Perkenalkan, saya **Nanda Alrezel Rifanie** — seorang Web Developer & UI/UX Designer yang memiliki ketertarikan besar dalam membangun website modern, interaktif, dan ramah pengguna. Saya juga sedang aktif mengeksplorasi dunia pengembangan aplikasi mobile dengan **Flutter & Dart**.
 
-- **Fun Fact** : Ngoding kalo rajin, kalo malas buka Facebook atau baca Novel
-- **Skill** : Web Developer, UI/UX Designer
-- **Sedang Mengerjakan** : Project Web HS15
-- **Sedang Mempelajari** : Framework Flutter & Dart
+<table>
+  <tr>
+    <td>🎯</td>
+    <td><b>Fun Fact</b></td>
+    <td>Ngoding kalau rajin, kalau malas buka Facebook atau baca Novel</td>
+  </tr>
+  <tr>
+    <td>💻</td>
+    <td><b>Skill</b></td>
+    <td>Web Developer, UI/UX Designer</td>
+  </tr>
+  <tr>
+    <td>🔨</td>
+    <td><b>Sedang Mengerjakan</b></td>
+    <td>Project Web HS15</td>
+  </tr>
+  <tr>
+    <td>📚</td>
+    <td><b>Sedang Mempelajari</b></td>
+    <td>Framework Flutter & Dart</td>
+  </tr>
+</table>
 
 ---
 
-### GitHub Statistics
+## 🛠️ Tech Stack
+
+<div align="center">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter" />
+  <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white" alt="Dart" />
+  <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="Figma" />
+</div>
+
+---
+
+## 📊 GitHub Statistics
 
 <div align="center">
 
@@ -48,7 +79,7 @@ Halo!👋, Perkenalkan saya **Nanda Alrezel Rifanie**. Saya seorang Web Develope
 
 ---
 
-### Contributions
+## 🐍 Contributions
 
 <div align="center">
   <picture>
