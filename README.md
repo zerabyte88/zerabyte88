@@ -60,5 +60,5 @@
 
 <div align="center">
   <!-- FOOTER -->
-  <img src="https://raw.githubusercontent.com/zerabyte88/zerabyte88/main/assets/space-footer.svg?v=2" width="100%" alt="Space & Stars Footer" />
+  <img src="https://raw.githubusercontent.com/zerabyte88/zerabyte88/a1687b8/assets/space-footer.svg" width="100%" alt="Space & Stars Footer" />
 </div>
