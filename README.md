@@ -1,7 +1,7 @@
 <div align="center">
 
   <!-- 1. HEADER -->
-  <img src="https://raw.githubusercontent.com/zerabyte88/zerabyte88/main/assets/space-header.svg" width="100%" alt="Space & Stars Header" />
+  <img src="https://raw.githubusercontent.com/zerabyte88/zerabyte88/85e0b40/assets/space-header.svg" width="100%" alt="Space & Stars Header" />
 
   <!-- 2. ANIMASI MENGETIK -->
   <a href="https://github.com/zerabyte88"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=23&pause=500&color=00F5D4&center=true&vCenter=true&width=500&height=32&lines=MALAS+NGODING?;BUKA+FACEBOOK+SOLUSINYA" alt="Typing SVG" /></a><br/>
