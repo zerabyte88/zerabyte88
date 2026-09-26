@@ -10,8 +10,8 @@
 
   <br/>
 
-  <!-- 3. ANIMASI DEVELOPER -->
-  <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="380" alt="Coding Animation" />
+  <!-- 3. DIVIDER GLOW CYAN -->
+  <img src="https://raw.githubusercontent.com/zerabyte88/zerabyte88/main/assets/line-cyan.svg" width="500" alt="Divider Line" />
 
   <br/><br/>
 

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 24" width="100%" height="100%">
+  <defs>
+    <!-- Cyan Neon Laser Line Gradient -->
+    <linearGradient id="cyanLineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f5d4" stop-opacity="0"/>
+      <stop offset="25%" stop-color="#7aa2f7" stop-opacity="0.5"/>
+      <stop offset="50%" stop-color="#00f5d4" stop-opacity="1"/>
+      <stop offset="75%" stop-color="#7aa2f7" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#00f5d4" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Intense Center Beam -->
+    <linearGradient id="centerWhiteGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="45%" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="55%" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Neon Glow Filter -->
+    <filter id="neonGlow" x="-20%" y="-100%" width="140%" height="300%">
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <g filter="url(#neonGlow)">
+    <!-- Main Outer Glowing Cyan Line -->
+    <line x1="50" y1="12" x2="950" y2="12" stroke="url(#cyanLineGrad)" stroke-width="2.5" stroke-linecap="round">
+      <animate attributeName="stroke-opacity" values="0.75;1;0.75" dur="3s" repeatCount="indefinite"/>
+    </line>
+
+    <!-- Sharp Center Core Light Beam -->
+    <line x1="250" y1="12" x2="750" y2="12" stroke="url(#centerWhiteGrad)" stroke-width="1.4" stroke-linecap="round">
+      <animate attributeName="stroke-opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite"/>
+    </line>
+
+    <!-- Center Cosmic Sparkle Glint -->
+    <g transform="translate(500, 12)">
+      <path d="M 0 -8 L 1.8 -1.8 L 8 0 L 1.8 1.8 L 0 8 L -1.8 1.8 L -8 0 L -1.8 -1.8 Z" fill="#00f5d4">
+        <animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite"/>
+      </path>
+      <circle cx="0" cy="0" r="2.5" fill="#ffffff"/>
+    </g>
+  </g>
+</svg>
