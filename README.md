@@ -29,7 +29,7 @@
 
 ---
 
-### Tentang Saya
+### About Me
 
 - **Fact** : Ngoding kalo niat, kalo tidak maka scroll fesnuk
 - **Skill** : Web Developer, UI/UX Designer
@@ -38,7 +38,7 @@
 
 ---
 
-### Statistik GitHub
+### GitHub Statistics
 
 <div align="center">
 
@@ -54,7 +54,7 @@
 
 ---
 
-### contributions
+### Contributions in the last year
 
 <div align="center">
   <picture>
