@@ -4,9 +4,7 @@
   <img src="https://raw.githubusercontent.com/zerabyte88/zerabyte88/main/assets/space-header.svg" width="100%" alt="Space & Stars Header" />
 
   <!-- 2. ANIMASI MENGETIK -->
-  <a href="https://github.com/zerabyte88">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=23&pause=500&color=00F5D4&center=true&vCenter=true&width=500&lines=MALAS+NGODING?;SCROLL+FACEBOOK+SOLUSINYA" alt="Typing SVG" />
-  </a>
+  <a href="https://github.com/zerabyte88"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=23&pause=500&color=00F5D4&center=true&vCenter=true&width=500&lines=MALAS+NGODING?;SCROLL+FACEBOOK+SOLUSINYA" alt="Typing SVG" /></a>
 
   <br/>
 
@@ -17,12 +15,8 @@
 
   <!-- 4. BADGE KONTAK & SOSIAL MEDIA -->
   <p align="center">
-    <a href="https://github.com/zerabyte88" target="_blank">
-      <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-    </a>
-    <a href="https://www.instagram.com/nanda.rifanie" target="_blank">
-      <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
-    </a>
+    <a href="https://github.com/zerabyte88" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
+    <a href="https://www.instagram.com/nanda.rifanie" target="_blank"><img src="https://img.shields.io/badge/Instagram-E11D48?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" /></a>
   </p>
 
 </div>
