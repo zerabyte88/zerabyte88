@@ -22,9 +22,9 @@
 
 ### About Me
 
-- **Fact** : Ngoding kalo niat, kalo tidak maka scroll fesnuk
-- **Skill** : Web Developer, UI/UX Designer
-- **Sedang Mengerjakan** : Proyek web HS15
+- **Fact** : Ngoding kalo lagi rajin, kalo malas ya scroll Facebook
+- **Skills** : Web Developer, UI/UX Designer
+- **Sedang Mengerjakan** : Project Web HS15
 - **Sedang Mempelajari** : Framework Flutter & Dart
 
 ---
