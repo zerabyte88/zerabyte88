@@ -54,7 +54,7 @@
 
 ---
 
-### Contributions in the last year
+### Contributions
 
 <div align="center">
   <picture>
