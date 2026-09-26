@@ -1,7 +1,7 @@
 <div align="center">
 
-  <!-- 1. HEADER -->
-  <img src="https://capsule-render.vercel.app/api?type=slice&color=gradient&customColorList=24,12,30&height=220&section=header&text=Mending%20Buka%20Facebook&fontSize=40&fontAlignY=38&animation=twinkling&fontColor=ffffff" width="100%" />
+  <!-- 1. HEADER (SPACE & STARS ANIMATED) -->
+  <img src="./assets/space-header.svg" width="100%" alt="Space & Stars Header" />
 
   <!-- 2. ANIMASI MENGETIK -->
   <a href="https://github.com/zerabyte88">
@@ -67,6 +67,6 @@
 ---
 
 <div align="center">
-  <!-- FOOTER -->
-  <img src="https://capsule-render.vercel.app/api?type=slice&color=gradient&customColorList=24,12,30&height=120&section=footer&text=✦%20✦%20✦&fontSize=24&fontAlignY=65&animation=twinkling&fontColor=00f5d4" width="100%" />
+  <!-- FOOTER (SPACE & STARS ANIMATED) -->
+  <img src="./assets/space-footer.svg" width="100%" alt="Space & Stars Footer" />
 </div>
