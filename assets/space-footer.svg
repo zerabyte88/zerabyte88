@@ -152,9 +152,10 @@
       </circle>
     </g>
 
-    <!-- Constellation Text Label -->
-    <text x="600" y="98" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" letter-spacing="4" fill="#00f5d4" opacity="0.85">
-      ✦ COSMOS • EXPLORATION ✦
+    <!-- Space Travel & Cosmic Quote -->
+    <text x="600" y="98" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="600" letter-spacing="2" fill="#00f5d4" opacity="0.9">
+      <animate attributeName="opacity" values="0.75;1;0.75" dur="3.5s" repeatCount="indefinite"/>
+      ✦ “Across the sea of space, the stars are other suns.” — Carl Sagan ✦
     </text>
   </g>
 </svg>
