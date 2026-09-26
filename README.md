@@ -3,14 +3,14 @@
   <!-- 1. HEADER GELOMBANG BERGERAK -->
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=24,12,30&height=220&section=header&text=Welcome%20to%20My%20Space!&fontSize=40&fontAlignY=38&animation=fadeIn&fontColor=ffffff" width="100%" />
 
-  <!-- 2. ANIMASI MENGETIK OTOMATIS (Sudah diperbaiki & dites aktif 100%) -->
+  <!-- 2. ANIMASI MENGETIK -->
   <a href="https://github.com/zerabyte88">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=23&pause=1000&color=00F5D4&center=true&vCenter=true&width=500&lines=Saya+zerabyte88;Software+and+Web+Developer;Suka+Mempelajari+Teknologi+Baru;Welcome+to+my+GitHub+Profile" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=23&pause=1000&color=00F5D4&center=true&vCenter=true&width=500&lines=Jangan+Ngoding;Mending+Scroll+Fesnuk+Lebih+Seru" alt="Typing SVG" />
   </a>
 
   <br/><br/>
 
-  <!-- 3. ANIMASI DEVELOPER (Tema Gelap / Dark Mode Friendly) -->
+  <!-- 3. ANIMASI DEVELOPER -->
   <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="380" alt="Coding Animation" />
 
   <br/><br/>
@@ -29,7 +29,7 @@
 
 ---
 
-### � About Me
+### � Tentang Saya
 
 ```javascript
 const developer = {
@@ -48,14 +48,14 @@ const developer = {
 ### 🛠️ Expertise & Technology
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,javascript.flutter,dart,git,github,vscode" alt="Tech Stack" />
+  <img src="https://skillicons.dev/icons?i=html,css,javascript.flutter,dart,git,github,vscode" alt="Tech Stack"/>
 </div>
 
 <br/>
 
 ---
 
-### 📊 GitHub Statistics
+### 📊 Statistik GitHub
 
 <div align="center">
 
