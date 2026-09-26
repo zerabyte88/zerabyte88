@@ -1,7 +1,7 @@
 <div align="center">
 
   <!-- 1. HEADER -->
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=00F5D4:050814,35:0f172a,70:2e1065,100:050814&height=220&section=header&text=✦%20MENDING%20BUKA%20FACEBOOK%20✦&fontSize=38&fontAlignY=40&desc=★%20NANDA%20ALREZEL%20RIFANIE%20★&descSize=14&descAlignY=62&animation=twinkling&fontColor=ffffff" width="100%" alt="Header" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=24,12,30&height=220&section=header&text=✦%20PROFILE%20GWEH%20✦&fontSize=40&fontAlignY=38&desc=★%20NANDA%20ALREZEL%20RIFANIE%20★&descSize=14&descAlignY=62&animation=twinkling&fontColor=ffffff" width="100%" alt="Header" />
 
   <!-- 2. ANIMASI MENGETIK -->
   <a href="https://github.com/zerabyte88">
@@ -68,5 +68,5 @@
 
 <div align="center">
   <!-- FOOTER -->
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:050814,35:0f172a,70:2e1065,100:050814&height=120&section=footer&text=✦%20⋆%20★%20COSMOS%20★%20⋆%20✦&fontSize=22&fontAlignY=65&animation=twinkling&fontColor=00f5d4" width="100%" alt="Footer" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=24,12,30&height=100&section=footer" width="100%" alt="Footer" />
 </div>
