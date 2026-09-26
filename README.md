@@ -20,14 +20,14 @@
 
 ### About Me
 
-Halo, perkenalkan saya **Nanda Alrezel Rifanie**. Biasa dipanggil Nanda. Saya seorang Web Developer & UI/UX Designer yang suka membangun website yang rapi dan enak dipakai. Di waktu luang biasanya ngoding, baca novel, atau scroll Facebook.
+Halo, perkenalkan saya **Nanda Alrezel Rifanie**. Biasa dipanggil Nanda. Saya seorang Web Developer & UI/UX Designer yang suka membangun website yang rapi dan enak dipakai. Di waktu luang biasanya ngoding, scroll Facebook, atau baca novel.
 
-Sekarang lagi fokus belajar **Flutter & Dart** buat bikin aplikasi mobile, sambil ngerjain project web **HS15**.
+Sekarang lagi fokus belajar **Flutter & Dart**, sambil ngerjain project Web Dokumentasi **HS15** di waktu luang.
 
 ```
-Fun Fact    →  Ngoding kalau rajin, kalau malas buka Facebook
+Fun Fact    →  Ngoding kalau rajin, kalau malas buka Facebook atau baca novel
 Skill       →  Web Developer · UI/UX Designer
-Mengerjakan →  Project Web HS15
+Mengerjakan →  Project Web Dokumentasi HS15
 Mempelajari →  Flutter & Dart
 ```
 
