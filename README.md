@@ -4,7 +4,8 @@
   <img src="https://raw.githubusercontent.com/zerabyte88/zerabyte88/main/assets/space-header.svg" width="100%" alt="Space & Stars Header" />
 
   <!-- 2. ANIMASI MENGETIK -->
-  <a href="https://github.com/zerabyte88"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=23&pause=500&color=00F5D4&center=true&vCenter=true&width=500&height=32&lines=MALAS+NGODING?;SCROLL+FACEBOOK+SOLUSINYA" alt="Typing SVG" /></a><br/>
+  <a href="https://github.com/zerabyte88"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=23&pause=500&color=00F5D4&center=true&vCenter=true&width=500&height=32&lines=MALAS+NGODING?;BUKA+FACEBOOK+SOLUSINYA" alt="Typing SVG" /></a><br/>
+
   <!-- 3. DIVIDER GLOW CYAN -->
   <img src="https://raw.githubusercontent.com/zerabyte88/zerabyte88/main/assets/line-cyan.svg" width="500" alt="Divider Line" />
 
@@ -22,7 +23,7 @@
 
 ### About Me
 
-- **Fact** : Ngoding kalo lagi rajin, kalo malas ya scroll Facebook
+- **Fact** : Ngoding kalo rajin, kalo malas buka Facebook atau baca Novel
 - **Skills** : Web Developer, UI/UX Designer
 - **Sedang Mengerjakan** : Project Web HS15
 - **Sedang Mempelajari** : Framework Flutter & Dart
