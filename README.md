@@ -1,7 +1,7 @@
 <div align="center">
 
-  <!-- 1. HEADER -->
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=24,12,30&height=220&section=header&text=✦%20PROFILE%20GWEH%20✦&fontSize=40&fontAlignY=38&desc=★%20NANDA%20ALREZEL%20RIFANIE%20★&descSize=14&descAlignY=62&animation=twinkling&fontColor=ffffff" width="100%" alt="Header" />
+  <!-- 1. HEADER (SPACE & STARS ANIMATED) -->
+  <img src="https://raw.githubusercontent.com/zerabyte88/zerabyte88/main/assets/space-header.svg" width="100%" alt="Space & Stars Header" />
 
   <!-- 2. ANIMASI MENGETIK -->
   <a href="https://github.com/zerabyte88">
@@ -67,6 +67,6 @@
 ---
 
 <div align="center">
-  <!-- FOOTER -->
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=24,12,30&height=100&section=footer" width="100%" alt="Footer" />
+  <!-- FOOTER (SPACE & STARS ANIMATED) -->
+  <img src="https://raw.githubusercontent.com/zerabyte88/zerabyte88/main/assets/space-footer.svg" width="100%" alt="Space & Stars Footer" />
 </div>
