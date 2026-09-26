@@ -5,7 +5,7 @@
 
   <!-- 2. ANIMASI MENGETIK -->
   <a href="https://github.com/zerabyte88">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=23&pause=1000&color=00F5D4&center=true&vCenter=true&width=500&lines=JANGAN+NGODING;MENDING+SCROLL+FESNUK+AJA" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=23&pause=500&color=00F5D4&center=true&vCenter=true&width=500&lines=Malas+Ngoding?;Mending+Scroll+Fesnuk+Aja" alt="Typing SVG" />
   </a>
 
   <br/><br/>
