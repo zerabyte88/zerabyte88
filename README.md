@@ -29,23 +29,19 @@
 
 ---
 
-### � Tentang Saya
+### Tentang Saya
 
-```javascript
-const developer = {
-    username: "zerabyte88",
-    status: "Lagi Rajin",
-    skills: ["Web Development", "UI/UX Design"],
-};
-```
-
-- 🔭 **Sedang Mengerjakan**: Proyek web HS15
-- 🌱 **Sedang Mempelajari**: Framework Flutter & Dart
-- ⚡ **Fun Fact**: Ngoding kalau niat, kalo tidak ya scroll fesnuk
+- **Fact** : Ngoding kalo niat, kalo tidak maka scroll fesnuk
 
 ---
 
-### 📊 Statistik GitHub
+- **Skill** : Web Development, UI/UX Design
+- **Sedang Mengerjakan** : Proyek web HS15
+- **Sedang Mempelajari** : Framework Flutter & Dart
+
+---
+
+### Statistik GitHub
 
 <div align="center">
 
@@ -61,7 +57,7 @@ const developer = {
 
 ---
 
-### 🐍 contributions
+### contributions
 
 <div align="center">
   <picture>
