@@ -1,11 +1,11 @@
 <div align="center">
 
-  <!-- 1. HEADER (SPACE & STARS ANIMATED) -->
+  <!-- 1. HEADER -->
   <img src="https://raw.githubusercontent.com/zerabyte88/zerabyte88/main/assets/space-header.svg" width="100%" alt="Space & Stars Header" />
 
   <!-- 2. ANIMASI MENGETIK -->
   <a href="https://github.com/zerabyte88">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=23&pause=500&color=00F5D4&center=true&vCenter=true&width=500&lines=MALAS+NGODING?;SCROLL+FESNUK+SOLUSINYA" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=23&pause=500&color=00F5D4&center=true&vCenter=true&width=500&lines=MALAS+NGODING?;SCROLL+FACEBOOK+SOLUSINYA" alt="Typing SVG" />
   </a>
 
   <br/>
@@ -67,6 +67,6 @@
 ---
 
 <div align="center">
-  <!-- FOOTER (SPACE & STARS ANIMATED) -->
+  <!-- FOOTER -->
   <img src="https://raw.githubusercontent.com/zerabyte88/zerabyte88/main/assets/space-footer.svg" width="100%" alt="Space & Stars Footer" />
 </div>
