@@ -23,12 +23,12 @@
 
 ### About Me
 
-Halo! Perkenalkan, saya **Nanda Alrezel Rifanie**. Saya seorang Web Developer dan UI/UX Designer yang antusias dalam merancang serta membangun website yang modern, interaktif, dan ramah pengguna. Saat ini saya juga sedang aktif mengeksplorasi teknologi baru dan mendalami pembuatan aplikasi mobile dengan Flutter & Dart.
+Halo!👋, Perkenalkan saya **Nanda Alrezel Rifanie**. Saya seorang Web Developer dan UI/UX Designer yang antusias dalam merancang serta membangun website yang modern, interaktif, dan ramah pengguna. Saat ini saya juga sedang aktif mengeksplorasi teknologi baru dan mendalami pembuatan aplikasi mobile dengan Flutter & Dart.
 
-- **Fun Fact**: Ngoding kalo rajin, kalo malas buka Facebook atau baca Novel
-- **Skill**: Web Developer, UI/UX Designer
-- **Sedang Mengerjakan**: Project Web HS15
-- **Sedang Mempelajari**: Framework Flutter & Dart
+- **Fun Fact** : Ngoding kalo rajin, kalo malas buka Facebook atau baca Novel
+- **Skill** : Web Developer, UI/UX Designer
+- **Sedang Mengerjakan** : Project Web HS15
+- **Sedang Mempelajari** : Framework Flutter & Dart
 
 ---
 
