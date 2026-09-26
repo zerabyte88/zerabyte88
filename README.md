@@ -8,7 +8,7 @@
     <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=23&pause=500&color=00F5D4&center=true&vCenter=true&width=500&lines=Malas+Ngoding?;Mending+Scroll+Fesnuk+Aja" alt="Typing SVG" />
   </a>
 
-  <br/><br/>
+  <br/>
 
   <!-- 3. ANIMASI DEVELOPER -->
   <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="380" alt="Coding Animation" />
@@ -51,9 +51,6 @@ const developer = {
 
   <!-- Streak Stats -->
   <img src="https://streak-stats.demolab.com?user=zerabyte88&theme=tokyonight&hide_border=true" alt="Streak GitHub" width="49%" />
-
-  <!-- Statistik Umum -->
-  <img src="https://github-readme-stats-fast.vercel.app/api?username=zerabyte88&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="Statistik GitHub" width="49%" />
 
   <br/><br/>
 
