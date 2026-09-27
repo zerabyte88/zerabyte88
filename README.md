@@ -11,7 +11,7 @@
 
   <br/><br/>
 
-  ![](https://komarev.com/ghpvc/?username=zerabyte88&color=blueviolet)
+  <img src="https://komarev.com/ghpvc/?username=zerabyte88&color=blueviolet&style=for-the-badge" alt="Profile Views" />
   <a href="https://github.com/zerabyte88" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
   <a href="https://www.instagram.com/nanda.rifanie" target="_blank"><img src="https://img.shields.io/badge/Instagram-E11D48?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" /></a>
 
