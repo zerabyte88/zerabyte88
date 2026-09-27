@@ -23,12 +23,12 @@
 
 Halo, perkenalkan saya **Nanda Alrezel Rifanie**. Biasa dipanggil Nanda. Saya seorang Web Developer & UI/UX Designer yang suka membangun website yang rapi dan enak dipakai. Di waktu luang biasanya ngoding, scroll Facebook, atau baca novel.
 
-Sekarang lagi fokus belajar **Flutter & Dart**, sambil ngerjain project Web Dokumentasi **HS15** di waktu luang.
+Sekarang lagi fokus belajar **Flutter & Dart** dan mengerjakan project web dokumentasi **HS15**.
 
 ```
 Fun Fact    →  Ngoding kalau rajin, kalau malas buka Facebook atau baca novel
 Skill       →  Web Developer · UI/UX Designer
-Mengerjakan →  Project Web Dokumentasi HS15
+Mengerjakan →  Project web dokumentasi HS15
 Mempelajari →  Flutter & Dart
 ```
 
@@ -41,10 +41,11 @@ Mempelajari →  Flutter & Dart
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS3" />
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript" />
   <img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white" alt="PHP" />
-  <img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white" alt="C++" />
   <img src="https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white" alt="Flutter" />
   <img src="https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white" alt="Dart" />
   <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL" />
+  <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git" />
 </div>
 
 ---
