@@ -46,6 +46,7 @@ Mempelajari →  Flutter & Dart
   <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL" />
   <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub" />
   <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git" />
+  <img src="https://img.shields.io/badge/Visual%20Studio%20Code-0078D4?style=flat-square&logo=visual-studio-code&logoColor=white" alt="VS Code" />
 </div>
 
 ---
