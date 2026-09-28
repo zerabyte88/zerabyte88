@@ -32,11 +32,11 @@
       <stop offset="100%" stop-color="#1e40af" stop-opacity="0"/>
     </linearGradient>
 
-    <!-- Meteor 4: Violet / Emerald (Steep plunge Right-to-Left Mid) -->
+    <!-- Meteor 4: Nebula Violet / Purple (Steep plunge Right-to-Left Mid) -->
     <linearGradient id="meteorViolet" x1="100%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
-      <stop offset="30%" stop-color="#c084fc" stop-opacity="0.8"/>
-      <stop offset="100%" stop-color="#00f5d4" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#c084fc" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#7928ca" stop-opacity="0"/>
     </linearGradient>
 
     <!-- Meteor 5: Golden Starlight (Shallow swift streak Left-to-Right Low) -->
@@ -44,6 +44,13 @@
       <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
       <stop offset="35%" stop-color="#ffd166" stop-opacity="0.85"/>
       <stop offset="100%" stop-color="#ff9f1c" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Meteor 6: Emerald Neon (Steep plunge Mid to Right) -->
+    <linearGradient id="meteorEmerald" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="30%" stop-color="#10b981" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#059669" stop-opacity="0"/>
     </linearGradient>
 
     <!-- Realistic Planet Saturn Gradients -->
@@ -387,6 +394,17 @@
       <circle cx="0" cy="0" r="2.2" fill="#ffffff" filter="url(#starGlow)"/>
     </g>
 
+    <!-- Meteor 6: Steep plunge Mid to Right (Emerald Green) -->
+    <g>
+      <animateTransform attributeName="transform" type="translate"
+        values="380 -50; 880 280"
+        dur="4.9s"
+        repeatCount="indefinite"
+        calcMode="linear"/>
+      <line x1="0" y1="0" x2="-60" y2="-39" stroke="url(#meteorEmerald)" stroke-width="2.1" stroke-linecap="round"/>
+      <circle cx="0" cy="0" r="2.3" fill="#ffffff" filter="url(#starGlow)"/>
+    </g>
+
     <!-- ============================================== -->
     <!-- 4. CATEGORY HEADINGS                           -->
     <!-- ============================================== -->
@@ -539,9 +557,9 @@
     <!-- 7. CRUISING COSMIC ROCKET SHIP (RIGHT TO LEFT) -->
     <!-- ============================================== -->
     <g>
-      <!-- Horizontal sweep across top margin from right to left -->
+      <!-- Horizontal sweep across bottom margin from right to left (clear of all badges & text) -->
       <animateTransform attributeName="transform" type="translate"
-        values="860 17; -70 17"
+        values="860 297; -70 297"
         dur="7.8s"
         repeatCount="indefinite"
         calcMode="linear"/>

@@ -53,18 +53,51 @@
       <stop offset="100%" stop-color="#7aa2f7" stop-opacity="0"/>
     </linearGradient>
 
-    <!-- Meteor Trails -->
-    <linearGradient id="meteorTrail1" x1="0%" y1="0%" x2="100%" y2="100%">
+    <!-- Meteor Trails (Multicolor Collection) -->
+    <!-- 1. Cyan / Electric Teal -->
+    <linearGradient id="meteorTrailCyan" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
-      <stop offset="35%" stop-color="#00f5d4" stop-opacity="0.75"/>
-      <stop offset="100%" stop-color="#7aa2f7" stop-opacity="0"/>
+      <stop offset="35%" stop-color="#00f5d4" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#00b4d8" stop-opacity="0"/>
     </linearGradient>
 
-    <linearGradient id="meteorTrail2" x1="100%" y1="0%" x2="0%" y2="100%">
+    <!-- 2. Pink / Magenta Rose -->
+    <linearGradient id="meteorTrailPink" x1="100%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
-      <stop offset="35%" stop-color="#f72585" stop-opacity="0.75"/>
+      <stop offset="35%" stop-color="#f72585" stop-opacity="0.85"/>
       <stop offset="100%" stop-color="#7209b7" stop-opacity="0"/>
     </linearGradient>
+
+    <!-- 3. Golden Starlight / Amber -->
+    <linearGradient id="meteorTrailGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="35%" stop-color="#ffd166" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#ff9f1c" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- 4. Nebula Violet / Deep Purple -->
+    <linearGradient id="meteorTrailViolet" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="35%" stop-color="#c084fc" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#7928ca" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- 5. Emerald Neon / Mint Green -->
+    <linearGradient id="meteorTrailEmerald" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="30%" stop-color="#10b981" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#059669" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- 6. Ice Blue / Electric Azure -->
+    <linearGradient id="meteorTrailIceBlue" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="35%" stop-color="#38bdf8" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#1d4ed8" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="meteorTrail1" href="#meteorTrailCyan"/>
+    <linearGradient id="meteorTrail2" href="#meteorTrailPink"/>
 
     <!-- Rocket Jet Flame Gradients -->
     <linearGradient id="rocketFlameGrad" x1="100%" y1="0%" x2="0%" y2="0%">
@@ -312,59 +345,70 @@
 
     <!-- ============================================== -->
     <!-- 3. SHOOTING STARS (ABUNDANT & RANDOMIZED LINEAR) -->
-    <!-- ============================================== -->
-    <!-- Meteor 1 (Cyan/White - Left to Right) -->
+    <!-- Shooting Stars / Meteors (Multicolor Collection) -->
+    <!-- Meteor 1 (Cyan / Electric Teal - Left to Right) -->
     <g>
       <animateTransform attributeName="transform" type="translate"
         values="-100 15; 1300 115"
         dur="4.6s"
         repeatCount="indefinite"
         calcMode="linear"/>
-      <line x1="0" y1="0" x2="-65" y2="-12" stroke="url(#meteorTrail1)" stroke-width="2" stroke-linecap="round"/>
+      <line x1="0" y1="0" x2="-65" y2="-12" stroke="url(#meteorTrailCyan)" stroke-width="2" stroke-linecap="round"/>
       <circle cx="0" cy="0" r="2.2" fill="#ffffff" filter="url(#coreGlow)"/>
     </g>
 
-    <!-- Meteor 2 (Pink/Violet - Right to Left) -->
+    <!-- Meteor 2 (Pink / Magenta Rose - Right to Left) -->
     <g>
       <animateTransform attributeName="transform" type="translate"
         values="1280 10; -120 120"
         dur="6.2s"
         repeatCount="indefinite"
         calcMode="linear"/>
-      <line x1="0" y1="0" x2="60" y2="-10" stroke="url(#meteorTrail2)" stroke-width="1.8" stroke-linecap="round"/>
+      <line x1="0" y1="0" x2="60" y2="-10" stroke="url(#meteorTrailPink)" stroke-width="1.8" stroke-linecap="round"/>
       <circle cx="0" cy="0" r="2.0" fill="#ffffff" filter="url(#coreGlow)"/>
     </g>
 
-    <!-- Meteor 3 (Cyan/Blue - Steep Angle Left to Mid-Right) -->
+    <!-- Meteor 3 (Amber Gold - Steep Angle Left to Mid-Right) -->
     <g>
       <animateTransform attributeName="transform" type="translate"
         values="50 -30; 950 160"
         dur="3.8s"
         repeatCount="indefinite"
         calcMode="linear"/>
-      <line x1="0" y1="0" x2="-55" y2="-16" stroke="url(#meteorTrail1)" stroke-width="2" stroke-linecap="round"/>
+      <line x1="0" y1="0" x2="-55" y2="-16" stroke="url(#meteorTrailGold)" stroke-width="2" stroke-linecap="round"/>
       <circle cx="0" cy="0" r="2.1" fill="#ffffff" filter="url(#coreGlow)"/>
     </g>
 
-    <!-- Meteor 4 (Pink/Violet - Gentle Slope Mid-Right to Left) -->
+    <!-- Meteor 4 (Nebula Violet - Gentle Slope Mid-Right to Left) -->
     <g>
       <animateTransform attributeName="transform" type="translate"
         values="1180 35; 100 140"
         dur="5.4s"
         repeatCount="indefinite"
         calcMode="linear"/>
-      <line x1="0" y1="0" x2="55" y2="-9" stroke="url(#meteorTrail2)" stroke-width="1.7" stroke-linecap="round"/>
+      <line x1="0" y1="0" x2="55" y2="-9" stroke="url(#meteorTrailViolet)" stroke-width="1.7" stroke-linecap="round"/>
       <circle cx="0" cy="0" r="1.8" fill="#ffffff" filter="url(#coreGlow)"/>
     </g>
 
-    <!-- Meteor 5 (Cyan/White - Fast Low Streak Mid to Far Right) -->
+    <!-- Meteor 5 (Emerald Neon - Fast Low Streak Mid to Far Right) -->
     <g>
       <animateTransform attributeName="transform" type="translate"
         values="450 -20; 1250 110"
         dur="4.2s"
         repeatCount="indefinite"
         calcMode="linear"/>
-      <line x1="0" y1="0" x2="-60" y2="-13" stroke="url(#meteorTrail1)" stroke-width="1.9" stroke-linecap="round"/>
+      <line x1="0" y1="0" x2="-60" y2="-13" stroke="url(#meteorTrailEmerald)" stroke-width="1.9" stroke-linecap="round"/>
+      <circle cx="0" cy="0" r="2.0" fill="#ffffff" filter="url(#coreGlow)"/>
+    </g>
+
+    <!-- Meteor 6 (Ice Blue - Low Altitude Rapid Streak) -->
+    <g>
+      <animateTransform attributeName="transform" type="translate"
+        values="-120 70; 1320 145"
+        dur="4.8s"
+        repeatCount="indefinite"
+        calcMode="linear"/>
+      <line x1="0" y1="0" x2="-62" y2="-11" stroke="url(#meteorTrailIceBlue)" stroke-width="1.9" stroke-linecap="round"/>
       <circle cx="0" cy="0" r="2.0" fill="#ffffff" filter="url(#coreGlow)"/>
     </g>
 
