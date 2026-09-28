@@ -1,0 +1,193 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 44" width="100%" height="100%">
+  <defs>
+    <!-- Space Cyan & Electric Blue Gradient (Identical to space-text.svg) -->
+    <linearGradient id="cosmicThemeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f5d4"/>
+      <stop offset="30%" stop-color="#38bdf8"/>
+      <stop offset="70%" stop-color="#7aa2f7"/>
+      <stop offset="100%" stop-color="#00f5d4"/>
+    </linearGradient>
+
+    <!-- Star & Ambient Glow Filter (Identical to space-text.svg) -->
+    <filter id="starGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- ================= CLIP PATHS (16s Cycle) ================= -->
+    <!-- Phrase 1: Start X=68, Width=450 -->
+    <clipPath id="clipP1">
+      <rect x="68" y="0" width="0" height="44">
+        <animate attributeName="width"
+          values="0; 0; 450; 450; 0; 0; 0"
+          keyTimes="0; 0.0125; 0.09375; 0.2125; 0.23125; 0.25; 1"
+          dur="16s" repeatCount="indefinite" calcMode="linear"/>
+      </rect>
+    </clipPath>
+
+    <!-- Phrase 2: Start X=78, Width=430 -->
+    <clipPath id="clipP2">
+      <rect x="78" y="0" width="0" height="44">
+        <animate attributeName="width"
+          values="0; 0; 0; 430; 430; 0; 0; 0"
+          keyTimes="0; 0.25; 0.2625; 0.34375; 0.4625; 0.48125; 0.50; 1"
+          dur="16s" repeatCount="indefinite" calcMode="linear"/>
+      </rect>
+    </clipPath>
+
+    <!-- Phrase 3: Start X=92, Width=405 -->
+    <clipPath id="clipP3">
+      <rect x="92" y="0" width="0" height="44">
+        <animate attributeName="width"
+          values="0; 0; 0; 405; 405; 0; 0; 0"
+          keyTimes="0; 0.50; 0.5125; 0.59375; 0.7125; 0.73125; 0.75; 1"
+          dur="16s" repeatCount="indefinite" calcMode="linear"/>
+      </rect>
+    </clipPath>
+
+    <!-- Phrase 4: Start X=43, Width=500 -->
+    <clipPath id="clipP4">
+      <rect x="43" y="0" width="0" height="44">
+        <animate attributeName="width"
+          values="0; 0; 0; 500; 500; 0; 0"
+          keyTimes="0; 0.75; 0.7625; 0.84375; 0.9625; 0.98125; 1"
+          dur="16s" repeatCount="indefinite" calcMode="linear"/>
+      </rect>
+    </clipPath>
+  </defs>
+
+  <style>
+    .cosmic-text {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 18px;
+      font-weight: 800;
+      letter-spacing: 2.2px;
+      dominant-baseline: central;
+    }
+    .cursor-neon {
+      fill: #00f5d4;
+      animation: cursorBlink 0.75s step-end infinite;
+    }
+    @keyframes cursorBlink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+  </style>
+
+  <!-- Zero-Gravity Gentle Float -->
+  <g>
+    <animateTransform attributeName="transform" type="translate"
+      values="0 1.8; 0 -1.8; 0 1.8"
+      dur="3.8s"
+      repeatCount="indefinite"
+      calcMode="spline"
+      keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+
+    <!-- Subtle Twinkling Side Ambient Stars -->
+    <circle cx="18" cy="22" r="1.1" fill="#00f5d4">
+      <animate attributeName="opacity" values="0.2;0.9;0.2" dur="2.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="562" cy="22" r="1.1" fill="#38bdf8">
+      <animate attributeName="opacity" values="0.2;0.9;0.2" dur="2.6s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- ================= PHRASE 1 ================= -->
+    <g clip-path="url(#clipP1)">
+      <!-- Ambient Glow Layer -->
+      <text x="68" y="22" class="cosmic-text" fill="url(#cosmicThemeGrad)" filter="url(#starGlow)" opacity="0.65">
+        ✦ Web Developer &amp; UI/UX Designer ✦
+      </text>
+      <!-- Crisp Foreground Text Layer -->
+      <text x="68" y="22" class="cosmic-text" fill="url(#cosmicThemeGrad)">
+        ✦ Web Developer &amp; UI/UX Designer ✦
+      </text>
+    </g>
+
+    <!-- Cursor 1 -->
+    <rect y="11" width="3" height="21" rx="1.5" class="cursor-neon" filter="url(#starGlow)">
+      <animate attributeName="x"
+        values="68; 68; 515; 515; 68; 68; 68"
+        keyTimes="0; 0.0125; 0.09375; 0.2125; 0.23125; 0.25; 1"
+        dur="16s" repeatCount="indefinite" calcMode="linear"/>
+      <animate attributeName="visibility"
+        values="visible; visible; visible; hidden; hidden; hidden"
+        keyTimes="0; 0.005; 0.225; 0.235; 0.25; 1"
+        dur="16s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- ================= PHRASE 2 ================= -->
+    <g clip-path="url(#clipP2)">
+      <!-- Ambient Glow Layer -->
+      <text x="78" y="22" class="cosmic-text" fill="url(#cosmicThemeGrad)" filter="url(#starGlow)" opacity="0.65">
+        ✦ Crafting Project Web HS15 🚀 ✦
+      </text>
+      <!-- Crisp Foreground Text Layer -->
+      <text x="78" y="22" class="cosmic-text" fill="url(#cosmicThemeGrad)">
+        ✦ Crafting Project Web HS15 🚀 ✦
+      </text>
+    </g>
+
+    <!-- Cursor 2 -->
+    <rect y="11" width="3" height="21" rx="1.5" class="cursor-neon" filter="url(#starGlow)" visibility="hidden">
+      <animate attributeName="x"
+        values="78; 78; 78; 505; 505; 78; 78; 78"
+        keyTimes="0; 0.25; 0.2625; 0.34375; 0.4625; 0.48125; 0.50; 1"
+        dur="16s" repeatCount="indefinite" calcMode="linear"/>
+      <animate attributeName="visibility"
+        values="hidden; visible; visible; hidden; hidden; hidden"
+        keyTimes="0; 0.255; 0.475; 0.485; 0.50; 1"
+        dur="16s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- ================= PHRASE 3 ================= -->
+    <g clip-path="url(#clipP3)">
+      <!-- Ambient Glow Layer -->
+      <text x="92" y="22" class="cosmic-text" fill="url(#cosmicThemeGrad)" filter="url(#starGlow)" opacity="0.65">
+        ✦ Exploring Flutter &amp; Dart 📱 ✦
+      </text>
+      <!-- Crisp Foreground Text Layer -->
+      <text x="92" y="22" class="cosmic-text" fill="url(#cosmicThemeGrad)">
+        ✦ Exploring Flutter &amp; Dart 📱 ✦
+      </text>
+    </g>
+
+    <!-- Cursor 3 -->
+    <rect y="11" width="3" height="21" rx="1.5" class="cursor-neon" filter="url(#starGlow)" visibility="hidden">
+      <animate attributeName="x"
+        values="92; 92; 92; 494; 494; 92; 92; 92"
+        keyTimes="0; 0.50; 0.5125; 0.59375; 0.7125; 0.73125; 0.75; 1"
+        dur="16s" repeatCount="indefinite" calcMode="linear"/>
+      <animate attributeName="visibility"
+        values="hidden; visible; visible; hidden; hidden; hidden"
+        keyTimes="0; 0.505; 0.725; 0.735; 0.75; 1"
+        dur="16s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- ================= PHRASE 4 ================= -->
+    <g clip-path="url(#clipP4)">
+      <!-- Ambient Glow Layer -->
+      <text x="43" y="22" class="cosmic-text" fill="url(#cosmicThemeGrad)" filter="url(#starGlow)" opacity="0.65">
+        ✦ PC nyala, tapi yang dibuka novel 📖 ✦
+      </text>
+      <!-- Crisp Foreground Text Layer -->
+      <text x="43" y="22" class="cosmic-text" fill="url(#cosmicThemeGrad)">
+        ✦ PC nyala, tapi yang dibuka novel 📖 ✦
+      </text>
+    </g>
+
+    <!-- Cursor 4 -->
+    <rect y="11" width="3" height="21" rx="1.5" class="cursor-neon" filter="url(#starGlow)" visibility="hidden">
+      <animate attributeName="x"
+        values="43; 43; 43; 540; 540; 43; 43"
+        keyTimes="0; 0.75; 0.7625; 0.84375; 0.9625; 0.98125; 1"
+        dur="16s" repeatCount="indefinite" calcMode="linear"/>
+      <animate attributeName="visibility"
+        values="hidden; visible; visible; hidden; hidden"
+        keyTimes="0; 0.755; 0.975; 0.985; 1"
+        dur="16s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>

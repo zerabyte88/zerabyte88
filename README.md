@@ -6,10 +6,8 @@
   <!-- ANIMASI TEKS KOSMIK -->
   <a href="https://github.com/zerabyte88"><img src="./assets/space-text.svg" width="500" alt="Space Quote" /></a><br/>
 
-  <!-- DYNAMIC TYPING SVG -->
-  <a href="https://github.com/zerabyte88">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1200&color=00F5D4&center=true&vCenter=true&width=550&lines=Web+Developer+%26+UI%2FUX+Designer+%F0%9F%8E%A8;Crafting+Project+Web+HS15+%F0%9F%9A%80;Exploring+Flutter+%26+Dart+%F0%9F%93%B1;PC+nyala%2C+tapi+yang+dibuka+novel+%F0%9F%93%96" alt="Typing SVG" />
-  </a><br/>
+  <!-- ANIMASI TEKS KETIK KOSMIK DENGAN KURSOR -->
+  <img src="./assets/space-typing.svg" width="580" alt="Cosmic Typing Animation" /><br/>
 
   <!-- DIVIDER -->
   <img src="./assets/line-cyan.svg" width="500" alt="Divider Line" />
@@ -50,10 +48,8 @@ Saat ini saya sedang fokus mengerjakan dan mengembangkan project web **HS15**, m
 ### GitHub Statistics
 
 <div align="center">
-  <img src="https://github-readme-stats-fast.vercel.app/api?username=zerabyte88&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats" width="49%" />
-  <img src="https://streak-stats.demolab.com?user=zerabyte88&theme=tokyonight&hide_border=true" alt="Streak GitHub" width="49%" />
-  <br/><br/>
-  <img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=zerabyte88&layout=compact&theme=tokyonight&hide_border=true" alt="Bahasa Terpopuler" width="60%" />
+  <img src="https://streak-stats.demolab.com?user=zerabyte88&theme=tokyonight&hide_border=true" height="195" alt="Streak GitHub" />
+  <img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=zerabyte88&layout=compact&theme=tokyonight&hide_border=true" height="195" alt="Bahasa Terpopuler" />
 </div>
 
 ---
