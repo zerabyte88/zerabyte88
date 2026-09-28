@@ -66,6 +66,20 @@
       <stop offset="100%" stop-color="#7209b7" stop-opacity="0"/>
     </linearGradient>
 
+    <!-- Rocket Jet Flame Gradients -->
+    <linearGradient id="rocketFlameGrad" x1="100%" y1="0%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="30%" stop-color="#00f5d4"/>
+      <stop offset="70%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#7aa2f7" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="rocketFlameCore" x1="100%" y1="0%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="45%" stop-color="#ffd166"/>
+      <stop offset="100%" stop-color="#f43f5e" stop-opacity="0"/>
+    </linearGradient>
+
     <!-- Center Orb 3D Gradient -->
     <radialGradient id="centerOrbGrad" cx="35%" cy="30%" r="70%">
       <stop offset="0%" stop-color="#ffffff"/>
@@ -414,5 +428,73 @@
         ✦ “Across the sea of space, the stars are other suns.” - Carl Sagan ✦
       </text>
     </g>
+    <!-- ============================================== -->
+    <!-- 6. CRUISING SPACE ROCKET (BOTTOM BASE)         -->
+    <!-- ============================================== -->
+    <g>
+      <!-- Continuous horizontal sweep across the bottom base of footer -->
+      <animateTransform attributeName="transform" type="translate"
+        values="-70 138; 1270 134"
+        dur="9s"
+        repeatCount="indefinite"
+        calcMode="linear"/>
+
+      <g transform="scale(0.85) rotate(-2)">
+        <!-- Ion Thruster Stardust Exhaust Trail -->
+        <circle cx="-28" cy="0" r="1.6" fill="#00f5d4" opacity="0.4" filter="url(#coreGlow)">
+          <animate attributeName="cx" values="-24; -44" dur="0.8s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0.6; 0" dur="0.8s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="-19" cy="1" r="1.2" fill="#38bdf8" opacity="0.5">
+          <animate attributeName="cx" values="-18; -36" dur="0.6s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0.7; 0" dur="0.6s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="-15" cy="-1" r="1.4" fill="#ffffff" opacity="0.6">
+          <animate attributeName="cx" values="-14; -28" dur="0.5s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0.8; 0" dur="0.5s" repeatCount="indefinite"/>
+        </circle>
+
+        <!-- Outer Thruster Jet Flame (Flickering Pulse) -->
+        <polygon points="-7,-4 -28,0 -7,4" fill="url(#rocketFlameGrad)">
+          <animate attributeName="points"
+            values="-7,-4 -28,0 -7,4; -7,-3.5 -22,0 -7,3.5; -7,-4.5 -32,0 -7,4.5; -7,-4 -28,0 -7,4"
+            dur="0.25s"
+            repeatCount="indefinite"/>
+        </polygon>
+
+        <!-- Inner Core Jet Flame -->
+        <polygon points="-7,-2 -17,0 -7,2" fill="url(#rocketFlameCore)">
+          <animate attributeName="points"
+            values="-7,-2 -17,0 -7,2; -7,-1.8 -13,0 -7,1.8; -7,-2.2 -19,0 -7,2.2; -7,-2 -17,0 -7,2"
+            dur="0.2s"
+            repeatCount="indefinite"/>
+        </polygon>
+
+        <!-- Thruster Engine Nozzle -->
+        <rect x="-8" y="-3" width="3" height="6" rx="0.8" fill="#334155" stroke="#64748b" stroke-width="0.5"/>
+
+        <!-- Top Stabilizer Fin -->
+        <polygon points="-5,-4.5 -12,-10.5 0,-4.5" fill="#0284c7" stroke="#38bdf8" stroke-width="0.5"/>
+
+        <!-- Bottom Stabilizer Fin -->
+        <polygon points="-5,4.5 -12,10.5 0,4.5" fill="#0284c7" stroke="#38bdf8" stroke-width="0.5"/>
+
+        <!-- Sleek Aerodynamic Rocket Body -->
+        <path d="M -6 -5 L 11 -5 Q 24 0 11 5 L -6 5 Z" fill="#f8fafc" stroke="#94a3b8" stroke-width="0.6"/>
+
+        <!-- Cyan Nose Cone Accent -->
+        <path d="M 11 -5 Q 24 0 11 5 Z" fill="#00f5d4"/>
+
+        <!-- Midline Azure Racing Stripe -->
+        <rect x="-3" y="-0.6" width="12" height="1.2" fill="#38bdf8" opacity="0.8"/>
+
+        <!-- Circular Porthole Window / Cockpit -->
+        <circle cx="5" cy="0" r="2.5" fill="#0284c7" stroke="#ffffff" stroke-width="0.6"/>
+        <circle cx="5" cy="0" r="1.8" fill="#38bdf8"/>
+        <!-- Window Reflection Glint -->
+        <circle cx="5.7" cy="-0.7" r="0.7" fill="#ffffff"/>
+      </g>
+    </g>
+
   </g>
 </svg>
