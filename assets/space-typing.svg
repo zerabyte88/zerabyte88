@@ -24,41 +24,41 @@
     </g>
 
     <!-- ================= CLIP PATHS (16s Cycle) ================= -->
-    <!-- Phrase 1: Start X=103, Width=385 -->
+    <!-- Phrase 1: Start X=108, Width=368 -->
     <clipPath id="clipP1">
-      <rect x="103" y="0" width="0" height="44">
+      <rect x="108" y="0" width="0" height="44">
         <animate attributeName="width"
-          values="0; 0; 385; 385; 0; 0; 0"
+          values="0; 0; 368; 368; 0; 0; 0"
           keyTimes="0; 0.0125; 0.09375; 0.2125; 0.23125; 0.25; 1"
           dur="16s" repeatCount="indefinite" calcMode="linear"/>
       </rect>
     </clipPath>
 
-    <!-- Phrase 2: Start X=130, Width=330 -->
+    <!-- Phrase 2: Start X=145, Width=295 -->
     <clipPath id="clipP2">
-      <rect x="130" y="0" width="0" height="44">
+      <rect x="145" y="0" width="0" height="44">
         <animate attributeName="width"
-          values="0; 0; 0; 330; 330; 0; 0; 0"
+          values="0; 0; 0; 295; 295; 0; 0; 0"
           keyTimes="0; 0.25; 0.2625; 0.34375; 0.4625; 0.48125; 0.50; 1"
           dur="16s" repeatCount="indefinite" calcMode="linear"/>
       </rect>
     </clipPath>
 
-    <!-- Phrase 3: Start X=143, Width=305 -->
+    <!-- Phrase 3: Start X=157, Width=270 -->
     <clipPath id="clipP3">
-      <rect x="143" y="0" width="0" height="44">
+      <rect x="157" y="0" width="0" height="44">
         <animate attributeName="width"
-          values="0; 0; 0; 305; 305; 0; 0; 0"
+          values="0; 0; 0; 270; 270; 0; 0; 0"
           keyTimes="0; 0.50; 0.5125; 0.59375; 0.7125; 0.73125; 0.75; 1"
           dur="16s" repeatCount="indefinite" calcMode="linear"/>
       </rect>
     </clipPath>
 
-    <!-- Phrase 4: Start X=96, Width=398 -->
+    <!-- Phrase 4: Start X=110, Width=364 -->
     <clipPath id="clipP4">
-      <rect x="96" y="0" width="0" height="44">
+      <rect x="110" y="0" width="0" height="44">
         <animate attributeName="width"
-          values="0; 0; 0; 398; 398; 0; 0"
+          values="0; 0; 0; 364; 364; 0; 0"
           keyTimes="0; 0.75; 0.7625; 0.84375; 0.9625; 0.98125; 1"
           dur="16s" repeatCount="indefinite" calcMode="linear"/>
       </rect>
@@ -101,7 +101,7 @@
     </circle>
 
     <!-- ================= PHRASE 1 ================= -->
-    <!-- Left Star: 79 | Text: 103..478 | Cursor: 103->482 | Right Star: 506 -->
+    <!-- Left Star: 84 | Text: 108..472 | Cursor: 108->474 (direct touch on 'r') | Right Star: 496 -->
     <g>
       <animate attributeName="opacity"
         values="1; 1; 0; 0; 0"
@@ -109,22 +109,22 @@
         dur="16s" repeatCount="indefinite"/>
 
       <!-- Left Star with generous 24px spacing -->
-      <use href="#twinkleStar" x="79" y="22"/>
+      <use href="#twinkleStar" x="84" y="22"/>
 
       <!-- Typed Text -->
       <g clip-path="url(#clipP1)">
-        <text x="103" y="22" class="cosmic-text" fill="url(#cosmicThemeGrad)" filter="url(#starGlow)" opacity="0.65">
+        <text x="108" y="22" class="cosmic-text" fill="url(#cosmicThemeGrad)" filter="url(#starGlow)" opacity="0.65">
           Web Developer &amp; UI/UX Designer
         </text>
-        <text x="103" y="22" class="cosmic-text" fill="url(#cosmicThemeGrad)">
+        <text x="108" y="22" class="cosmic-text" fill="url(#cosmicThemeGrad)">
           Web Developer &amp; UI/UX Designer
         </text>
       </g>
 
-      <!-- Cursor 1 (Stops at 482, stays safely before right star at 506) -->
-      <rect y="11" width="3" height="21" rx="1.5" class="cursor-neon" filter="url(#starGlow)">
+      <!-- Cursor 1 (Hugs 'r' at 474, leaves 22px space before right star at 496) -->
+      <rect y="11" width="2.5" height="21" rx="1.2" class="cursor-neon" filter="url(#starGlow)">
         <animate attributeName="x"
-          values="103; 103; 482; 482; 103; 103; 103"
+          values="108; 108; 474; 474; 108; 108; 108"
           keyTimes="0; 0.0125; 0.09375; 0.2125; 0.23125; 0.25; 1"
           dur="16s" repeatCount="indefinite" calcMode="linear"/>
         <animate attributeName="visibility"
@@ -133,12 +133,12 @@
           dur="16s" repeatCount="indefinite"/>
       </rect>
 
-      <!-- Right Star with generous 24px spacing -->
-      <use href="#twinkleStar" x="506" y="22"/>
+      <!-- Right Star with generous 22px spacing -->
+      <use href="#twinkleStar" x="496" y="22"/>
     </g>
 
     <!-- ================= PHRASE 2 ================= -->
-    <!-- Left Star: 106 | Text: 130..450 | Cursor: 130->454 | Right Star: 478 -->
+    <!-- Left Star: 121 | Text: 145..436 | Cursor: 145->438 (direct touch on '5') | Right Star: 460 -->
     <g>
       <animate attributeName="opacity"
         values="0; 0; 1; 1; 0; 0"
@@ -146,22 +146,22 @@
         dur="16s" repeatCount="indefinite"/>
 
       <!-- Left Star with generous 24px spacing -->
-      <use href="#twinkleStar" x="106" y="22"/>
+      <use href="#twinkleStar" x="121" y="22"/>
 
       <!-- Typed Text -->
       <g clip-path="url(#clipP2)">
-        <text x="130" y="22" class="cosmic-text" fill="url(#cosmicThemeGrad)" filter="url(#starGlow)" opacity="0.65">
+        <text x="145" y="22" class="cosmic-text" fill="url(#cosmicThemeGrad)" filter="url(#starGlow)" opacity="0.65">
           Crafting Project Web HS15
         </text>
-        <text x="130" y="22" class="cosmic-text" fill="url(#cosmicThemeGrad)">
+        <text x="145" y="22" class="cosmic-text" fill="url(#cosmicThemeGrad)">
           Crafting Project Web HS15
         </text>
       </g>
 
-      <!-- Cursor 2 (Stops at 454, stays safely before right star at 478) -->
-      <rect y="11" width="3" height="21" rx="1.5" class="cursor-neon" filter="url(#starGlow)" visibility="hidden">
+      <!-- Cursor 2 (Hugs '5' at 438, leaves 22px space before right star at 460) -->
+      <rect y="11" width="2.5" height="21" rx="1.2" class="cursor-neon" filter="url(#starGlow)" visibility="hidden">
         <animate attributeName="x"
-          values="130; 130; 130; 454; 454; 130; 130; 130"
+          values="145; 145; 145; 438; 438; 145; 145; 145"
           keyTimes="0; 0.25; 0.2625; 0.34375; 0.4625; 0.48125; 0.50; 1"
           dur="16s" repeatCount="indefinite" calcMode="linear"/>
         <animate attributeName="visibility"
@@ -170,12 +170,12 @@
           dur="16s" repeatCount="indefinite"/>
       </rect>
 
-      <!-- Right Star with generous 24px spacing -->
-      <use href="#twinkleStar" x="478" y="22"/>
+      <!-- Right Star with generous 22px spacing -->
+      <use href="#twinkleStar" x="460" y="22"/>
     </g>
 
     <!-- ================= PHRASE 3 ================= -->
-    <!-- Left Star: 119 | Text: 143..438 | Cursor: 143->442 | Right Star: 466 -->
+    <!-- Left Star: 133 | Text: 157..423 | Cursor: 157->425 (direct touch on 't') | Right Star: 447 -->
     <g>
       <animate attributeName="opacity"
         values="0; 0; 1; 1; 0; 0"
@@ -183,22 +183,22 @@
         dur="16s" repeatCount="indefinite"/>
 
       <!-- Left Star with generous 24px spacing -->
-      <use href="#twinkleStar" x="119" y="22"/>
+      <use href="#twinkleStar" x="133" y="22"/>
 
       <!-- Typed Text -->
       <g clip-path="url(#clipP3)">
-        <text x="143" y="22" class="cosmic-text" fill="url(#cosmicThemeGrad)" filter="url(#starGlow)" opacity="0.65">
+        <text x="157" y="22" class="cosmic-text" fill="url(#cosmicThemeGrad)" filter="url(#starGlow)" opacity="0.65">
           Exploring Flutter &amp; Dart
         </text>
-        <text x="143" y="22" class="cosmic-text" fill="url(#cosmicThemeGrad)">
+        <text x="157" y="22" class="cosmic-text" fill="url(#cosmicThemeGrad)">
           Exploring Flutter &amp; Dart
         </text>
       </g>
 
-      <!-- Cursor 3 (Stops at 442, stays safely before right star at 466) -->
-      <rect y="11" width="3" height="21" rx="1.5" class="cursor-neon" filter="url(#starGlow)" visibility="hidden">
+      <!-- Cursor 3 (Hugs 't' at 425, leaves 22px space before right star at 447) -->
+      <rect y="11" width="2.5" height="21" rx="1.2" class="cursor-neon" filter="url(#starGlow)" visibility="hidden">
         <animate attributeName="x"
-          values="143; 143; 143; 442; 442; 143; 143; 143"
+          values="157; 157; 157; 425; 425; 157; 157; 157"
           keyTimes="0; 0.50; 0.5125; 0.59375; 0.7125; 0.73125; 0.75; 1"
           dur="16s" repeatCount="indefinite" calcMode="linear"/>
         <animate attributeName="visibility"
@@ -207,12 +207,12 @@
           dur="16s" repeatCount="indefinite"/>
       </rect>
 
-      <!-- Right Star with generous 24px spacing -->
-      <use href="#twinkleStar" x="466" y="22"/>
+      <!-- Right Star with generous 22px spacing -->
+      <use href="#twinkleStar" x="447" y="22"/>
     </g>
 
     <!-- ================= PHRASE 4 ================= -->
-    <!-- Left Star: 72 | Text: 96..484 | Cursor: 96->488 | Right Star: 512 -->
+    <!-- Left Star: 86 | Text: 110..470 | Cursor: 110->472 (direct touch on 'l') | Right Star: 494 -->
     <g>
       <animate attributeName="opacity"
         values="0; 0; 1; 1; 0; 0"
@@ -220,22 +220,22 @@
         dur="16s" repeatCount="indefinite"/>
 
       <!-- Left Star with generous 24px spacing -->
-      <use href="#twinkleStar" x="72" y="22"/>
+      <use href="#twinkleStar" x="86" y="22"/>
 
       <!-- Typed Text -->
       <g clip-path="url(#clipP4)">
-        <text x="96" y="22" class="cosmic-text" fill="url(#cosmicThemeGrad)" filter="url(#starGlow)" opacity="0.65">
+        <text x="110" y="22" class="cosmic-text" fill="url(#cosmicThemeGrad)" filter="url(#starGlow)" opacity="0.65">
           PC nyala, tapi yang dibuka novel
         </text>
-        <text x="96" y="22" class="cosmic-text" fill="url(#cosmicThemeGrad)">
+        <text x="110" y="22" class="cosmic-text" fill="url(#cosmicThemeGrad)">
           PC nyala, tapi yang dibuka novel
         </text>
       </g>
 
-      <!-- Cursor 4 (Stops at 488, stays safely before right star at 512) -->
-      <rect y="11" width="3" height="21" rx="1.5" class="cursor-neon" filter="url(#starGlow)" visibility="hidden">
+      <!-- Cursor 4 (Hugs 'l' at 472, leaves 22px space before right star at 494) -->
+      <rect y="11" width="2.5" height="21" rx="1.2" class="cursor-neon" filter="url(#starGlow)" visibility="hidden">
         <animate attributeName="x"
-          values="96; 96; 96; 488; 488; 96; 96"
+          values="110; 110; 110; 472; 472; 110; 110"
           keyTimes="0; 0.75; 0.7625; 0.84375; 0.9625; 0.98125; 1"
           dur="16s" repeatCount="indefinite" calcMode="linear"/>
         <animate attributeName="visibility"
@@ -244,8 +244,8 @@
           dur="16s" repeatCount="indefinite"/>
       </rect>
 
-      <!-- Right Star with generous 24px spacing -->
-      <use href="#twinkleStar" x="512" y="22"/>
+      <!-- Right Star with generous 22px spacing -->
+      <use href="#twinkleStar" x="494" y="22"/>
     </g>
   </g>
 </svg>
