@@ -65,5 +65,5 @@ Sekarang sedang mengerjakan project web **HS15** dan pelan-pelan belajar **Flutt
 ---
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/zerabyte88/zerabyte88/a1687b8/assets/space-footer.svg" width="100%" alt="Space & Stars Footer" />
+  <img src="https://raw.githubusercontent.com/zerabyte88/zerabyte88/05c37cf/assets/space-footer.svg" width="100%" alt="Space & Stars Footer" />
 </div>
