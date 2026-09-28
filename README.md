@@ -3,11 +3,8 @@
   <!-- HEADER -->
   <img src="./assets/space-header.svg" width="100%" alt="Space & Stars Header" />
 
-  <!-- ANIMASI TEKS KOSMIK -->
-  <a href="https://github.com/zerabyte88"><img src="./assets/space-text.svg" width="500" alt="Space Quote" /></a><br/>
-
   <!-- ANIMASI TEKS KETIK KOSMIK DENGAN KURSOR -->
-  <img src="./assets/space-typing.svg" width="580" alt="Cosmic Typing Animation" /><br/>
+  <a href="https://github.com/zerabyte88"><img src="./assets/space-typing.svg" width="580" alt="Cosmic Typing Animation" /></a><br/>
 
   <!-- DIVIDER -->
   <img src="./assets/line-cyan.svg" width="500" alt="Divider Line" />
