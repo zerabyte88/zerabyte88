@@ -21,9 +21,9 @@
 
 ### About Me
 
-Nama saya **Nanda Alrezel Rifanie**, seorang Web Developer dan UI/UX Designer. Sehari-hari berkutat dengan web, kadang desain UI, dan kalau sudah tidak ada kerjaan biasanya baca novel atau buka Facebook.
+Nama saya **Nanda Alrezel Rifanie**, seorang Web Developer dan UI/UX Designer. Kalau lagi ada niat, saya ngoding atau desain. Kalau tidak ada niat, ya buka Facebook atau baca novel.
 
-Saat ini sedang fokus mengerjakan project web **HS15** dan belajar **Flutter & Dart** untuk mulai merambah ke pengembangan aplikasi mobile.
+Sekarang sedang mengerjakan project web **HS15** dan pelan-pelan belajar **Flutter & Dart** untuk coba-coba bikin aplikasi mobile.
 
 | | |
 |---|---|
