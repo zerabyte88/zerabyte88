@@ -1,28 +1,47 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 310" width="100%" height="100%">
   <defs>
-    <!-- Laser Shimmer Gradient for Badges -->
-    <linearGradient id="laserShimmerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <!-- 90° Pure Vertical Shimmer Gradient (Left to Right) -->
+    <linearGradient id="verticalShimmerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
-      <stop offset="42%" stop-color="#00f5d4" stop-opacity="0.15"/>
-      <stop offset="48%" stop-color="#00f5d4" stop-opacity="0.75"/>
+      <stop offset="38%" stop-color="#00f5d4" stop-opacity="0.12"/>
+      <stop offset="47%" stop-color="#00f5d4" stop-opacity="0.75"/>
       <stop offset="50%" stop-color="#ffffff" stop-opacity="1"/>
-      <stop offset="52%" stop-color="#00bbf9" stop-opacity="0.75"/>
-      <stop offset="58%" stop-color="#00bbf9" stop-opacity="0.15"/>
+      <stop offset="53%" stop-color="#00bbf9" stop-opacity="0.75"/>
+      <stop offset="62%" stop-color="#00bbf9" stop-opacity="0.12"/>
       <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
     </linearGradient>
 
-    <!-- Scanner Beam Line Gradient -->
-    <linearGradient id="scannerLineGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#00f5d4" stop-opacity="0"/>
-      <stop offset="15%" stop-color="#00f5d4" stop-opacity="0.6"/>
-      <stop offset="50%" stop-color="#ffffff" stop-opacity="1"/>
-      <stop offset="85%" stop-color="#00bbf9" stop-opacity="0.6"/>
-      <stop offset="100%" stop-color="#00bbf9" stop-opacity="0"/>
+    <!-- Meteor 1 Trail: Cyan / Electric Blue -->
+    <linearGradient id="meteorCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="30%" stop-color="#00f5d4" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#7aa2f7" stop-opacity="0"/>
     </linearGradient>
 
-    <!-- Glow Filter for Laser & Stars -->
-    <filter id="laserGlow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+    <!-- Meteor 2 Trail: Pink / Nebula Violet -->
+    <linearGradient id="meteorPink" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="35%" stop-color="#f72585" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#7209b7" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Meteor 3 Trail: Sky Blue / Cobalt -->
+    <linearGradient id="meteorBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="35%" stop-color="#38bdf8" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#1e40af" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Meteor 4 Trail: Violet / Cyan -->
+    <linearGradient id="meteorViolet" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="30%" stop-color="#c084fc" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#00f5d4" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Glow Filter for Shooting Stars -->
+    <filter id="starGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
@@ -50,15 +69,83 @@
       <rect x="391" y="256" width="115" height="28" rx="4" fill="#ffffff"/>
     </mask>
 
-    <clipPath id="shimmerClip">
+    <clipPath id="canvasClip">
       <rect x="0" y="0" width="800" height="310"/>
     </clipPath>
   </defs>
 
-  <g clip-path="url(#shimmerClip)">
+  <g clip-path="url(#canvasClip)">
 
     <!-- ============================================== -->
-    <!-- 1. CATEGORY HEADINGS                           -->
+    <!-- 1. TWINKLING BACKGROUND STARS                  -->
+    <!-- ============================================== -->
+    <g fill="#ffffff">
+      <circle cx="90" cy="45" r="1.3">
+        <animate attributeName="opacity" values="0.1;0.9;0.1" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="710" cy="35" r="1.5" fill="#00f5d4">
+        <animate attributeName="opacity" values="0.2;1;0.2" dur="2.7s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="110" cy="190" r="1.2" fill="#7aa2f7">
+        <animate attributeName="opacity" values="0.15;0.85;0.15" dur="2.2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="690" cy="180" r="1.4" fill="#00f5d4">
+        <animate attributeName="opacity" values="0.2;0.95;0.2" dur="3s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="160" cy="275" r="1.1">
+        <animate attributeName="opacity" values="0.1;0.8;0.1" dur="1.8s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="640" cy="285" r="1.3" fill="#c084fc">
+        <animate attributeName="opacity" values="0.2;0.9;0.2" dur="2.4s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <!-- ============================================== -->
+    <!-- 2. MULTIPLE SHOOTING STARS (BINTANG JATUH)     -->
+    <!-- ============================================== -->
+
+    <!-- Meteor 1 (Cyan/White: Streaks Left -> Right, Top to Mid) -->
+    <g>
+      <animateTransform attributeName="transform" type="translate"
+        values="-120 15; 920 195"
+        dur="4.6s"
+        repeatCount="indefinite"/>
+      <line x1="0" y1="0" x2="-75" y2="-15" stroke="url(#meteorCyan)" stroke-width="2.2" stroke-linecap="round"/>
+      <circle cx="0" cy="0" r="2.5" fill="#ffffff" filter="url(#starGlow)"/>
+    </g>
+
+    <!-- Meteor 2 (Pink/Violet: Streaks Right -> Left, Top to Mid) -->
+    <g>
+      <animateTransform attributeName="transform" type="translate"
+        values="920 5; -140 185"
+        dur="5.8s"
+        repeatCount="indefinite"/>
+      <line x1="0" y1="0" x2="68" y2="-14" stroke="url(#meteorPink)" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="0" cy="0" r="2.2" fill="#ffffff" filter="url(#starGlow)"/>
+    </g>
+
+    <!-- Meteor 3 (Sky Blue: Streaks Left -> Right, Mid to Bottom) -->
+    <g>
+      <animateTransform attributeName="transform" type="translate"
+        values="-100 115; 940 295"
+        dur="6.4s"
+        repeatCount="indefinite"/>
+      <line x1="0" y1="0" x2="-70" y2="-14" stroke="url(#meteorBlue)" stroke-width="2.2" stroke-linecap="round"/>
+      <circle cx="0" cy="0" r="2.4" fill="#ffffff" filter="url(#starGlow)"/>
+    </g>
+
+    <!-- Meteor 4 (Violet/Cyan: Streaks Right -> Left, Mid to Bottom) -->
+    <g>
+      <animateTransform attributeName="transform" type="translate"
+        values="900 135; -120 295"
+        dur="7.2s"
+        repeatCount="indefinite"/>
+      <line x1="0" y1="0" x2="65" y2="-13" stroke="url(#meteorViolet)" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="0" cy="0" r="2.2" fill="#ffffff" filter="url(#starGlow)"/>
+    </g>
+
+    <!-- ============================================== -->
+    <!-- 3. CATEGORY HEADINGS                           -->
     <!-- ============================================== -->
     <g font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5" font-weight="700" letter-spacing="1.5" text-anchor="middle" fill="#94a3b8">
       <!-- Frontend -->
@@ -72,7 +159,7 @@
     </g>
 
     <!-- ============================================== -->
-    <!-- 2. TECH STACK BADGES                           -->
+    <!-- 4. TECH STACK BADGES                           -->
     <!-- ============================================== -->
     <g font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="10.5" letter-spacing="1">
 
@@ -174,69 +261,17 @@
     </g>
 
     <!-- ============================================== -->
-    <!-- 3. ANIMATED COSMIC LASER SCAN / SHIMMER       -->
+    <!-- 5. 90° VERTICAL SHIMMER GLINT (LEFT TO RIGHT)  -->
     <!-- ============================================== -->
-
-    <!-- Shimmer Glint Sweep (Masked over Badges) -->
     <g mask="url(#badgeMask)">
-      <rect x="850" y="0" width="400" height="310" fill="url(#laserShimmerGrad)">
+      <rect x="-300" y="0" width="300" height="310" fill="url(#verticalShimmerGrad)">
         <animate attributeName="x"
-          values="850; -400"
-          dur="3.4s"
+          values="-300; 850"
+          dur="3.2s"
           repeatCount="indefinite"
           calcMode="spline"
           keySplines="0.4 0 0.2 1"/>
       </rect>
-    </g>
-
-    <!-- Scanning Laser Light Ray & Starlight Pulse -->
-    <g filter="url(#laserGlow)">
-      <line y1="15" y2="295" stroke="url(#scannerLineGrad)" stroke-width="2.5" opacity="0.8">
-        <animate attributeName="x1"
-          values="1000; -200"
-          dur="3.4s"
-          repeatCount="indefinite"
-          calcMode="spline"
-          keySplines="0.4 0 0.2 1"/>
-        <animate attributeName="x2"
-          values="1070; -130"
-          dur="3.4s"
-          repeatCount="indefinite"
-          calcMode="spline"
-          keySplines="0.4 0 0.2 1"/>
-      </line>
-
-      <!-- Leading Starlight Spark Riding the Laser -->
-      <circle r="3" fill="#ffffff">
-        <animate attributeName="cx"
-          values="1035; -165"
-          dur="3.4s"
-          repeatCount="indefinite"
-          calcMode="spline"
-          keySplines="0.4 0 0.2 1"/>
-        <animate attributeName="cy"
-          values="20; 290"
-          dur="3.4s"
-          repeatCount="indefinite"
-          calcMode="spline"
-          keySplines="0.4 0 0.2 1"/>
-      </circle>
-    </g>
-
-    <!-- Subtle Twinkling Periphery Stars -->
-    <g fill="#ffffff">
-      <circle cx="120" cy="50" r="1.3">
-        <animate attributeName="opacity" values="0.1;0.9;0.1" dur="2s" repeatCount="indefinite"/>
-      </circle>
-      <circle cx="680" cy="45" r="1.5" fill="#00f5d4">
-        <animate attributeName="opacity" values="0.2;1;0.2" dur="2.7s" repeatCount="indefinite"/>
-      </circle>
-      <circle cx="140" cy="190" r="1.2" fill="#7aa2f7">
-        <animate attributeName="opacity" values="0.1;0.8;0.1" dur="2.2s" repeatCount="indefinite"/>
-      </circle>
-      <circle cx="670" cy="200" r="1.4" fill="#00f5d4">
-        <animate attributeName="opacity" values="0.2;0.95;0.2" dur="3s" repeatCount="indefinite"/>
-      </circle>
     </g>
 
   </g>
