@@ -179,9 +179,9 @@
 
     <!-- Shimmer Glint Sweep (Masked over Badges) -->
     <g mask="url(#badgeMask)">
-      <rect x="-400" y="0" width="400" height="310" fill="url(#laserShimmerGrad)">
+      <rect x="850" y="0" width="400" height="310" fill="url(#laserShimmerGrad)">
         <animate attributeName="x"
-          values="-400; 850"
+          values="850; -400"
           dur="3.4s"
           repeatCount="indefinite"
           calcMode="spline"
@@ -193,13 +193,13 @@
     <g filter="url(#laserGlow)">
       <line y1="15" y2="295" stroke="url(#scannerLineGrad)" stroke-width="2.5" opacity="0.8">
         <animate attributeName="x1"
-          values="-200; 1000"
+          values="1000; -200"
           dur="3.4s"
           repeatCount="indefinite"
           calcMode="spline"
           keySplines="0.4 0 0.2 1"/>
         <animate attributeName="x2"
-          values="-130; 1070"
+          values="1070; -130"
           dur="3.4s"
           repeatCount="indefinite"
           calcMode="spline"
@@ -209,7 +209,7 @@
       <!-- Leading Starlight Spark Riding the Laser -->
       <circle r="3" fill="#ffffff">
         <animate attributeName="cx"
-          values="-165; 1035"
+          values="1035; -165"
           dur="3.4s"
           repeatCount="indefinite"
           calcMode="spline"
