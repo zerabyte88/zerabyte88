@@ -8,18 +8,6 @@
       <stop offset="100%" stop-color="#070916"/>
     </linearGradient>
 
-    <!-- Top Star Dust Wave Gradients -->
-    <linearGradient id="topWave1" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00f5d4" stop-opacity="0.4"/>
-      <stop offset="50%" stop-color="#7aa2f7" stop-opacity="0.3"/>
-      <stop offset="100%" stop-color="#c084fc" stop-opacity="0.4"/>
-    </linearGradient>
-
-    <linearGradient id="topWave2" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#050714" stop-opacity="0.95"/>
-      <stop offset="50%" stop-color="#0e132c" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#050714" stop-opacity="0.95"/>
-    </linearGradient>
 
     <!-- Realistic Planet Saturn Gradients -->
     <radialGradient id="saturnBodyRealistic" cx="35%" cy="30%" r="70%">
@@ -120,16 +108,7 @@
     <!-- Base Deep Space Background (Matched with Header & Tech Stack) -->
     <rect width="1200" height="150" fill="url(#spaceGradient)"/>
 
-    <!-- Inverted Top Star Dust Wave -->
-    <path d="M 0 20 Q 300 40 600 20 T 1200 20 L 1200 0 L 0 0 Z" fill="url(#topWave1)">
-      <animate attributeName="d"
-        values="M 0 20 Q 300 40 600 20 T 1200 20 L 1200 0 L 0 0 Z;
-                M 0 25 Q 300 10 600 25 T 1200 25 L 1200 0 L 0 0 Z;
-                M 0 20 Q 300 40 600 20 T 1200 20 L 1200 0 L 0 0 Z"
-        dur="6s"
-        repeatCount="indefinite"/>
-    </path>
-    <path d="M 0 8 Q 300 18 600 8 T 1200 8 L 1200 0 L 0 0 Z" fill="url(#topWave2)"/>
+
 
 
     <!-- ============================================== -->

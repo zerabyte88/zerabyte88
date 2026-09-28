@@ -79,18 +79,7 @@
       <stop offset="100%" stop-color="#f43f5e"/>
     </linearGradient>
 
-    <!-- Bottom Wave Gradients -->
-    <linearGradient id="bottomWave1" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00f5d4" stop-opacity="0.4"/>
-      <stop offset="50%" stop-color="#7aa2f7" stop-opacity="0.3"/>
-      <stop offset="100%" stop-color="#c084fc" stop-opacity="0.4"/>
-    </linearGradient>
 
-    <linearGradient id="bottomWave2" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#050714" stop-opacity="0.95"/>
-      <stop offset="50%" stop-color="#0d1124" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#050714" stop-opacity="0.95"/>
-    </linearGradient>
 
     <!-- Star Glow Filters -->
     <filter id="starGlow" x="-30%" y="-30%" width="160%" height="160%">
@@ -402,15 +391,5 @@
     </g>
     <!-- ================================================================= -->
 
-    <!-- Bottom Horizon: Layered Star Dust Waves -->
-    <path d="M 0 225 Q 300 205 600 225 T 1200 225 L 1200 260 L 0 260 Z" fill="url(#bottomWave1)">
-      <animate attributeName="d"
-        values="M 0 225 Q 300 205 600 225 T 1200 225 L 1200 260 L 0 260 Z;
-                M 0 220 Q 300 235 600 220 T 1200 220 L 1200 260 L 0 260 Z;
-                M 0 225 Q 300 205 600 225 T 1200 225 L 1200 260 L 0 260 Z"
-        dur="6s"
-        repeatCount="indefinite"/>
-    </path>
-    <path d="M 0 238 Q 300 228 600 238 T 1200 238 L 1200 260 L 0 260 Z" fill="url(#bottomWave2)"/>
   </g>
 </svg>
