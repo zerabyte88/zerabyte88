@@ -21,22 +21,22 @@
 
 ### About Me
 
-Nama saya **Nanda Alrezel Rifanie**, biasa dipanggil Nanda. Saya seorang Web Developer dan UI/UX Designer yang senang membangun website yang bersih dan mudah digunakan. Waktu luang biasanya diisi dengan ngoding, baca novel, atau buka Facebook.
+Nama saya **Nanda Alrezel Rifanie**, seorang Web Developer dan UI/UX Designer. Sehari-hari berkutat dengan web, kadang desain UI, dan kalau sudah tidak ada kerjaan biasanya baca novel atau buka Facebook.
 
-Saat ini sedang mengerjakan project web **HS15** dan perlahan belajar **Flutter & Dart** untuk pengembangan aplikasi mobile.
+Saat ini sedang fokus mengerjakan project web **HS15** dan belajar **Flutter & Dart** untuk mulai merambah ke pengembangan aplikasi mobile.
 
-```
-Skill       →  Web Developer · UI/UX Designer
-Mengerjakan →  Project Web HS15
-Mempelajari →  Flutter & Dart
-Fun Fact    →  PC nyala, tapi yang dibuka Facebook atau baca novel
-```
+| | |
+|---|---|
+| **Skill** | Web Developer · UI/UX Designer |
+| **Sedang Mengerjakan** | Project Web HS15 |
+| **Sedang Mempelajari** | Flutter & Dart |
+| **Fun Fact** | PC nyala, tapi yang dibuka Facebook atau baca novel |
 
 ---
 
 ### Tech Stack
 
-**Frontend**
+• **Frontend**
 
 <div align="center">
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
@@ -44,7 +44,7 @@ Fun Fact    →  PC nyala, tapi yang dibuka Facebook atau baca novel
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
 </div>
 
-**Backend**
+• **Backend**
 
 <div align="center">
   <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP" />
@@ -52,14 +52,14 @@ Fun Fact    →  PC nyala, tapi yang dibuka Facebook atau baca novel
   <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
 </div>
 
-**Mobile**
+• **Mobile**
 
 <div align="center">
   <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter" />
   <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white" alt="Dart" />
 </div>
 
-**Tools**
+• **Tools**
 
 <div align="center">
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
