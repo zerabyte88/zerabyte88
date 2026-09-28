@@ -11,32 +11,39 @@
       <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
     </linearGradient>
 
-    <!-- Meteor 1 Trail: Cyan / Electric Blue -->
+    <!-- Meteor 1: Cyan / Electric Blue (Steep angle Left-to-Right) -->
     <linearGradient id="meteorCyan" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
       <stop offset="30%" stop-color="#00f5d4" stop-opacity="0.85"/>
       <stop offset="100%" stop-color="#7aa2f7" stop-opacity="0"/>
     </linearGradient>
 
-    <!-- Meteor 2 Trail: Pink / Nebula Violet -->
+    <!-- Meteor 2: Pink / Nebula Violet (Steep angle Right-to-Left) -->
     <linearGradient id="meteorPink" x1="100%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
       <stop offset="35%" stop-color="#f72585" stop-opacity="0.8"/>
       <stop offset="100%" stop-color="#7209b7" stop-opacity="0"/>
     </linearGradient>
 
-    <!-- Meteor 3 Trail: Sky Blue / Cobalt -->
+    <!-- Meteor 3: Sky Blue / Cobalt (Shallow angle Left-to-Right High) -->
     <linearGradient id="meteorBlue" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
-      <stop offset="35%" stop-color="#38bdf8" stop-opacity="0.8"/>
+      <stop offset="35%" stop-color="#38bdf8" stop-opacity="0.85"/>
       <stop offset="100%" stop-color="#1e40af" stop-opacity="0"/>
     </linearGradient>
 
-    <!-- Meteor 4 Trail: Violet / Cyan -->
+    <!-- Meteor 4: Violet / Emerald (Steep plunge Right-to-Left Mid) -->
     <linearGradient id="meteorViolet" x1="100%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
       <stop offset="30%" stop-color="#c084fc" stop-opacity="0.8"/>
       <stop offset="100%" stop-color="#00f5d4" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Meteor 5: Golden Starlight (Shallow swift streak Left-to-Right Low) -->
+    <linearGradient id="meteorGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="35%" stop-color="#ffd166" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#ff9f1c" stop-opacity="0"/>
     </linearGradient>
 
     <!-- Glow Filter for Shooting Stars -->
@@ -77,70 +84,178 @@
   <g clip-path="url(#canvasClip)">
 
     <!-- ============================================== -->
-    <!-- 1. TWINKLING BACKGROUND STARS                  -->
+    <!-- 1. DENSE TWINKLING STARFIELD (BINTIK BINTANG)  -->
     <!-- ============================================== -->
+    <!-- Left Region Stars -->
     <g fill="#ffffff">
-      <circle cx="90" cy="45" r="1.3">
-        <animate attributeName="opacity" values="0.1;0.9;0.1" dur="2s" repeatCount="indefinite"/>
+      <circle cx="45" cy="30" r="1.3">
+        <animate attributeName="opacity" values="0.1;0.9;0.1" dur="2.1s" repeatCount="indefinite"/>
       </circle>
-      <circle cx="710" cy="35" r="1.5" fill="#00f5d4">
-        <animate attributeName="opacity" values="0.2;1;0.2" dur="2.7s" repeatCount="indefinite"/>
+      <circle cx="85" cy="75" r="1.5" fill="#00f5d4">
+        <animate attributeName="opacity" values="0.2;1;0.2" dur="2.8s" repeatCount="indefinite"/>
       </circle>
-      <circle cx="110" cy="190" r="1.2" fill="#7aa2f7">
-        <animate attributeName="opacity" values="0.15;0.85;0.15" dur="2.2s" repeatCount="indefinite"/>
+      <circle cx="140" cy="40" r="0.9">
+        <animate attributeName="opacity" values="0.1;0.75;0.1" dur="1.7s" repeatCount="indefinite"/>
       </circle>
-      <circle cx="690" cy="180" r="1.4" fill="#00f5d4">
-        <animate attributeName="opacity" values="0.2;0.95;0.2" dur="3s" repeatCount="indefinite"/>
+      <circle cx="35" cy="120" r="1.2" fill="#7aa2f7">
+        <animate attributeName="opacity" values="0.15;0.85;0.15" dur="3.2s" repeatCount="indefinite"/>
       </circle>
-      <circle cx="160" cy="275" r="1.1">
+      <circle cx="95" cy="155" r="1.6" fill="#ffffff">
+        <animate attributeName="opacity" values="0.2;1;0.2" dur="2.4s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="160" cy="130" r="1.0" fill="#c084fc">
+        <animate attributeName="opacity" values="0.1;0.8;0.1" dur="2.9s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="50" cy="210" r="1.4" fill="#00f5d4">
+        <animate attributeName="opacity" values="0.2;0.95;0.2" dur="2.3s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="125" cy="235" r="1.1">
+        <animate attributeName="opacity" values="0.1;0.7;0.1" dur="1.9s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="70" cy="285" r="1.3" fill="#ffd166">
+        <animate attributeName="opacity" values="0.15;0.9;0.15" dur="3.5s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="150" cy="290" r="1.5" fill="#7aa2f7">
+        <animate attributeName="opacity" values="0.2;1;0.2" dur="2.6s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <!-- Right Region Stars -->
+    <g fill="#ffffff">
+      <circle cx="755" cy="35" r="1.4" fill="#00f5d4">
+        <animate attributeName="opacity" values="0.2;1;0.2" dur="2.5s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="670" cy="65" r="1.0">
         <animate attributeName="opacity" values="0.1;0.8;0.1" dur="1.8s" repeatCount="indefinite"/>
       </circle>
-      <circle cx="640" cy="285" r="1.3" fill="#c084fc">
-        <animate attributeName="opacity" values="0.2;0.9;0.2" dur="2.4s" repeatCount="indefinite"/>
+      <circle cx="720" cy="100" r="1.6" fill="#ffffff">
+        <animate attributeName="opacity" values="0.25;1;0.25" dur="3.1s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="640" cy="140" r="1.2" fill="#c084fc">
+        <animate attributeName="opacity" values="0.15;0.85;0.15" dur="2.7s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="765" cy="165" r="1.1" fill="#7aa2f7">
+        <animate attributeName="opacity" values="0.1;0.75;0.1" dur="2.2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="680" cy="210" r="1.5" fill="#00f5d4">
+        <animate attributeName="opacity" values="0.2;1;0.2" dur="3.3s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="740" cy="245" r="1.3">
+        <animate attributeName="opacity" values="0.15;0.9;0.15" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="630" cy="275" r="1.0" fill="#ffd166">
+        <animate attributeName="opacity" values="0.1;0.8;0.1" dur="2.8s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="715" cy="295" r="1.4" fill="#ffffff">
+        <animate attributeName="opacity" values="0.2;1;0.2" dur="2.4s" repeatCount="indefinite"/>
       </circle>
     </g>
 
-    <!-- ============================================== -->
-    <!-- 2. MULTIPLE SHOOTING STARS (BINTANG JATUH)     -->
-    <!-- ============================================== -->
-
-    <!-- Meteor 1 (Cyan/White: Streaks Left -> Right, Top to Mid) -->
-    <g>
-      <animateTransform attributeName="transform" type="translate"
-        values="-120 15; 920 195"
-        dur="4.6s"
-        repeatCount="indefinite"/>
-      <line x1="0" y1="0" x2="-75" y2="-15" stroke="url(#meteorCyan)" stroke-width="2.2" stroke-linecap="round"/>
-      <circle cx="0" cy="0" r="2.5" fill="#ffffff" filter="url(#starGlow)"/>
+    <!-- Center Interstitial Stars (Between Rows & Badges) -->
+    <g fill="#ffffff">
+      <circle cx="210" cy="85" r="1.1" fill="#00f5d4">
+        <animate attributeName="opacity" values="0.1;0.8;0.1" dur="2.2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="600" cy="80" r="1.3" fill="#7aa2f7">
+        <animate attributeName="opacity" values="0.2;0.9;0.2" dur="3s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="195" cy="170" r="1.0">
+        <animate attributeName="opacity" values="0.1;0.75;0.1" dur="1.9s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="580" cy="160" r="1.2" fill="#00f5d4">
+        <animate attributeName="opacity" values="0.15;0.85;0.15" dur="2.6s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="230" cy="235" r="1.4" fill="#c084fc">
+        <animate attributeName="opacity" values="0.2;0.95;0.2" dur="3.4s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="560" cy="230" r="1.1">
+        <animate attributeName="opacity" values="0.1;0.8;0.1" dur="2.1s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="250" cy="295" r="1.2" fill="#00f5d4">
+        <animate attributeName="opacity" values="0.15;0.85;0.15" dur="2.9s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="535" cy="300" r="1.3" fill="#7aa2f7">
+        <animate attributeName="opacity" values="0.2;0.9;0.2" dur="3.2s" repeatCount="indefinite"/>
+      </circle>
     </g>
 
-    <!-- Meteor 2 (Pink/Violet: Streaks Right -> Left, Top to Mid) -->
-    <g>
-      <animateTransform attributeName="transform" type="translate"
-        values="920 5; -140 185"
-        dur="5.8s"
-        repeatCount="indefinite"/>
-      <line x1="0" y1="0" x2="68" y2="-14" stroke="url(#meteorPink)" stroke-width="2" stroke-linecap="round"/>
-      <circle cx="0" cy="0" r="2.2" fill="#ffffff" filter="url(#starGlow)"/>
+    <!-- Micro Cross Sparkles (✦) -->
+    <g fill="#00f5d4">
+      <!-- Top Left Sparkle -->
+      <path d="M 60 55 L 61 53 L 62 55 L 63 55 L 61.5 56 L 62 58 L 61 56.5 L 60 58 L 60.5 56 Z" opacity="0.6">
+        <animate attributeName="opacity" values="0.2;0.9;0.2" dur="2.7s" repeatCount="indefinite"/>
+      </path>
+      <!-- Bottom Right Sparkle -->
+      <path d="M 740 70 L 741 68 L 742 70 L 743 70 L 741.5 71 L 742 73 L 741 71.5 L 740 73 L 740.5 71 Z" fill="#c084fc" opacity="0.6">
+        <animate attributeName="opacity" values="0.15;0.85;0.15" dur="3.1s" repeatCount="indefinite"/>
+      </path>
+      <!-- Mid Left Sparkle -->
+      <path d="M 120 180 L 121 178 L 122 180 L 123 180 L 121.5 181 L 122 183 L 121 181.5 L 120 183 L 120.5 181 Z" fill="#ffd166" opacity="0.55">
+        <animate attributeName="opacity" values="0.2;0.8;0.2" dur="2.3s" repeatCount="indefinite"/>
+      </path>
     </g>
 
-    <!-- Meteor 3 (Sky Blue: Streaks Left -> Right, Mid to Bottom) -->
+    <!-- ============================================== -->
+    <!-- 2. RANDOMIZED SHOOTING STARS (BINTANG JATUH)   -->
+    <!-- ============================================== -->
+
+    <!-- Meteor 1: Steep diagonal Left -> Right (Cyan-White) -->
     <g>
       <animateTransform attributeName="transform" type="translate"
-        values="-100 115; 940 295"
-        dur="6.4s"
-        repeatCount="indefinite"/>
-      <line x1="0" y1="0" x2="-70" y2="-14" stroke="url(#meteorBlue)" stroke-width="2.2" stroke-linecap="round"/>
+        values="-80 -30; 650 340"
+        dur="4.2s"
+        repeatCount="indefinite"
+        calcMode="spline"
+        keySplines="0.25 0.1 0.25 1"/>
+      <line x1="0" y1="0" x2="-62" y2="-32" stroke="url(#meteorCyan)" stroke-width="2.3" stroke-linecap="round"/>
+      <circle cx="0" cy="0" r="2.6" fill="#ffffff" filter="url(#starGlow)"/>
+    </g>
+
+    <!-- Meteor 2: Steep diagonal Right -> Left (Pink-Violet) -->
+    <g>
+      <animateTransform attributeName="transform" type="translate"
+        values="880 -40; 120 350"
+        dur="6.1s"
+        repeatCount="indefinite"
+        calcMode="spline"
+        keySplines="0.3 0.1 0.3 1"/>
+      <line x1="0" y1="0" x2="66" y2="-35" stroke="url(#meteorPink)" stroke-width="2.2" stroke-linecap="round"/>
       <circle cx="0" cy="0" r="2.4" fill="#ffffff" filter="url(#starGlow)"/>
     </g>
 
-    <!-- Meteor 4 (Violet/Cyan: Streaks Right -> Left, Mid to Bottom) -->
+    <!-- Meteor 3: Fast shallow streak across upper third (Electric Blue) -->
     <g>
       <animateTransform attributeName="transform" type="translate"
-        values="900 135; -120 295"
-        dur="7.2s"
-        repeatCount="indefinite"/>
-      <line x1="0" y1="0" x2="65" y2="-13" stroke="url(#meteorViolet)" stroke-width="2" stroke-linecap="round"/>
+        values="-100 30; 890 160"
+        dur="5.1s"
+        repeatCount="indefinite"
+        calcMode="spline"
+        keySplines="0.2 0 0.2 1"/>
+      <line x1="0" y1="0" x2="-84" y2="-11" stroke="url(#meteorBlue)" stroke-width="2.0" stroke-linecap="round"/>
+      <circle cx="0" cy="0" r="2.3" fill="#ffffff" filter="url(#starGlow)"/>
+    </g>
+
+    <!-- Meteor 4: Sharp steep drop cutting across right side (Violet-Cyan) -->
+    <g>
+      <animateTransform attributeName="transform" type="translate"
+        values="680 -50; 380 360"
+        dur="7.4s"
+        repeatCount="indefinite"
+        calcMode="spline"
+        keySplines="0.35 0.1 0.35 1"/>
+      <line x1="0" y1="0" x2="38" y2="-53" stroke="url(#meteorViolet)" stroke-width="2.2" stroke-linecap="round"/>
+      <circle cx="0" cy="0" r="2.4" fill="#ffffff" filter="url(#starGlow)"/>
+    </g>
+
+    <!-- Meteor 5: Low-altitude swift streak across bottom (Gold) -->
+    <g>
+      <animateTransform attributeName="transform" type="translate"
+        values="-90 190; 880 330"
+        dur="5.7s"
+        repeatCount="indefinite"
+        calcMode="spline"
+        keySplines="0.25 0.1 0.25 1"/>
+      <line x1="0" y1="0" x2="-69" y2="-10" stroke="url(#meteorGold)" stroke-width="2.0" stroke-linecap="round"/>
       <circle cx="0" cy="0" r="2.2" fill="#ffffff" filter="url(#starGlow)"/>
     </g>
 
