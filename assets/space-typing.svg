@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 44" width="100%" height="100%">
   <defs>
-    <!-- Space Cyan & Electric Blue Gradient (Identical to space-text.svg) -->
+    <!-- Space Cyan & Electric Blue Gradient (Matches Theme Perfectly) -->
     <linearGradient id="cosmicThemeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#00f5d4"/>
       <stop offset="30%" stop-color="#38bdf8"/>
@@ -8,7 +8,7 @@
       <stop offset="100%" stop-color="#00f5d4"/>
     </linearGradient>
 
-    <!-- Star & Ambient Glow Filter (Identical to space-text.svg) -->
+    <!-- Star & Ambient Glow Filter -->
     <filter id="starGlow" x="-30%" y="-30%" width="160%" height="160%">
       <feGaussianBlur stdDeviation="2.5" result="blur"/>
       <feMerge>
@@ -17,49 +17,44 @@
       </feMerge>
     </filter>
 
-    <!-- 4-Pointed Cosmic Star Path Definition -->
-    <g id="twinkleStar">
-      <path d="M 0 -6 L 1.3 -1.3 L 6 0 L 1.3 1.3 L 0 6 L -1.3 1.3 L -6 0 L -1.3 -1.3 Z" fill="#00f5d4" filter="url(#starGlow)"/>
-      <circle cx="0" cy="0" r="1.1" fill="#ffffff"/>
-    </g>
-
-    <!-- ================= CLIP PATHS (16s Cycle) ================= -->
-    <!-- Phrase 1: Start X=108, Width=368 -->
+    <!-- ================= CLIP PATHS (16s Cycle: 4s per Phrase) ================= -->
+    <!-- Progressive typing sweep (0 -> 580) across canvas guarantees full reveal on all OSes -->
+    <!-- Phrase 1: Active 0s - 4s (Sweep: 0.1s - 1.05s) -->
     <clipPath id="clipP1">
-      <rect x="108" y="0" width="0" height="44">
+      <rect x="0" y="0" width="0" height="44">
         <animate attributeName="width"
-          values="0; 0; 368; 368; 0; 0; 0"
-          keyTimes="0; 0.0125; 0.09375; 0.2125; 0.23125; 0.25; 1"
+          values="0; 0; 580; 580; 0; 0"
+          keyTimes="0; 0.006; 0.066; 0.244; 0.25; 1"
           dur="16s" repeatCount="indefinite" calcMode="linear"/>
       </rect>
     </clipPath>
 
-    <!-- Phrase 2: Start X=145, Width=295 -->
+    <!-- Phrase 2: Active 4s - 8s (Sweep: 4.1s - 5.05s) -->
     <clipPath id="clipP2">
-      <rect x="145" y="0" width="0" height="44">
+      <rect x="0" y="0" width="0" height="44">
         <animate attributeName="width"
-          values="0; 0; 0; 295; 295; 0; 0; 0"
-          keyTimes="0; 0.25; 0.2625; 0.34375; 0.4625; 0.48125; 0.50; 1"
+          values="0; 0; 0; 580; 580; 0; 0"
+          keyTimes="0; 0.25; 0.256; 0.316; 0.494; 0.50; 1"
           dur="16s" repeatCount="indefinite" calcMode="linear"/>
       </rect>
     </clipPath>
 
-    <!-- Phrase 3: Start X=157, Width=270 -->
+    <!-- Phrase 3: Active 8s - 12s (Sweep: 8.1s - 9.05s) -->
     <clipPath id="clipP3">
-      <rect x="157" y="0" width="0" height="44">
+      <rect x="0" y="0" width="0" height="44">
         <animate attributeName="width"
-          values="0; 0; 0; 270; 270; 0; 0; 0"
-          keyTimes="0; 0.50; 0.5125; 0.59375; 0.7125; 0.73125; 0.75; 1"
+          values="0; 0; 0; 580; 580; 0; 0"
+          keyTimes="0; 0.50; 0.506; 0.566; 0.744; 0.75; 1"
           dur="16s" repeatCount="indefinite" calcMode="linear"/>
       </rect>
     </clipPath>
 
-    <!-- Phrase 4: Start X=110, Width=364 -->
+    <!-- Phrase 4: Active 12s - 16s (Sweep: 12.1s - 13.05s) -->
     <clipPath id="clipP4">
-      <rect x="110" y="0" width="0" height="44">
+      <rect x="0" y="0" width="0" height="44">
         <animate attributeName="width"
-          values="0; 0; 0; 364; 364; 0; 0"
-          keyTimes="0; 0.75; 0.7625; 0.84375; 0.9625; 0.98125; 1"
+          values="0; 0; 0; 580; 580; 0; 0"
+          keyTimes="0; 0.75; 0.756; 0.816; 0.994; 1; 1"
           dur="16s" repeatCount="indefinite" calcMode="linear"/>
       </rect>
     </clipPath>
@@ -70,11 +65,13 @@
       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       font-size: 18px;
       font-weight: 800;
-      letter-spacing: 2.2px;
+      letter-spacing: 2px;
       dominant-baseline: central;
     }
     .cursor-neon {
       fill: #00f5d4;
+      font-weight: 300;
+      letter-spacing: 0;
       animation: cursorBlink 0.75s step-end infinite;
     }
     @keyframes cursorBlink {
@@ -83,7 +80,9 @@
     }
   </style>
 
-  <!-- Zero-Gravity Gentle Float -->
+  <!-- ============================================== -->
+  <!-- ZERO-GRAVITY GENTLE FLOAT ROOT CONTAINER       -->
+  <!-- ============================================== -->
   <g>
     <animateTransform attributeName="transform" type="translate"
       values="0 1.8; 0 -1.8; 0 1.8"
@@ -124,7 +123,7 @@
         <animate attributeName="opacity" values="0.2;0.9;0.2" dur="2.8s" repeatCount="indefinite"/>
       </circle>
       <circle cx="225" cy="8" r="0.8" fill="#38bdf8">
-        <animate attributeName="opacity" values="0.15;0.8;0.15" dur="1.9s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.15;0.85;0.15" dur="1.9s" repeatCount="indefinite"/>
       </circle>
       <circle cx="285" cy="6" r="1.2" fill="#00f5d4">
         <animate attributeName="opacity" values="0.2;0.95;0.2" dur="3.1s" repeatCount="indefinite"/>
@@ -136,7 +135,7 @@
         <animate attributeName="opacity" values="0.2;0.9;0.2" dur="2.6s" repeatCount="indefinite"/>
       </circle>
       <circle cx="468" cy="8" r="0.8" fill="#00f5d4">
-        <animate attributeName="opacity" values="0.15;0.8;0.15" dur="2.1s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.15;0.85;0.15" dur="2.1s" repeatCount="indefinite"/>
       </circle>
 
       <!-- Lower Edge Ambient Stars (Below Text) -->
@@ -188,136 +187,116 @@
       <animate attributeName="opacity" values="0.2;0.85;0.2" dur="2.9s" repeatCount="indefinite"/>
     </path>
 
-    <!-- ================= PHRASE 1 ================= -->
-    <!-- Left Star: 84 | Text: 108..471.7 | Cursor: 108->473 (direct touch on 'r') | Right Star: 495 -->
+    <!-- ============================================== -->
+    <!-- PHRASE 1: WEB DEVELOPER & UI/UX DESIGNER       -->
+    <!-- ============================================== -->
     <g>
       <animate attributeName="opacity"
         values="1; 1; 0; 0; 0"
-        keyTimes="0; 0.22; 0.245; 0.25; 1"
+        keyTimes="0; 0.220; 0.245; 0.250; 1"
         dur="16s" repeatCount="indefinite"/>
 
-      <!-- Left Star with generous 24px spacing -->
-      <use href="#twinkleStar" x="84" y="22"/>
-
-      <!-- Typed Text -->
       <g clip-path="url(#clipP1)">
-        <text x="108" y="22" class="cosmic-text" fill="url(#cosmicThemeGrad)" filter="url(#starGlow)" opacity="0.65">Web Developer &amp; UI/UX Designer</text>
-        <text x="108" y="22" class="cosmic-text" fill="url(#cosmicThemeGrad)">Web Developer &amp; UI/UX Designer</text>
+        <!-- Ambient Glow Text Layer -->
+        <text x="290" y="22" text-anchor="middle" class="cosmic-text" fill="url(#cosmicThemeGrad)" filter="url(#starGlow)" opacity="0.65">
+          <tspan fill="#00f5d4">✦  </tspan>
+          <tspan fill="url(#cosmicThemeGrad)">Web Developer &amp; UI/UX Designer</tspan>
+          <tspan class="cursor-neon" fill="#00f5d4">|</tspan>
+          <tspan fill="#38bdf8">  ✦</tspan>
+        </text>
+
+        <!-- Crisp Foreground Text Layer -->
+        <text x="290" y="22" text-anchor="middle" class="cosmic-text" fill="url(#cosmicThemeGrad)">
+          <tspan fill="#00f5d4">✦  </tspan>
+          <tspan fill="url(#cosmicThemeGrad)">Web Developer &amp; UI/UX Designer</tspan>
+          <tspan class="cursor-neon" fill="#00f5d4">|</tspan>
+          <tspan fill="#38bdf8">  ✦</tspan>
+        </text>
       </g>
-
-      <!-- Cursor 1 (Directly hugs 'r' at 473, 22px space before right star at 495) -->
-      <rect y="11" width="2.5" height="21" rx="1.2" class="cursor-neon" filter="url(#starGlow)">
-        <animate attributeName="x"
-          values="108; 108; 473; 473; 108; 108; 108"
-          keyTimes="0; 0.0125; 0.09375; 0.2125; 0.23125; 0.25; 1"
-          dur="16s" repeatCount="indefinite" calcMode="linear"/>
-        <animate attributeName="visibility"
-          values="visible; visible; visible; hidden; hidden; hidden"
-          keyTimes="0; 0.005; 0.225; 0.235; 0.25; 1"
-          dur="16s" repeatCount="indefinite"/>
-      </rect>
-
-      <!-- Right Star with generous 22px spacing -->
-      <use href="#twinkleStar" x="495" y="22"/>
     </g>
 
-    <!-- ================= PHRASE 2 ================= -->
-    <!-- Left Star: 121 | Text: 145..435.9 | Cursor: 145->437 (direct touch on '5') | Right Star: 459 -->
+    <!-- ============================================== -->
+    <!-- PHRASE 2: DEVELOPING PROJECT WEB HS15          -->
+    <!-- ============================================== -->
     <g>
       <animate attributeName="opacity"
         values="0; 0; 1; 1; 0; 0"
-        keyTimes="0; 0.25; 0.26; 0.47; 0.495; 1"
+        keyTimes="0; 0.245; 0.250; 0.470; 0.495; 1"
         dur="16s" repeatCount="indefinite"/>
 
-      <!-- Left Star with generous 24px spacing -->
-      <use href="#twinkleStar" x="121" y="22"/>
-
-      <!-- Typed Text -->
       <g clip-path="url(#clipP2)">
-        <text x="145" y="22" class="cosmic-text" fill="url(#cosmicThemeGrad)" filter="url(#starGlow)" opacity="0.65">Crafting Project Web HS15</text>
-        <text x="145" y="22" class="cosmic-text" fill="url(#cosmicThemeGrad)">Crafting Project Web HS15</text>
+        <!-- Ambient Glow Text Layer -->
+        <text x="290" y="22" text-anchor="middle" class="cosmic-text" fill="url(#cosmicThemeGrad)" filter="url(#starGlow)" opacity="0.65">
+          <tspan fill="#00f5d4">✦  </tspan>
+          <tspan fill="url(#cosmicThemeGrad)">Developing Project Web HS15</tspan>
+          <tspan class="cursor-neon" fill="#00f5d4">|</tspan>
+          <tspan fill="#38bdf8">  ✦</tspan>
+        </text>
+
+        <!-- Crisp Foreground Text Layer -->
+        <text x="290" y="22" text-anchor="middle" class="cosmic-text" fill="url(#cosmicThemeGrad)">
+          <tspan fill="#00f5d4">✦  </tspan>
+          <tspan fill="url(#cosmicThemeGrad)">Developing Project Web HS15</tspan>
+          <tspan class="cursor-neon" fill="#00f5d4">|</tspan>
+          <tspan fill="#38bdf8">  ✦</tspan>
+        </text>
       </g>
-
-      <!-- Cursor 2 (Directly hugs '5' at 437, 22px space before right star at 459) -->
-      <rect y="11" width="2.5" height="21" rx="1.2" class="cursor-neon" filter="url(#starGlow)" visibility="hidden">
-        <animate attributeName="x"
-          values="145; 145; 145; 437; 437; 145; 145; 145"
-          keyTimes="0; 0.25; 0.2625; 0.34375; 0.4625; 0.48125; 0.50; 1"
-          dur="16s" repeatCount="indefinite" calcMode="linear"/>
-        <animate attributeName="visibility"
-          values="hidden; visible; visible; hidden; hidden; hidden"
-          keyTimes="0; 0.255; 0.475; 0.485; 0.50; 1"
-          dur="16s" repeatCount="indefinite"/>
-      </rect>
-
-      <!-- Right Star with generous 22px spacing -->
-      <use href="#twinkleStar" x="459" y="22"/>
     </g>
 
-    <!-- ================= PHRASE 3 ================= -->
-    <!-- Left Star: 133 | Text: 157..422.6 | Cursor: 157->424 (direct touch on 't') | Right Star: 446 -->
+    <!-- ============================================== -->
+    <!-- PHRASE 3: EXPLORING FLUTTER & DART             -->
+    <!-- ============================================== -->
     <g>
       <animate attributeName="opacity"
         values="0; 0; 1; 1; 0; 0"
-        keyTimes="0; 0.50; 0.51; 0.72; 0.745; 1"
+        keyTimes="0; 0.495; 0.500; 0.720; 0.745; 1"
         dur="16s" repeatCount="indefinite"/>
 
-      <!-- Left Star with generous 24px spacing -->
-      <use href="#twinkleStar" x="133" y="22"/>
-
-      <!-- Typed Text -->
       <g clip-path="url(#clipP3)">
-        <text x="157" y="22" class="cosmic-text" fill="url(#cosmicThemeGrad)" filter="url(#starGlow)" opacity="0.65">Exploring Flutter &amp; Dart</text>
-        <text x="157" y="22" class="cosmic-text" fill="url(#cosmicThemeGrad)">Exploring Flutter &amp; Dart</text>
+        <!-- Ambient Glow Text Layer -->
+        <text x="290" y="22" text-anchor="middle" class="cosmic-text" fill="url(#cosmicThemeGrad)" filter="url(#starGlow)" opacity="0.65">
+          <tspan fill="#00f5d4">✦  </tspan>
+          <tspan fill="url(#cosmicThemeGrad)">Exploring Flutter &amp; Dart</tspan>
+          <tspan class="cursor-neon" fill="#00f5d4">|</tspan>
+          <tspan fill="#38bdf8">  ✦</tspan>
+        </text>
+
+        <!-- Crisp Foreground Text Layer -->
+        <text x="290" y="22" text-anchor="middle" class="cosmic-text" fill="url(#cosmicThemeGrad)">
+          <tspan fill="#00f5d4">✦  </tspan>
+          <tspan fill="url(#cosmicThemeGrad)">Exploring Flutter &amp; Dart</tspan>
+          <tspan class="cursor-neon" fill="#00f5d4">|</tspan>
+          <tspan fill="#38bdf8">  ✦</tspan>
+        </text>
       </g>
-
-      <!-- Cursor 3 (Directly hugs 't' at 424 with 0 gap, 22px space before right star at 446) -->
-      <rect y="11" width="2.5" height="21" rx="1.2" class="cursor-neon" filter="url(#starGlow)" visibility="hidden">
-        <animate attributeName="x"
-          values="157; 157; 157; 424; 424; 157; 157; 157"
-          keyTimes="0; 0.50; 0.5125; 0.59375; 0.7125; 0.73125; 0.75; 1"
-          dur="16s" repeatCount="indefinite" calcMode="linear"/>
-        <animate attributeName="visibility"
-          values="hidden; visible; visible; hidden; hidden; hidden"
-          keyTimes="0; 0.505; 0.725; 0.735; 0.75; 1"
-          dur="16s" repeatCount="indefinite"/>
-      </rect>
-
-      <!-- Right Star with generous 22px spacing -->
-      <use href="#twinkleStar" x="446" y="22"/>
     </g>
 
-    <!-- ================= PHRASE 4 ================= -->
-    <!-- Left Star: 86 | Text: 110..469.2 | Cursor: 110->471 (direct touch on 'l') | Right Star: 493 -->
+    <!-- ============================================== -->
+    <!-- PHRASE 4: DESIGNING INTUITIVE USER EXPERIENCES -->
+    <!-- ============================================== -->
     <g>
       <animate attributeName="opacity"
         values="0; 0; 1; 1; 0; 0"
-        keyTimes="0; 0.75; 0.76; 0.97; 0.995; 1"
+        keyTimes="0; 0.745; 0.750; 0.970; 0.995; 1"
         dur="16s" repeatCount="indefinite"/>
 
-      <!-- Left Star with generous 24px spacing -->
-      <use href="#twinkleStar" x="86" y="22"/>
-
-      <!-- Typed Text -->
       <g clip-path="url(#clipP4)">
-        <text x="110" y="22" class="cosmic-text" fill="url(#cosmicThemeGrad)" filter="url(#starGlow)" opacity="0.65">PC nyala, tapi yang dibuka novel</text>
-        <text x="110" y="22" class="cosmic-text" fill="url(#cosmicThemeGrad)">PC nyala, tapi yang dibuka novel</text>
+        <!-- Ambient Glow Text Layer -->
+        <text x="290" y="22" text-anchor="middle" class="cosmic-text" fill="url(#cosmicThemeGrad)" filter="url(#starGlow)" opacity="0.65">
+          <tspan fill="#00f5d4">✦  </tspan>
+          <tspan fill="url(#cosmicThemeGrad)">Designing Intuitive User Experiences</tspan>
+          <tspan class="cursor-neon" fill="#00f5d4">|</tspan>
+          <tspan fill="#38bdf8">  ✦</tspan>
+        </text>
+
+        <!-- Crisp Foreground Text Layer -->
+        <text x="290" y="22" text-anchor="middle" class="cosmic-text" fill="url(#cosmicThemeGrad)">
+          <tspan fill="#00f5d4">✦  </tspan>
+          <tspan fill="url(#cosmicThemeGrad)">Designing Intuitive User Experiences</tspan>
+          <tspan class="cursor-neon" fill="#00f5d4">|</tspan>
+          <tspan fill="#38bdf8">  ✦</tspan>
+        </text>
       </g>
-
-      <!-- Cursor 4 (Directly hugs 'l' at 471, 22px space before right star at 493) -->
-      <rect y="11" width="2.5" height="21" rx="1.2" class="cursor-neon" filter="url(#starGlow)" visibility="hidden">
-        <animate attributeName="x"
-          values="110; 110; 110; 471; 471; 110; 110"
-          keyTimes="0; 0.75; 0.7625; 0.84375; 0.9625; 0.98125; 1"
-          dur="16s" repeatCount="indefinite" calcMode="linear"/>
-        <animate attributeName="visibility"
-          values="hidden; visible; visible; hidden; hidden"
-          keyTimes="0; 0.755; 0.975; 0.985; 1"
-          dur="16s" repeatCount="indefinite"/>
-      </rect>
-
-      <!-- Right Star with generous 22px spacing -->
-      <use href="#twinkleStar" x="493" y="22"/>
     </g>
   </g>
 </svg>
