@@ -131,13 +131,6 @@
     </path>
     <path d="M 0 8 Q 300 18 600 8 T 1200 8 L 1200 0 L 0 0 Z" fill="url(#topWave2)"/>
 
-    <!-- Constellation Lines (Delicate Geometry) -->
-    <g stroke="#7aa2f7" stroke-width="0.8" stroke-dasharray="3,3" opacity="0.3">
-      <line x1="80" y1="40" x2="160" y2="75"/>
-      <line x1="160" y1="75" x2="250" y2="50"/>
-      <line x1="950" y1="50" x2="1040" y2="75"/>
-      <line x1="1040" y1="75" x2="1120" y2="40"/>
-    </g>
 
     <!-- ============================================== -->
     <!-- 1. DENSE TWINKLING STARFIELD (BINTIK BINTANG)  -->
@@ -325,13 +318,13 @@
     </g>
 
     <!-- ============================================== -->
-    <!-- 3. SHOOTING STARS (CONSTANT LINEAR SPEED)     -->
+    <!-- 3. SHOOTING STARS (ABUNDANT & RANDOMIZED LINEAR) -->
     <!-- ============================================== -->
     <!-- Meteor 1 (Cyan/White - Left to Right) -->
     <g>
       <animateTransform attributeName="transform" type="translate"
         values="-100 15; 1300 115"
-        dur="5s"
+        dur="4.6s"
         repeatCount="indefinite"
         calcMode="linear"/>
       <line x1="0" y1="0" x2="-65" y2="-12" stroke="url(#meteorTrail1)" stroke-width="2" stroke-linecap="round"/>
@@ -341,11 +334,44 @@
     <!-- Meteor 2 (Pink/Violet - Right to Left) -->
     <g>
       <animateTransform attributeName="transform" type="translate"
-        values="1280 10; -120 100"
-        dur="6.5s"
+        values="1280 10; -120 120"
+        dur="6.2s"
         repeatCount="indefinite"
         calcMode="linear"/>
       <line x1="0" y1="0" x2="60" y2="-10" stroke="url(#meteorTrail2)" stroke-width="1.8" stroke-linecap="round"/>
+      <circle cx="0" cy="0" r="2.0" fill="#ffffff" filter="url(#coreGlow)"/>
+    </g>
+
+    <!-- Meteor 3 (Cyan/Blue - Steep Angle Left to Mid-Right) -->
+    <g>
+      <animateTransform attributeName="transform" type="translate"
+        values="50 -30; 950 160"
+        dur="3.8s"
+        repeatCount="indefinite"
+        calcMode="linear"/>
+      <line x1="0" y1="0" x2="-55" y2="-16" stroke="url(#meteorTrail1)" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="0" cy="0" r="2.1" fill="#ffffff" filter="url(#coreGlow)"/>
+    </g>
+
+    <!-- Meteor 4 (Pink/Violet - Gentle Slope Mid-Right to Left) -->
+    <g>
+      <animateTransform attributeName="transform" type="translate"
+        values="1180 35; 100 140"
+        dur="5.4s"
+        repeatCount="indefinite"
+        calcMode="linear"/>
+      <line x1="0" y1="0" x2="55" y2="-9" stroke="url(#meteorTrail2)" stroke-width="1.7" stroke-linecap="round"/>
+      <circle cx="0" cy="0" r="1.8" fill="#ffffff" filter="url(#coreGlow)"/>
+    </g>
+
+    <!-- Meteor 5 (Cyan/White - Fast Low Streak Mid to Far Right) -->
+    <g>
+      <animateTransform attributeName="transform" type="translate"
+        values="450 -20; 1250 110"
+        dur="4.2s"
+        repeatCount="indefinite"
+        calcMode="linear"/>
+      <line x1="0" y1="0" x2="-60" y2="-13" stroke="url(#meteorTrail1)" stroke-width="1.9" stroke-linecap="round"/>
       <circle cx="0" cy="0" r="2.0" fill="#ffffff" filter="url(#coreGlow)"/>
     </g>
 
