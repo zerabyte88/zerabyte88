@@ -48,8 +48,9 @@ Saat ini saya sedang fokus mengerjakan dan mengembangkan project web **HS15**, m
 ### GitHub Statistics
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com?user=zerabyte88&theme=tokyonight&hide_border=true" height="195" alt="Streak GitHub" />
-  <img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=zerabyte88&layout=compact&theme=tokyonight&hide_border=true" height="195" alt="Bahasa Terpopuler" />
+  <img src="https://streak-stats.demolab.com?user=zerabyte88&theme=tokyonight&hide_border=true" alt="Streak GitHub" width="49%" />
+  <br/><br/>
+  <img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=zerabyte88&layout=compact&theme=tokyonight&hide_border=true" alt="Bahasa Terpopuler" width="60%" />
 </div>
 
 ---
