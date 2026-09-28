@@ -34,9 +34,9 @@ Fun Fact    →  PC nyala, tapi yang dibuka Facebook atau baca novel
 
 ---
 
-### Tech Stack
+### Yang Saya Pakai
 
-• **Web**
+• **Untuk web**
 
 <div align="center">
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
@@ -45,7 +45,7 @@ Fun Fact    →  PC nyala, tapi yang dibuka Facebook atau baca novel
   <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP" />
 </div>
 
-• **Mobile & Language**
+• **Untuk mobile**
 
 <div align="center">
   <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter" />
@@ -53,7 +53,7 @@ Fun Fact    →  PC nyala, tapi yang dibuka Facebook atau baca novel
   <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++" />
 </div>
 
-• **Database & Tools**
+• **Yang sering dipakai**
 
 <div align="center">
   <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
