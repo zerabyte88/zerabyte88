@@ -119,16 +119,16 @@
     </path>
 
     <!-- ============================================== -->
-    <!-- TEXT 1: MALAS NGODING? (SMOOTH CROSSFADE)      -->
+    <!-- TEXT 1: MALAS NGODING? (SEAMLESS ZERO-GAP FADE) -->
     <!-- ============================================== -->
     <g>
       <animate attributeName="opacity"
-        values="0; 1; 1; 0; 0; 0"
-        keyTimes="0; 0.09; 0.44; 0.52; 0.95; 1"
-        dur="6.5s"
+        values="1; 1; 0; 0; 1"
+        keyTimes="0; 0.422; 0.500; 0.922; 1"
+        dur="6.4s"
         repeatCount="indefinite"
         calcMode="spline"
-        keySplines="0.4 0 0.2 1; 0 0 1 1; 0.4 0 0.2 1; 0 0 1 1; 0.4 0 0.2 1"/>
+        keySplines="0 0 1 1; 0.4 0 0.2 1; 0 0 1 1; 0.4 0 0.2 1"/>
 
       <!-- Ambient Glow Behind Text (Cyan & Electric Blue) -->
       <text x="250" y="27" text-anchor="middle"
@@ -151,12 +151,12 @@
     <!-- ============================================== -->
     <g>
       <animate attributeName="opacity"
-        values="0; 0; 1; 1; 0; 0"
-        keyTimes="0; 0.46; 0.55; 0.91; 0.98; 1"
-        dur="6.5s"
+        values="0; 0; 1; 1; 0"
+        keyTimes="0; 0.422; 0.500; 0.922; 1"
+        dur="6.4s"
         repeatCount="indefinite"
         calcMode="spline"
-        keySplines="0 0 1 1; 0.4 0 0.2 1; 0 0 1 1; 0.4 0 0.2 1; 0.4 0 0.2 1"/>
+        keySplines="0 0 1 1; 0.4 0 0.2 1; 0 0 1 1; 0.4 0 0.2 1"/>
 
       <!-- Ambient Glow Behind Text (Cyan & Electric Blue) -->
       <text x="250" y="27" text-anchor="middle"
