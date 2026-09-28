@@ -1,7 +1,7 @@
 <div align="center">
 
   <!-- HEADER -->
-  <img src="https://raw.githubusercontent.com/zerabyte88/zerabyte88/6310dbe/assets/space-header.svg" width="100%" alt="Space & Stars Header" />
+  <img src="https://raw.githubusercontent.com/zerabyte88/zerabyte88/c43dedb/assets/space-header.svg" width="100%" alt="Space & Stars Header" />
 
   <!-- ANIMASI TEKS KOSMIK (SPACE) -->
   <a href="https://github.com/zerabyte88"><img src="https://raw.githubusercontent.com/zerabyte88/zerabyte88/e39618a/assets/space-text.svg" width="500" alt="Space Quote" /></a><br/>
@@ -37,7 +37,7 @@ Saat ini saya sedang fokus mengerjakan dan mengembangkan project web **HS15**, m
 ### Tech Stack
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/zerabyte88/zerabyte88/76c0179/assets/tech-shimmer.svg" width="100%" alt="Tech Stack" />
+  <img src="https://raw.githubusercontent.com/zerabyte88/zerabyte88/c43dedb/assets/tech-shimmer.svg" width="100%" alt="Tech Stack" />
 </div>
 
 ---
@@ -65,5 +65,5 @@ Saat ini saya sedang fokus mengerjakan dan mengembangkan project web **HS15**, m
 ---
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/zerabyte88/zerabyte88/76c0179/assets/space-footer.svg" width="100%" alt="Space & Stars Footer" />
+  <img src="https://raw.githubusercontent.com/zerabyte88/zerabyte88/c43dedb/assets/space-footer.svg" width="100%" alt="Space & Stars Footer" />
 </div>
