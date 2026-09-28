@@ -1,0 +1,243 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 310" width="100%" height="100%">
+  <defs>
+    <!-- Laser Shimmer Gradient for Badges -->
+    <linearGradient id="laserShimmerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="42%" stop-color="#00f5d4" stop-opacity="0.15"/>
+      <stop offset="48%" stop-color="#00f5d4" stop-opacity="0.75"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="52%" stop-color="#00bbf9" stop-opacity="0.75"/>
+      <stop offset="58%" stop-color="#00bbf9" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Scanner Beam Line Gradient -->
+    <linearGradient id="scannerLineGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00f5d4" stop-opacity="0"/>
+      <stop offset="15%" stop-color="#00f5d4" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="85%" stop-color="#00bbf9" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#00bbf9" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Glow Filter for Laser & Stars -->
+    <filter id="laserGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Mask Covering all Badge Shapes -->
+    <mask id="badgeMask">
+      <!-- Row 1: Frontend -->
+      <rect x="223" y="34" width="100" height="28" rx="4" fill="#ffffff"/>
+      <rect x="335" y="34" width="95" height="28" rx="4" fill="#ffffff"/>
+      <rect x="442" y="34" width="135" height="28" rx="4" fill="#ffffff"/>
+
+      <!-- Row 2: Backend -->
+      <rect x="250" y="108" width="85" height="28" rx="4" fill="#ffffff"/>
+      <rect x="347" y="108" width="85" height="28" rx="4" fill="#ffffff"/>
+      <rect x="444" y="108" width="106" height="28" rx="4" fill="#ffffff"/>
+
+      <!-- Row 3: Mobile -->
+      <rect x="289" y="182" width="115" height="28" rx="4" fill="#ffffff"/>
+      <rect x="416" y="182" width="95" height="28" rx="4" fill="#ffffff"/>
+
+      <!-- Row 4: Tools -->
+      <rect x="294" y="256" width="85" height="28" rx="4" fill="#ffffff"/>
+      <rect x="391" y="256" width="115" height="28" rx="4" fill="#ffffff"/>
+    </mask>
+
+    <clipPath id="shimmerClip">
+      <rect x="0" y="0" width="800" height="310"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#shimmerClip)">
+
+    <!-- ============================================== -->
+    <!-- 1. CATEGORY HEADINGS                           -->
+    <!-- ============================================== -->
+    <g font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5" font-weight="700" letter-spacing="1.5" text-anchor="middle" fill="#94a3b8">
+      <!-- Frontend -->
+      <text x="400" y="22"><tspan fill="#00f5d4">•</tspan> FRONTEND</text>
+      <!-- Backend -->
+      <text x="400" y="96"><tspan fill="#00f5d4">•</tspan> BACKEND</text>
+      <!-- Mobile -->
+      <text x="400" y="170"><tspan fill="#00f5d4">•</tspan> MOBILE</text>
+      <!-- Tools -->
+      <text x="400" y="244"><tspan fill="#00f5d4">•</tspan> TOOLS</text>
+    </g>
+
+    <!-- ============================================== -->
+    <!-- 2. TECH STACK BADGES                           -->
+    <!-- ============================================== -->
+    <g font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="10.5" letter-spacing="1">
+
+      <!-- ============ ROW 1: FRONTEND ============ -->
+      <!-- HTML5 (x: 223, width: 100) -->
+      <g transform="translate(223, 34)">
+        <rect width="100" height="28" rx="4" fill="#e34f26"/>
+        <rect width="28" height="28" rx="4" fill="#b93815"/>
+        <rect x="24" width="4" height="28" fill="#e34f26"/>
+        <text x="14" y="18" fill="#ffffff" font-size="12" text-anchor="middle">5</text>
+        <text x="62" y="18" fill="#ffffff" text-anchor="middle">HTML5</text>
+      </g>
+
+      <!-- CSS3 (x: 335, width: 95) -->
+      <g transform="translate(335, 34)">
+        <rect width="95" height="28" rx="4" fill="#1572b6"/>
+        <rect width="28" height="28" rx="4" fill="#0d5284"/>
+        <rect x="24" width="4" height="28" fill="#1572b6"/>
+        <text x="14" y="18" fill="#ffffff" font-size="12" text-anchor="middle">#</text>
+        <text x="60" y="18" fill="#ffffff" text-anchor="middle">CSS3</text>
+      </g>
+
+      <!-- JAVASCRIPT (x: 442, width: 135) -->
+      <g transform="translate(442, 34)">
+        <rect width="135" height="28" rx="4" fill="#f7df1e"/>
+        <rect width="28" height="28" rx="4" fill="#d4be14"/>
+        <rect x="24" width="4" height="28" fill="#f7df1e"/>
+        <text x="14" y="18" fill="#000000" font-size="11" text-anchor="middle">JS</text>
+        <text x="80" y="18" fill="#000000" text-anchor="middle">JAVASCRIPT</text>
+      </g>
+
+      <!-- ============ ROW 2: BACKEND ============ -->
+      <!-- PHP (x: 250, width: 85) -->
+      <g transform="translate(250, 108)">
+        <rect width="85" height="28" rx="4" fill="#777bb4"/>
+        <rect width="26" height="28" rx="4" fill="#585c8f"/>
+        <rect x="22" width="4" height="28" fill="#777bb4"/>
+        <text x="13" y="17.5" fill="#ffffff" font-size="9" text-anchor="middle">PHP</text>
+        <text x="54" y="18" fill="#ffffff" text-anchor="middle">PHP</text>
+      </g>
+
+      <!-- C++ (x: 347, width: 85) -->
+      <g transform="translate(347, 108)">
+        <rect width="85" height="28" rx="4" fill="#00599c"/>
+        <rect width="26" height="28" rx="4" fill="#003e6d"/>
+        <rect x="22" width="4" height="28" fill="#00599c"/>
+        <text x="13" y="18" fill="#ffffff" font-size="11" text-anchor="middle">C</text>
+        <text x="54" y="18" fill="#ffffff" text-anchor="middle">C++</text>
+      </g>
+
+      <!-- MYSQL (x: 444, width: 106) -->
+      <g transform="translate(444, 108)">
+        <rect width="106" height="28" rx="4" fill="#4479a1"/>
+        <rect width="28" height="28" rx="4" fill="#305a7b"/>
+        <rect x="24" width="4" height="28" fill="#4479a1"/>
+        <text x="14" y="17.5" fill="#ffffff" font-size="8.5" text-anchor="middle">SQL</text>
+        <text x="65" y="18" fill="#ffffff" text-anchor="middle">MYSQL</text>
+      </g>
+
+      <!-- ============ ROW 3: MOBILE ============ -->
+      <!-- FLUTTER (x: 289, width: 115) -->
+      <g transform="translate(289, 182)">
+        <rect width="115" height="28" rx="4" fill="#02569b"/>
+        <rect width="28" height="28" rx="4" fill="#013b6b"/>
+        <rect x="24" width="4" height="28" fill="#02569b"/>
+        <path d="M 10 9 L 14 14 L 10 19 M 14 9 L 18 14 L 14 19" stroke="#ffffff" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+        <text x="70" y="18" fill="#ffffff" text-anchor="middle">FLUTTER</text>
+      </g>
+
+      <!-- DART (x: 416, width: 95) -->
+      <g transform="translate(416, 182)">
+        <rect width="95" height="28" rx="4" fill="#0175c2"/>
+        <rect width="28" height="28" rx="4" fill="#015288"/>
+        <rect x="24" width="4" height="28" fill="#0175c2"/>
+        <polygon points="10,9 18,14 10,19 12,14" fill="#ffffff"/>
+        <text x="60" y="18" fill="#ffffff" text-anchor="middle">DART</text>
+      </g>
+
+      <!-- ============ ROW 4: TOOLS ============ -->
+      <!-- GIT (x: 294, width: 85) -->
+      <g transform="translate(294, 256)">
+        <rect width="85" height="28" rx="4" fill="#f05032"/>
+        <rect width="26" height="28" rx="4" fill="#bf361c"/>
+        <rect x="22" width="4" height="28" fill="#f05032"/>
+        <circle cx="11" cy="11" r="2" fill="#ffffff"/>
+        <circle cx="15" cy="17" r="2" fill="#ffffff"/>
+        <line x1="11" y1="11" x2="15" y2="17" stroke="#ffffff" stroke-width="1.2"/>
+        <text x="54" y="18" fill="#ffffff" text-anchor="middle">GIT</text>
+      </g>
+
+      <!-- VS CODE (x: 391, width: 115) -->
+      <g transform="translate(391, 256)">
+        <rect width="115" height="28" rx="4" fill="#0078d4"/>
+        <rect width="28" height="28" rx="4" fill="#005394"/>
+        <rect x="24" width="4" height="28" fill="#0078d4"/>
+        <polygon points="10,9 18,14 10,19" fill="#ffffff"/>
+        <text x="70" y="18" fill="#ffffff" text-anchor="middle">VS CODE</text>
+      </g>
+    </g>
+
+    <!-- ============================================== -->
+    <!-- 3. ANIMATED COSMIC LASER SCAN / SHIMMER       -->
+    <!-- ============================================== -->
+
+    <!-- Shimmer Glint Sweep (Masked over Badges) -->
+    <g mask="url(#badgeMask)">
+      <rect x="-400" y="0" width="400" height="310" fill="url(#laserShimmerGrad)">
+        <animate attributeName="x"
+          values="-400; 850"
+          dur="3.4s"
+          repeatCount="indefinite"
+          calcMode="spline"
+          keySplines="0.4 0 0.2 1"/>
+      </rect>
+    </g>
+
+    <!-- Scanning Laser Light Ray & Starlight Pulse -->
+    <g filter="url(#laserGlow)">
+      <line y1="15" y2="295" stroke="url(#scannerLineGrad)" stroke-width="2.5" opacity="0.8">
+        <animate attributeName="x1"
+          values="-200; 1000"
+          dur="3.4s"
+          repeatCount="indefinite"
+          calcMode="spline"
+          keySplines="0.4 0 0.2 1"/>
+        <animate attributeName="x2"
+          values="-130; 1070"
+          dur="3.4s"
+          repeatCount="indefinite"
+          calcMode="spline"
+          keySplines="0.4 0 0.2 1"/>
+      </line>
+
+      <!-- Leading Starlight Spark Riding the Laser -->
+      <circle r="3" fill="#ffffff">
+        <animate attributeName="cx"
+          values="-165; 1035"
+          dur="3.4s"
+          repeatCount="indefinite"
+          calcMode="spline"
+          keySplines="0.4 0 0.2 1"/>
+        <animate attributeName="cy"
+          values="20; 290"
+          dur="3.4s"
+          repeatCount="indefinite"
+          calcMode="spline"
+          keySplines="0.4 0 0.2 1"/>
+      </circle>
+    </g>
+
+    <!-- Subtle Twinkling Periphery Stars -->
+    <g fill="#ffffff">
+      <circle cx="120" cy="50" r="1.3">
+        <animate attributeName="opacity" values="0.1;0.9;0.1" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="680" cy="45" r="1.5" fill="#00f5d4">
+        <animate attributeName="opacity" values="0.2;1;0.2" dur="2.7s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="140" cy="190" r="1.2" fill="#7aa2f7">
+        <animate attributeName="opacity" values="0.1;0.8;0.1" dur="2.2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="670" cy="200" r="1.4" fill="#00f5d4">
+        <animate attributeName="opacity" values="0.2;0.95;0.2" dur="3s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+  </g>
+</svg>
