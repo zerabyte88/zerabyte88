@@ -37,7 +37,7 @@ Saat ini sedang aktif mengembangkan project web **HS15** dan mendalami dunia mob
 ### Tech Stack
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/zerabyte88/zerabyte88/ca295b8/assets/tech-shimmer.svg" width="100%" alt="Tech Stack" />
+  <img src="https://raw.githubusercontent.com/zerabyte88/zerabyte88/76c0179/assets/tech-shimmer.svg" width="100%" alt="Tech Stack" />
 </div>
 
 ---
@@ -65,5 +65,5 @@ Saat ini sedang aktif mengembangkan project web **HS15** dan mendalami dunia mob
 ---
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/zerabyte88/zerabyte88/42283f9/assets/space-footer.svg" width="100%" alt="Space & Stars Footer" />
+  <img src="https://raw.githubusercontent.com/zerabyte88/zerabyte88/76c0179/assets/space-footer.svg" width="100%" alt="Space & Stars Footer" />
 </div>
