@@ -29,7 +29,7 @@ Saat ini sedang mengerjakan project web **HS15** dan perlahan belajar **Flutter 
 Skill       →  Web Developer · UI/UX Designer
 Mengerjakan →  Project Web HS15
 Mempelajari →  Flutter & Dart
-Fun Fact    →  Laptop nyala, tapi yang dibuka Facebook
+Fun Fact    →  PC nyala, tapi yang dibuka Facebook atau baca novel
 ```
 
 ---
