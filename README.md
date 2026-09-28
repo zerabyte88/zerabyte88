@@ -3,8 +3,8 @@
   <!-- HEADER -->
   <img src="https://raw.githubusercontent.com/zerabyte88/zerabyte88/85e0b40/assets/space-header.svg" width="100%" alt="Space & Stars Header" />
 
-  <!-- ANIMASI MENGETIK -->
-  <a href="https://github.com/zerabyte88"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=23&pause=500&color=00F5D4&center=true&vCenter=true&width=500&height=32&lines=MALAS+NGODING?;BUKA+FACEBOOK+SOLUSINYA" alt="Typing SVG" /></a><br/>
+  <!-- ANIMASI TEKS KOSMIK (SPACE) -->
+  <a href="https://github.com/zerabyte88"><img src="https://raw.githubusercontent.com/zerabyte88/zerabyte88/6074932/assets/space-text.svg" width="500" alt="Space Quote" /></a><br/>
 
   <!-- DIVIDER -->
   <img src="https://raw.githubusercontent.com/zerabyte88/zerabyte88/main/assets/line-cyan.svg" width="500" alt="Divider Line" />
