@@ -40,26 +40,36 @@
       <stop offset="100%" stop-color="#7209b7" stop-opacity="0"/>
     </linearGradient>
 
-    <!-- Planet Saturn Gradients -->
-    <linearGradient id="saturnBody" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#7aa2f7"/>
-      <stop offset="50%" stop-color="#3b82f6"/>
-      <stop offset="100%" stop-color="#1e1b4b"/>
-    </linearGradient>
+    <!-- Realistic Planet Saturn Gradients -->
+    <radialGradient id="saturnBodyRealistic" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#93c5fd"/>
+      <stop offset="35%" stop-color="#3b82f6"/>
+      <stop offset="70%" stop-color="#1e40af"/>
+      <stop offset="100%" stop-color="#0b132b"/>
+    </radialGradient>
 
     <linearGradient id="saturnRing" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#00f5d4" stop-opacity="0"/>
-      <stop offset="30%" stop-color="#00f5d4" stop-opacity="0.9"/>
-      <stop offset="70%" stop-color="#c084fc" stop-opacity="0.9"/>
+      <stop offset="30%" stop-color="#00f5d4" stop-opacity="0.95"/>
+      <stop offset="70%" stop-color="#c084fc" stop-opacity="0.95"/>
       <stop offset="100%" stop-color="#c084fc" stop-opacity="0"/>
     </linearGradient>
 
-    <!-- Crescent Moon Gradient -->
-    <linearGradient id="moonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#f8fafc"/>
-      <stop offset="60%" stop-color="#94a3b8"/>
-      <stop offset="100%" stop-color="#334155"/>
-    </linearGradient>
+    <!-- Realistic Ocean Base Radial Gradient -->
+    <radialGradient id="oceanSphereGrad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="25%" stop-color="#0284c7"/>
+      <stop offset="65%" stop-color="#0369a1"/>
+      <stop offset="100%" stop-color="#082f49"/>
+    </radialGradient>
+
+    <!-- 3D Spherical Night Shadow (Terminator) -->
+    <radialGradient id="sphericalShadow" cx="30%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="45%" stop-color="#000000" stop-opacity="0.1"/>
+      <stop offset="70%" stop-color="#020617" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#020617" stop-opacity="0.95"/>
+    </radialGradient>
 
     <!-- Title Gradient -->
     <linearGradient id="spaceTitleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -99,26 +109,19 @@
     <clipPath id="headerClip">
       <rect x="0" y="0" width="1200" height="260" rx="16"/>
     </clipPath>
+
+    <clipPath id="saturnClipHeader">
+      <circle cx="0" cy="0" r="24"/>
+    </clipPath>
+
+    <clipPath id="terraClipHeader">
+      <circle cx="0" cy="0" r="25"/>
+    </clipPath>
   </defs>
 
   <g clip-path="url(#headerClip)">
     <!-- Base Deep Space Background -->
     <rect width="1200" height="260" fill="url(#spaceGradient)"/>
-
-    <!-- Cosmic Nebulae with Gentle Breathing Animation -->
-    <g filter="url(#nebulaBlur)">
-      <circle cx="320" cy="110" r="170" fill="url(#nebulaViolet)">
-        <animate attributeName="opacity" values="0.45;0.75;0.45" dur="8s" repeatCount="indefinite"/>
-        <animate attributeName="r" values="160;185;160" dur="8s" repeatCount="indefinite"/>
-      </circle>
-      <circle cx="880" cy="130" r="180" fill="url(#nebulaCyan)">
-        <animate attributeName="opacity" values="0.4;0.7;0.4" dur="10s" repeatCount="indefinite"/>
-        <animate attributeName="r" values="170;195;170" dur="10s" repeatCount="indefinite"/>
-      </circle>
-      <circle cx="600" cy="70" r="140" fill="url(#nebulaPink)">
-        <animate attributeName="opacity" values="0.3;0.6;0.3" dur="7s" repeatCount="indefinite"/>
-      </circle>
-    </g>
 
     <!-- Constellation Lines (Delicate Background Geometry) -->
     <g stroke="#7aa2f7" stroke-width="0.8" stroke-dasharray="3,3" opacity="0.35">
@@ -130,25 +133,102 @@
       <line x1="1000" y1="45" x2="1080" y2="80"/>
     </g>
 
-    <!-- Celestial Body 1: Planet Saturn with Ring (Right Side) -->
-    <g transform="translate(1040, 80)">
-      <circle cx="0" cy="0" r="32" fill="#00f5d4" opacity="0.1" filter="url(#starGlow)"/>
-      <path d="M -55 -6 A 58 16 0 0 1 55 -6" stroke="url(#saturnRing)" stroke-width="4.5" fill="none" opacity="0.65"/>
-      <circle cx="0" cy="0" r="24" fill="url(#saturnBody)"/>
-      <path d="M -16 -16 A 24 24 0 0 1 18 -14 A 20 20 0 0 0 -16 -16" fill="#00f5d4" opacity="0.4"/>
-      <path d="M -58 0 A 60 18 0 0 0 58 0" stroke="url(#saturnRing)" stroke-width="5" fill="none">
-        <animate attributeName="opacity" values="0.75;1;0.75" dur="4s" repeatCount="indefinite"/>
+    <!-- Celestial Body 1: Realistic Ringed Saturn (Left Side) -->
+    <g transform="translate(160, 80)">
+      <!-- Ambient Halo Glow -->
+      <circle cx="0" cy="0" r="32" fill="#00f5d4" opacity="0.12" filter="url(#starGlow)"/>
+
+      <!-- Back of Planetary Ring -->
+      <path d="M -56 -6 A 58 17 0 0 1 56 -6" stroke="url(#saturnRing)" stroke-width="5" fill="none" opacity="0.6"/>
+
+      <!-- Saturn Gas Giant Sphere -->
+      <circle cx="0" cy="0" r="24" fill="url(#saturnBodyRealistic)"/>
+
+      <!-- Atmospheric Cloud Bands (Clipped to sphere) -->
+      <g clip-path="url(#saturnClipHeader)">
+        <!-- Band 1: Golden Ammonia Belt -->
+        <rect x="-24" y="-10" width="48" height="5" fill="#fde68a" opacity="0.35"/>
+        <!-- Band 2: Cyan Jetstream -->
+        <rect x="-24" y="-3" width="48" height="4" fill="#00f5d4" opacity="0.25"/>
+        <!-- Band 3: Deep Azure Belt -->
+        <rect x="-24" y="3" width="48" height="6" fill="#1e40af" opacity="0.4"/>
+        <!-- Band 4: Polar Vortex -->
+        <ellipse cx="0" cy="-21" rx="10" ry="3.5" fill="#1e3a8a" opacity="0.6"/>
+        <!-- 3D Spherical Night Shadow -->
+        <circle cx="0" cy="0" r="24" fill="url(#sphericalShadow)"/>
+      </g>
+
+      <!-- Atmosphere Edge Highlight -->
+      <path d="M -17 -17 A 24 24 0 0 1 17 17 A 21.5 21.5 0 0 0 -17 -17 Z" fill="#7aa2f7" opacity="0.5"/>
+
+      <!-- Front of Planetary Ring with Cassini Division -->
+      <path d="M -58 0 A 60 18 0 0 0 58 0" stroke="url(#saturnRing)" stroke-width="5.5" fill="none">
+        <animate attributeName="opacity" values="0.8;1;0.8" dur="4s" repeatCount="indefinite"/>
       </path>
+      <!-- Cassini Gap (Dark Division) -->
+      <path d="M -54 1 A 56 17 0 0 0 54 1" stroke="#050714" stroke-width="1.1" fill="none" opacity="0.9"/>
     </g>
 
-    <!-- Celestial Body 2: Crescent Moon (Left Side) -->
-    <g transform="translate(150, 75)">
-      <circle cx="0" cy="0" r="24" fill="#ffffff" opacity="0.08" filter="url(#starGlow)"/>
-      <path d="M -14 -18 A 22 22 0 1 0 14 18 A 18 18 0 1 1 -14 -18 Z" fill="url(#moonGrad)">
-        <animate attributeName="opacity" values="0.8;1;0.8" dur="5s" repeatCount="indefinite"/>
-      </path>
-      <circle cx="-5" cy="2" r="1.6" fill="#475569" opacity="0.6"/>
-      <circle cx="-9" cy="-6" r="1.2" fill="#475569" opacity="0.5"/>
+    <!-- Celestial Body 2: Realistic Blue Marble Exoplanet with Orbiting Satellite (Right Side) -->
+    <g transform="translate(1040, 85)">
+      <!-- 1. Atmospheric Corona Glow -->
+      <circle cx="0" cy="0" r="34" fill="#00f5d4" opacity="0.15" filter="url(#starGlow)"/>
+      <circle cx="0" cy="0" r="28" fill="#38bdf8" opacity="0.3" filter="url(#starGlow)"/>
+
+      <!-- 2. Ocean Base Sphere -->
+      <circle cx="0" cy="0" r="25" fill="url(#oceanSphereGrad)"/>
+
+      <!-- 3. Continents & Landmasses (Clipped to sphere) -->
+      <g clip-path="url(#terraClipHeader)">
+        <!-- Northern Continent -->
+        <path d="M -18 -9 Q -11 -18 -2 -16 Q 6 -14 9 -7 Q 11 2 2 5 Q -6 6 -11 1 Q -17 0 -18 -9 Z" fill="#10b981"/>
+        <path d="M -14 -11 Q -7 -16 0 -13 Q -3 -6 -9 -5 Z" fill="#34d399"/>
+        <!-- Southern Continent -->
+        <path d="M -6 7 Q 5 6 10 11 Q 8 18 0 19 Q -9 18 -8 11 Z" fill="#059669"/>
+        <path d="M -2 9 Q 3 8 7 14 Q 2 17 -3 15 Z" fill="#34d399"/>
+        <!-- Eastern Archipelago -->
+        <circle cx="16" cy="-2" r="2.5" fill="#10b981"/>
+        <circle cx="18" cy="5" r="1.7" fill="#059669"/>
+        <circle cx="-15" cy="9" r="1.8" fill="#10b981"/>
+        <!-- North Polar Ice Cap -->
+        <ellipse cx="0" cy="-22" rx="10" ry="4" fill="#f8fafc" opacity="0.9"/>
+        <!-- South Polar Ice Cap -->
+        <ellipse cx="0" cy="22" rx="9" ry="3.5" fill="#f8fafc" opacity="0.85"/>
+
+        <!-- 4. Atmospheric Swirling Storm & Cloud Belts -->
+        <path d="M -25 -5 Q -14 -10 0 -6 Q 14 -1 25 -7 Q 16 0 0 -2 Q -14 -5 -25 -5 Z" fill="#ffffff" opacity="0.55"/>
+        <path d="M -23 6 Q -11 2 2 8 Q 16 12 25 9 Q 14 8 0 5 Q -11 2 -23 6 Z" fill="#ffffff" opacity="0.5"/>
+        <path d="M -9 -15 Q -2 -18 7 -12 Q 2 -14 -5 -12 Z" fill="#ffffff" opacity="0.6"/>
+
+        <!-- 5. 3D Day/Night Terminator Spherical Shadow -->
+        <circle cx="0" cy="0" r="25" fill="url(#sphericalShadow)"/>
+      </g>
+
+      <!-- 6. Rayleigh Scattering Sunlit Atmospheric Rim -->
+      <path d="M -17.5 -17.5 A 25 25 0 0 1 17.5 17.5 A 23 23 0 0 0 -17.5 -17.5 Z" fill="#00f5d4" opacity="0.8"/>
+
+      <!-- 7. Orbiting Space Satellite with Solar Panels -->
+      <g>
+        <ellipse rx="44" ry="18" fill="none" stroke="#00f5d4" stroke-width="0.9" opacity="0.35" stroke-dasharray="3,3" transform="rotate(-20)"/>
+        <!-- Satellite Motion Group -->
+        <g>
+          <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="11s" repeatCount="indefinite"/>
+          <g transform="translate(44, 0)">
+            <!-- Central Probe Body -->
+            <rect x="-3.5" y="-3.5" width="7" height="7" rx="1" fill="#e2e8f0" stroke="#94a3b8" stroke-width="0.5"/>
+            <!-- Left Blue Solar Wing -->
+            <rect x="-13" y="-2.5" width="8.5" height="5" rx="0.5" fill="#0284c7" stroke="#38bdf8" stroke-width="0.5"/>
+            <!-- Right Blue Solar Wing -->
+            <rect x="4.5" y="-2.5" width="8.5" height="5" rx="0.5" fill="#0284c7" stroke="#38bdf8" stroke-width="0.5"/>
+            <!-- Communication Antenna Mast -->
+            <line x1="0" y1="-3.5" x2="0" y2="-7" stroke="#ffffff" stroke-width="0.8"/>
+            <!-- Beacon Light -->
+            <circle cx="0" cy="-7" r="1.5" fill="#00f5d4" filter="url(#starGlow)">
+              <animate attributeName="opacity" values="0.3;1;0.3" dur="1.2s" repeatCount="indefinite"/>
+            </circle>
+          </g>
+        </g>
+      </g>
     </g>
 
     <!-- Twinkling Starfield (Various Frequencies and Sizes) -->
@@ -240,27 +320,38 @@
       </path>
     </g>
 
-    <!-- Shooting Stars / Meteors -->
-    <!-- Meteor 1 (Cyan/White - Streaks across left to right) -->
+    <!-- Shooting Stars / Meteors (Constant Linear Speed, No Slowdown) -->
+    <!-- Meteor 1 (Cyan/White - Steep Left to Right) -->
     <g>
       <animateTransform attributeName="transform" type="translate"
         values="-120 -30; 1320 230"
-        keyTimes="0; 1"
-        dur="5.5s"
-        repeatCount="indefinite"/>
+        dur="4.5s"
+        repeatCount="indefinite"
+        calcMode="linear"/>
       <line x1="0" y1="0" x2="-80" y2="-15" stroke="url(#meteorTrail1)" stroke-width="2.5" stroke-linecap="round"/>
       <circle cx="0" cy="0" r="2.8" fill="#ffffff" filter="url(#starGlow)"/>
     </g>
 
-    <!-- Meteor 2 (Pink/Violet - Streaks across opposite direction) -->
+    <!-- Meteor 2 (Pink/Violet - High Speed Right to Left) -->
     <g>
       <animateTransform attributeName="transform" type="translate"
         values="1300 -10; -150 210"
-        keyTimes="0; 1"
-        dur="7.5s"
-        repeatCount="indefinite"/>
+        dur="6.2s"
+        repeatCount="indefinite"
+        calcMode="linear"/>
       <line x1="0" y1="0" x2="70" y2="-13" stroke="url(#meteorTrail2)" stroke-width="2" stroke-linecap="round"/>
       <circle cx="0" cy="0" r="2.2" fill="#ffffff" filter="url(#starGlow)"/>
+    </g>
+
+    <!-- Meteor 3 (Cyan/Blue - Lower Mid Space) -->
+    <g>
+      <animateTransform attributeName="transform" type="translate"
+        values="100 -40; 1100 240"
+        dur="5.8s"
+        repeatCount="indefinite"
+        calcMode="linear"/>
+      <line x1="0" y1="0" x2="-65" y2="-18" stroke="url(#meteorTrail1)" stroke-width="1.8" stroke-linecap="round"/>
+      <circle cx="0" cy="0" r="2.0" fill="#ffffff" filter="url(#starGlow)"/>
     </g>
 
     <!-- ================================================================= -->
