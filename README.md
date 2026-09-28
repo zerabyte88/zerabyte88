@@ -1,7 +1,7 @@
 <div align="center">
 
   <!-- HEADER -->
-  <img src="https://raw.githubusercontent.com/zerabyte88/zerabyte88/42283f9/assets/space-header.svg" width="100%" alt="Space & Stars Header" />
+  <img src="https://raw.githubusercontent.com/zerabyte88/zerabyte88/6310dbe/assets/space-header.svg" width="100%" alt="Space & Stars Header" />
 
   <!-- ANIMASI TEKS KOSMIK (SPACE) -->
   <a href="https://github.com/zerabyte88"><img src="https://raw.githubusercontent.com/zerabyte88/zerabyte88/e39618a/assets/space-text.svg" width="500" alt="Space Quote" /></a><br/>
