@@ -1,10 +1,10 @@
 <div align="center">
 
   <!-- HEADER -->
-  <img src="https://raw.githubusercontent.com/zerabyte88/zerabyte88/ca295b8/assets/space-header.svg" width="100%" alt="Space & Stars Header" />
+  <img src="https://raw.githubusercontent.com/zerabyte88/zerabyte88/0910e2f/assets/space-header.svg" width="100%" alt="Space & Stars Header" />
 
   <!-- ANIMASI TEKS KOSMIK (SPACE) -->
-  <a href="https://github.com/zerabyte88"><img src="https://raw.githubusercontent.com/zerabyte88/zerabyte88/32f7cdc/assets/space-text.svg" width="500" alt="Space Quote" /></a><br/>
+  <a href="https://github.com/zerabyte88"><img src="https://raw.githubusercontent.com/zerabyte88/zerabyte88/0910e2f/assets/space-text.svg" width="500" alt="Space Quote" /></a><br/>
 
   <!-- DIVIDER -->
   <img src="https://raw.githubusercontent.com/zerabyte88/zerabyte88/main/assets/line-cyan.svg" width="500" alt="Divider Line" />
@@ -65,5 +65,5 @@ Saat ini sedang aktif mengembangkan project web **HS15** dan mendalami dunia mob
 ---
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/zerabyte88/zerabyte88/05c37cf/assets/space-footer.svg" width="100%" alt="Space & Stars Footer" />
+  <img src="https://raw.githubusercontent.com/zerabyte88/zerabyte88/0910e2f/assets/space-footer.svg" width="100%" alt="Space & Stars Footer" />
 </div>
