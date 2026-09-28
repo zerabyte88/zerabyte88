@@ -92,13 +92,101 @@
       calcMode="spline"
       keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
 
-    <!-- Subtle Twinkling Ambient Corner Stars -->
-    <circle cx="16" cy="22" r="1.1" fill="#00f5d4">
-      <animate attributeName="opacity" values="0.2;0.9;0.2" dur="2.1s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="564" cy="22" r="1.1" fill="#38bdf8">
-      <animate attributeName="opacity" values="0.2;0.9;0.2" dur="2.6s" repeatCount="indefinite"/>
-    </circle>
+    <!-- ============================================== -->
+    <!-- DENSE TWINKLING STARDUST (BINTIK BINTANG)     -->
+    <!-- ============================================== -->
+    <g fill="#ffffff">
+      <!-- Left Stardust Cluster -->
+      <circle cx="16" cy="22" r="1.1" fill="#00f5d4">
+        <animate attributeName="opacity" values="0.2;0.95;0.2" dur="2.1s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="26" cy="12" r="0.9">
+        <animate attributeName="opacity" values="0.15;0.8;0.15" dur="1.7s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="36" cy="32" r="1.2" fill="#38bdf8">
+        <animate attributeName="opacity" values="0.2;0.9;0.2" dur="2.5s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="48" cy="15" r="1.0" fill="#00f5d4">
+        <animate attributeName="opacity" values="0.15;1;0.15" dur="2.9s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="60" cy="29" r="1.3" fill="#ffffff">
+        <animate attributeName="opacity" values="0.25;0.9;0.25" dur="2.2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="72" cy="11" r="0.8" fill="#38bdf8">
+        <animate attributeName="opacity" values="0.2;0.85;0.2" dur="2.7s" repeatCount="indefinite"/>
+      </circle>
+
+      <!-- Upper Edge Ambient Stars (Above Text) -->
+      <circle cx="112" cy="7" r="0.9" fill="#00f5d4">
+        <animate attributeName="opacity" values="0.15;0.85;0.15" dur="2.0s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="165" cy="6" r="1.1" fill="#ffffff">
+        <animate attributeName="opacity" values="0.2;0.9;0.2" dur="2.8s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="225" cy="8" r="0.8" fill="#38bdf8">
+        <animate attributeName="opacity" values="0.15;0.8;0.15" dur="1.9s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="285" cy="6" r="1.2" fill="#00f5d4">
+        <animate attributeName="opacity" values="0.2;0.95;0.2" dur="3.1s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="345" cy="7" r="0.9" fill="#ffffff">
+        <animate attributeName="opacity" values="0.15;0.85;0.15" dur="2.3s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="405" cy="6" r="1.1" fill="#38bdf8">
+        <animate attributeName="opacity" values="0.2;0.9;0.2" dur="2.6s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="468" cy="8" r="0.8" fill="#00f5d4">
+        <animate attributeName="opacity" values="0.15;0.8;0.15" dur="2.1s" repeatCount="indefinite"/>
+      </circle>
+
+      <!-- Lower Edge Ambient Stars (Below Text) -->
+      <circle cx="130" cy="37" r="1.0" fill="#38bdf8">
+        <animate attributeName="opacity" values="0.2;0.9;0.2" dur="2.4s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="190" cy="38" r="0.9" fill="#00f5d4">
+        <animate attributeName="opacity" values="0.15;0.85;0.15" dur="1.8s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="250" cy="36" r="1.2" fill="#ffffff">
+        <animate attributeName="opacity" values="0.25;0.95;0.25" dur="2.7s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="310" cy="38" r="0.8" fill="#38bdf8">
+        <animate attributeName="opacity" values="0.15;0.8;0.15" dur="2.2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="370" cy="37" r="1.1" fill="#00f5d4">
+        <animate attributeName="opacity" values="0.2;0.9;0.2" dur="3.0s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="430" cy="36" r="0.9" fill="#ffffff">
+        <animate attributeName="opacity" values="0.15;0.85;0.15" dur="2.5s" repeatCount="indefinite"/>
+      </circle>
+
+      <!-- Right Stardust Cluster -->
+      <circle cx="510" cy="13" r="0.9" fill="#38bdf8">
+        <animate attributeName="opacity" values="0.2;0.85;0.2" dur="2.0s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="522" cy="30" r="1.2" fill="#00f5d4">
+        <animate attributeName="opacity" values="0.2;0.95;0.2" dur="2.6s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="535" cy="15" r="1.0" fill="#ffffff">
+        <animate attributeName="opacity" values="0.25;0.9;0.25" dur="1.9s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="548" cy="31" r="1.3" fill="#38bdf8">
+        <animate attributeName="opacity" values="0.2;1;0.2" dur="2.8s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="564" cy="22" r="1.1" fill="#00f5d4">
+        <animate attributeName="opacity" values="0.2;0.9;0.2" dur="2.4s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="572" cy="11" r="0.8" fill="#ffffff">
+        <animate attributeName="opacity" values="0.15;0.85;0.15" dur="1.8s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <!-- Micro Sparkles (✦) -->
+    <path d="M 38 21 L 39 19 L 40 21 L 42 21 L 40.5 22 L 41 24 L 39 22.5 L 37 24 L 37.5 22 Z" fill="#00f5d4" opacity="0.6">
+      <animate attributeName="opacity" values="0.2;0.85;0.2" dur="2.4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 540 20 L 541 18 L 542 20 L 544 20 L 542.5 21 L 543 23 L 541 21.5 L 539 23 L 539.5 21 Z" fill="#38bdf8" opacity="0.6">
+      <animate attributeName="opacity" values="0.2;0.85;0.2" dur="2.9s" repeatCount="indefinite"/>
+    </path>
 
     <!-- ================= PHRASE 1 ================= -->
     <!-- Left Star: 84 | Text: 108..471.7 | Cursor: 108->473 (direct touch on 'r') | Right Star: 495 -->

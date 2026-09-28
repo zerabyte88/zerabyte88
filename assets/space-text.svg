@@ -30,32 +30,28 @@
       calcMode="spline"
       keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
 
-    <!-- Left Cosmic Twinkling Star (✦) -->
-    <g transform="translate(55, 20)">
-      <path d="M 0 -7 L 1.5 -1.5 L 7 0 L 1.5 1.5 L 0 7 L -1.5 1.5 L -7 0 L -1.5 -1.5 Z" fill="#00f5d4" filter="url(#starGlow)">
-        <animate attributeName="opacity" values="0.4;1;0.4" dur="2.4s" repeatCount="indefinite"/>
-      </path>
-      <circle cx="0" cy="0" r="1.3" fill="#ffffff"/>
-    </g>
-
-    <!-- Right Cosmic Twinkling Star (✦) -->
-    <g transform="translate(445, 20)">
-      <path d="M 0 -7 L 1.5 -1.5 L 7 0 L 1.5 1.5 L 0 7 L -1.5 1.5 L -7 0 L -1.5 -1.5 Z" fill="#38bdf8" filter="url(#starGlow)">
-        <animate attributeName="opacity" values="0.4;1;0.4" dur="2.8s" repeatCount="indefinite"/>
-      </path>
-      <circle cx="0" cy="0" r="1.3" fill="#ffffff"/>
-    </g>
-
     <!-- ============================================== -->
     <!-- DENSE TWINKLING STARDUST (BINTIK BINTANG)     -->
     <!-- ============================================== -->
     <g fill="#ffffff">
-      <!-- Left Area Stars -->
+      <!-- Left Area Stars (Enriched with stardust in place of big star) -->
+      <circle cx="20" cy="22" r="1.1" fill="#00f5d4">
+        <animate attributeName="opacity" values="0.2;0.9;0.2" dur="2.1s" repeatCount="indefinite"/>
+      </circle>
       <circle cx="28" cy="14" r="1.0">
         <animate attributeName="opacity" values="0.2;0.9;0.2" dur="1.8s" repeatCount="indefinite"/>
       </circle>
       <circle cx="38" cy="27" r="1.2" fill="#00f5d4">
         <animate attributeName="opacity" values="0.15;1;0.15" dur="2.5s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="50" cy="13" r="0.9" fill="#38bdf8">
+        <animate attributeName="opacity" values="0.2;0.85;0.2" dur="1.9s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="56" cy="23" r="1.3" fill="#ffffff">
+        <animate attributeName="opacity" values="0.3;1;0.3" dur="2.4s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="62" cy="30" r="1.0" fill="#00f5d4">
+        <animate attributeName="opacity" values="0.15;0.9;0.15" dur="2.7s" repeatCount="indefinite"/>
       </circle>
       <circle cx="75" cy="11" r="0.9">
         <animate attributeName="opacity" values="0.2;0.8;0.2" dur="2.1s" repeatCount="indefinite"/>
@@ -84,7 +80,7 @@
         <animate attributeName="opacity" values="0.15;0.9;0.15" dur="2.6s" repeatCount="indefinite"/>
       </circle>
 
-      <!-- Right Area Stars -->
+      <!-- Right Area Stars (Enriched with stardust in place of big star) -->
       <circle cx="395" cy="31" r="1.2" fill="#38bdf8">
         <animate attributeName="opacity" values="0.2;1;0.2" dur="2.4s" repeatCount="indefinite"/>
       </circle>
@@ -94,11 +90,23 @@
       <circle cx="428" cy="27" r="1.3" fill="#00f5d4">
         <animate attributeName="opacity" values="0.2;0.95;0.2" dur="2.8s" repeatCount="indefinite"/>
       </circle>
+      <circle cx="438" cy="14" r="1.0" fill="#ffffff">
+        <animate attributeName="opacity" values="0.25;0.95;0.25" dur="2.0s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="446" cy="24" r="1.3" fill="#38bdf8">
+        <animate attributeName="opacity" values="0.3;1;0.3" dur="2.5s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="454" cy="31" r="0.9" fill="#00f5d4">
+        <animate attributeName="opacity" values="0.15;0.85;0.15" dur="2.8s" repeatCount="indefinite"/>
+      </circle>
       <circle cx="465" cy="13" r="1.1" fill="#38bdf8">
         <animate attributeName="opacity" values="0.15;0.9;0.15" dur="2.2s" repeatCount="indefinite"/>
       </circle>
       <circle cx="475" cy="28" r="0.9">
         <animate attributeName="opacity" values="0.2;0.8;0.2" dur="3.0s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="484" cy="18" r="1.0" fill="#00f5d4">
+        <animate attributeName="opacity" values="0.2;0.9;0.2" dur="2.4s" repeatCount="indefinite"/>
       </circle>
     </g>
 
