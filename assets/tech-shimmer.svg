@@ -46,7 +46,28 @@
       <stop offset="100%" stop-color="#ff9f1c" stop-opacity="0"/>
     </linearGradient>
 
-    <!-- Glow Filter for Shooting Stars -->
+    <!-- Planet Saturn Gradients -->
+    <linearGradient id="saturnBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7aa2f7"/>
+      <stop offset="50%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#0c102a"/>
+    </linearGradient>
+
+    <linearGradient id="saturnRing" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f5d4" stop-opacity="0"/>
+      <stop offset="25%" stop-color="#00f5d4" stop-opacity="0.95"/>
+      <stop offset="75%" stop-color="#c084fc" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#c084fc" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Crescent Moon Gradient -->
+    <linearGradient id="moonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e0e7ff"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+
+    <!-- Glow Filter for Shooting Stars and Celestial Halos -->
     <filter id="starGlow" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="2.5" result="blur"/>
       <feMerge>
@@ -86,7 +107,6 @@
     <!-- ============================================== -->
     <!-- 1. DENSE TWINKLING STARFIELD (BINTIK BINTANG)  -->
     <!-- ============================================== -->
-    <!-- Left Region Stars -->
     <g fill="#ffffff">
       <circle cx="45" cy="30" r="1.3">
         <animate attributeName="opacity" values="0.1;0.9;0.1" dur="2.1s" repeatCount="indefinite"/>
@@ -100,42 +120,28 @@
       <circle cx="35" cy="120" r="1.2" fill="#7aa2f7">
         <animate attributeName="opacity" values="0.15;0.85;0.15" dur="3.2s" repeatCount="indefinite"/>
       </circle>
-      <circle cx="95" cy="155" r="1.6" fill="#ffffff">
-        <animate attributeName="opacity" values="0.2;1;0.2" dur="2.4s" repeatCount="indefinite"/>
-      </circle>
       <circle cx="160" cy="130" r="1.0" fill="#c084fc">
         <animate attributeName="opacity" values="0.1;0.8;0.1" dur="2.9s" repeatCount="indefinite"/>
       </circle>
-      <circle cx="50" cy="210" r="1.4" fill="#00f5d4">
+      <circle cx="50" cy="270" r="1.4" fill="#00f5d4">
         <animate attributeName="opacity" values="0.2;0.95;0.2" dur="2.3s" repeatCount="indefinite"/>
       </circle>
-      <circle cx="125" cy="235" r="1.1">
+      <circle cx="125" cy="285" r="1.1">
         <animate attributeName="opacity" values="0.1;0.7;0.1" dur="1.9s" repeatCount="indefinite"/>
       </circle>
-      <circle cx="70" cy="285" r="1.3" fill="#ffd166">
+      <circle cx="170" cy="240" r="1.3" fill="#ffd166">
         <animate attributeName="opacity" values="0.15;0.9;0.15" dur="3.5s" repeatCount="indefinite"/>
       </circle>
-      <circle cx="150" cy="290" r="1.5" fill="#7aa2f7">
-        <animate attributeName="opacity" values="0.2;1;0.2" dur="2.6s" repeatCount="indefinite"/>
-      </circle>
-    </g>
 
-    <!-- Right Region Stars -->
-    <g fill="#ffffff">
+      <!-- Right Region Stars -->
       <circle cx="755" cy="35" r="1.4" fill="#00f5d4">
         <animate attributeName="opacity" values="0.2;1;0.2" dur="2.5s" repeatCount="indefinite"/>
       </circle>
-      <circle cx="670" cy="65" r="1.0">
+      <circle cx="670" cy="45" r="1.0">
         <animate attributeName="opacity" values="0.1;0.8;0.1" dur="1.8s" repeatCount="indefinite"/>
       </circle>
-      <circle cx="720" cy="100" r="1.6" fill="#ffffff">
-        <animate attributeName="opacity" values="0.25;1;0.25" dur="3.1s" repeatCount="indefinite"/>
-      </circle>
-      <circle cx="640" cy="140" r="1.2" fill="#c084fc">
+      <circle cx="770" cy="140" r="1.2" fill="#c084fc">
         <animate attributeName="opacity" values="0.15;0.85;0.15" dur="2.7s" repeatCount="indefinite"/>
-      </circle>
-      <circle cx="765" cy="165" r="1.1" fill="#7aa2f7">
-        <animate attributeName="opacity" values="0.1;0.75;0.1" dur="2.2s" repeatCount="indefinite"/>
       </circle>
       <circle cx="680" cy="210" r="1.5" fill="#00f5d4">
         <animate attributeName="opacity" values="0.2;1;0.2" dur="3.3s" repeatCount="indefinite"/>
@@ -149,10 +155,8 @@
       <circle cx="715" cy="295" r="1.4" fill="#ffffff">
         <animate attributeName="opacity" values="0.2;1;0.2" dur="2.4s" repeatCount="indefinite"/>
       </circle>
-    </g>
 
-    <!-- Center Interstitial Stars (Between Rows & Badges) -->
-    <g fill="#ffffff">
+      <!-- Interstitial Stars -->
       <circle cx="210" cy="85" r="1.1" fill="#00f5d4">
         <animate attributeName="opacity" values="0.1;0.8;0.1" dur="2.2s" repeatCount="indefinite"/>
       </circle>
@@ -181,32 +185,66 @@
 
     <!-- Micro Cross Sparkles (✦) -->
     <g fill="#00f5d4">
-      <!-- Top Left Sparkle -->
       <path d="M 60 55 L 61 53 L 62 55 L 63 55 L 61.5 56 L 62 58 L 61 56.5 L 60 58 L 60.5 56 Z" opacity="0.6">
         <animate attributeName="opacity" values="0.2;0.9;0.2" dur="2.7s" repeatCount="indefinite"/>
       </path>
-      <!-- Bottom Right Sparkle -->
-      <path d="M 740 70 L 741 68 L 742 70 L 743 70 L 741.5 71 L 742 73 L 741 71.5 L 740 73 L 740.5 71 Z" fill="#c084fc" opacity="0.6">
+      <path d="M 750 190 L 751 188 L 752 190 L 753 190 L 751.5 191 L 752 193 L 751 191.5 L 750 193 L 750.5 191 Z" fill="#c084fc" opacity="0.6">
         <animate attributeName="opacity" values="0.15;0.85;0.15" dur="3.1s" repeatCount="indefinite"/>
-      </path>
-      <!-- Mid Left Sparkle -->
-      <path d="M 120 180 L 121 178 L 122 180 L 123 180 L 121.5 181 L 122 183 L 121 181.5 L 120 183 L 120.5 181 Z" fill="#ffd166" opacity="0.55">
-        <animate attributeName="opacity" values="0.2;0.8;0.2" dur="2.3s" repeatCount="indefinite"/>
       </path>
     </g>
 
     <!-- ============================================== -->
-    <!-- 2. RANDOMIZED SHOOTING STARS (BINTANG JATUH)   -->
+    <!-- 2. CELESTIAL PLANETS (TAMBAHAN PLANET)         -->
+    <!-- ============================================== -->
+
+    <!-- Planet 1: Ringed Gas Giant Saturn (Upper-Right) -->
+    <g transform="translate(715, 95)">
+      <!-- Ambient Halo Glow -->
+      <circle cx="0" cy="0" r="26" fill="#00f5d4" opacity="0.12" filter="url(#starGlow)"/>
+      <!-- Back Orbital Ring -->
+      <path d="M -44 -5 A 46 13 0 0 1 44 -5" stroke="url(#saturnRing)" stroke-width="3.5" fill="none" opacity="0.65"/>
+      <!-- Planet Sphere -->
+      <circle cx="0" cy="0" r="19" fill="url(#saturnBody)"/>
+      <!-- Atmosphere Highlight -->
+      <path d="M -13 -13 A 19 19 0 0 1 14 -11 A 16 16 0 0 0 -13 -13" fill="#00f5d4" opacity="0.45"/>
+      <!-- Front Orbital Ring with Neon Glow -->
+      <path d="M -46 0 A 48 14 0 0 0 46 0" stroke="url(#saturnRing)" stroke-width="4" fill="none">
+        <animate attributeName="opacity" values="0.8;1;0.8" dur="4s" repeatCount="indefinite"/>
+      </path>
+    </g>
+
+    <!-- Planet 2: Crescent Moon with Orbiting Satellite (Lower-Left) -->
+    <g transform="translate(95, 205)">
+      <!-- Ambient Lunar Halo -->
+      <circle cx="0" cy="0" r="22" fill="#818cf8" opacity="0.12" filter="url(#starGlow)"/>
+      <!-- Crescent Moon Body -->
+      <path d="M -12 -15 A 18 18 0 1 0 12 15 A 15 15 0 1 1 -12 -15 Z" fill="url(#moonGrad)">
+        <animate attributeName="opacity" values="0.8;1;0.8" dur="5s" repeatCount="indefinite"/>
+      </path>
+      <!-- Small Crater Details -->
+      <circle cx="-4" cy="2" r="1.3" fill="#4338ca" opacity="0.6"/>
+      <circle cx="-7" cy="-5" r="1.0" fill="#4338ca" opacity="0.5"/>
+      <!-- Orbiting Mini-Satellite -->
+      <g>
+        <circle cx="0" cy="0" r="26" fill="none" stroke="#00f5d4" stroke-width="0.7" opacity="0.25" stroke-dasharray="2,2"/>
+        <g>
+          <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="9s" repeatCount="indefinite"/>
+          <circle cx="26" cy="0" r="1.5" fill="#00f5d4" filter="url(#starGlow)"/>
+        </g>
+      </g>
+    </g>
+
+    <!-- ============================================== -->
+    <!-- 3. UNSTOPPABLE SHOOTING STARS (LINEAR SPEED)   -->
     <!-- ============================================== -->
 
     <!-- Meteor 1: Steep diagonal Left -> Right (Cyan-White) -->
     <g>
       <animateTransform attributeName="transform" type="translate"
-        values="-80 -30; 650 340"
-        dur="4.2s"
+        values="-90 -30; 700 350"
+        dur="3.8s"
         repeatCount="indefinite"
-        calcMode="spline"
-        keySplines="0.25 0.1 0.25 1"/>
+        calcMode="linear"/>
       <line x1="0" y1="0" x2="-62" y2="-32" stroke="url(#meteorCyan)" stroke-width="2.3" stroke-linecap="round"/>
       <circle cx="0" cy="0" r="2.6" fill="#ffffff" filter="url(#starGlow)"/>
     </g>
@@ -214,11 +252,10 @@
     <!-- Meteor 2: Steep diagonal Right -> Left (Pink-Violet) -->
     <g>
       <animateTransform attributeName="transform" type="translate"
-        values="880 -40; 120 350"
-        dur="6.1s"
+        values="890 -40; 100 360"
+        dur="5.5s"
         repeatCount="indefinite"
-        calcMode="spline"
-        keySplines="0.3 0.1 0.3 1"/>
+        calcMode="linear"/>
       <line x1="0" y1="0" x2="66" y2="-35" stroke="url(#meteorPink)" stroke-width="2.2" stroke-linecap="round"/>
       <circle cx="0" cy="0" r="2.4" fill="#ffffff" filter="url(#starGlow)"/>
     </g>
@@ -226,11 +263,10 @@
     <!-- Meteor 3: Fast shallow streak across upper third (Electric Blue) -->
     <g>
       <animateTransform attributeName="transform" type="translate"
-        values="-100 30; 890 160"
-        dur="5.1s"
+        values="-120 30; 920 160"
+        dur="4.6s"
         repeatCount="indefinite"
-        calcMode="spline"
-        keySplines="0.2 0 0.2 1"/>
+        calcMode="linear"/>
       <line x1="0" y1="0" x2="-84" y2="-11" stroke="url(#meteorBlue)" stroke-width="2.0" stroke-linecap="round"/>
       <circle cx="0" cy="0" r="2.3" fill="#ffffff" filter="url(#starGlow)"/>
     </g>
@@ -238,11 +274,10 @@
     <!-- Meteor 4: Sharp steep drop cutting across right side (Violet-Cyan) -->
     <g>
       <animateTransform attributeName="transform" type="translate"
-        values="680 -50; 380 360"
-        dur="7.4s"
+        values="690 -50; 370 370"
+        dur="6.8s"
         repeatCount="indefinite"
-        calcMode="spline"
-        keySplines="0.35 0.1 0.35 1"/>
+        calcMode="linear"/>
       <line x1="0" y1="0" x2="38" y2="-53" stroke="url(#meteorViolet)" stroke-width="2.2" stroke-linecap="round"/>
       <circle cx="0" cy="0" r="2.4" fill="#ffffff" filter="url(#starGlow)"/>
     </g>
@@ -250,17 +285,16 @@
     <!-- Meteor 5: Low-altitude swift streak across bottom (Gold) -->
     <g>
       <animateTransform attributeName="transform" type="translate"
-        values="-90 190; 880 330"
-        dur="5.7s"
+        values="-100 190; 900 330"
+        dur="5.2s"
         repeatCount="indefinite"
-        calcMode="spline"
-        keySplines="0.25 0.1 0.25 1"/>
+        calcMode="linear"/>
       <line x1="0" y1="0" x2="-69" y2="-10" stroke="url(#meteorGold)" stroke-width="2.0" stroke-linecap="round"/>
       <circle cx="0" cy="0" r="2.2" fill="#ffffff" filter="url(#starGlow)"/>
     </g>
 
     <!-- ============================================== -->
-    <!-- 3. CATEGORY HEADINGS                           -->
+    <!-- 4. CATEGORY HEADINGS                           -->
     <!-- ============================================== -->
     <g font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5" font-weight="700" letter-spacing="1.5" text-anchor="middle" fill="#94a3b8">
       <!-- Frontend -->
@@ -274,7 +308,7 @@
     </g>
 
     <!-- ============================================== -->
-    <!-- 4. TECH STACK BADGES                           -->
+    <!-- 5. TECH STACK BADGES                           -->
     <!-- ============================================== -->
     <g font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="10.5" letter-spacing="1">
 
@@ -376,7 +410,7 @@
     </g>
 
     <!-- ============================================== -->
-    <!-- 5. 90° VERTICAL SHIMMER GLINT (LEFT TO RIGHT)  -->
+    <!-- 6. 90° VERTICAL SHIMMER GLINT (LEFT TO RIGHT)  -->
     <!-- ============================================== -->
     <g mask="url(#badgeMask)">
       <rect x="-300" y="0" width="300" height="310" fill="url(#verticalShimmerGrad)">
