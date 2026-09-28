@@ -37,7 +37,7 @@ Sekarang sedang mengerjakan project web **HS15** dan pelan-pelan belajar **Flutt
 ### Tech Stack
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/zerabyte88/zerabyte88/c46fb4c/assets/tech-constellation.svg" width="100%" alt="Tech Stack Constellation" />
+  <img src="https://raw.githubusercontent.com/zerabyte88/zerabyte88/bda9687/assets/tech-shimmer.svg" width="100%" alt="Tech Stack" />
 </div>
 
 ---
