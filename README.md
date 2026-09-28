@@ -3,7 +3,7 @@
   <!-- HEADER -->
   <img src="https://raw.githubusercontent.com/zerabyte88/zerabyte88/c43dedb/assets/space-header.svg" width="100%" alt="Space & Stars Header" />
 
-  <!-- ANIMASI TEKS KOSMIK (SPACE) -->
+  <!-- ANIMASI TEKS KOSMIK -->
   <a href="https://github.com/zerabyte88"><img src="https://raw.githubusercontent.com/zerabyte88/zerabyte88/e39618a/assets/space-text.svg" width="500" alt="Space Quote" /></a><br/>
 
   <!-- DIVIDER -->
@@ -21,9 +21,9 @@
 
 ### About Me
 
-Nama saya **Nanda Alrezel Rifanie**, seorang Web Developer dan UI/UX Designer. Keseharian saya tidak jauh-jauh dari urusan baris kode dan utak-atik antarmuka visual. Prinsip kerja saya cukup sederhana: kalau lagi ada niat dan inspirasi datang, saya bisa tahan berjam-jam fokus ngoding atau merapikan desain sampai detail terkecil. Tapi kalau niatnya lagi hilang entah ke mana, ya paling mentok PC tetap nyala sementara yang dibuka malah Facebook atau lanjut maraton baca novel.
+Nama saya **Nanda Alrezel Rifanie**, seorang Web Developer dan UI/UX Designer. Prinsip kerja saya cukup sederhana: kalau lagi ada niat dan inspirasi datang, saya bisa berjam-jam fokus ngoding atau merapikan desain sampai detail terkecil. Tapi kalau niatnya lagi hilang entah ke mana, ya paling mentok PC tetap nyala sementara yang dibuka malah Facebook atau lanjut maraton baca novel.
 
-Saat ini saya sedang fokus mengerjakan dan mengembangkan project web **HS15**, mulai dari struktur logika sampai tampilan antarmukanya. Di samping itu, saya juga mulai meluangkan waktu untuk pelan-pelan belajar **Flutter & Dart**, berhubung ada rasa penasaran dan ketertarikan untuk coba-coba memperluas wawasan ke dunia pengembangan aplikasi mobile.
+Saat ini saya sedang fokus mengerjakan dan mengembangkan project web **HS15**, mulai dari struktur sampai tampilan antarmukanya. Di samping itu, saya juga meluangkan waktu untuk belajar **Flutter & Dart**, berhubung ada rasa penasaran dan ketertarikan untuk coba-coba memperluas wawasan ke dunia pengembangan aplikasi mobile.
 
 | | |
 |---|---|
