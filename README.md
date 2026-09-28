@@ -21,9 +21,9 @@
 
 ### About Me
 
-Nama saya **Nanda**, mahasiswa yang nyambi jadi developer. Sehari-hari ngulik web, sesekali desain UI, dan kalau lagi mager ya buka Facebook atau baca novel.
+Nama saya **Nanda Alrezel Rifanie**, biasa dipanggil Nanda. Saya seorang Web Developer dan UI/UX Designer yang senang membangun website yang bersih dan mudah digunakan. Waktu luang biasanya diisi dengan ngoding, baca novel, atau buka Facebook.
 
-Lagi ngerjain project web **HS15** sambil pelan-pelan belajar **Flutter** buat bikin aplikasi mobile. Masih proses, tapi ya dijalanin aja.
+Saat ini sedang mengerjakan project web **HS15** dan perlahan belajar **Flutter & Dart** untuk pengembangan aplikasi mobile.
 
 ```
 Skill       →  Web Developer · UI/UX Designer
