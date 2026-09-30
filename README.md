@@ -11,7 +11,7 @@
 
   <br/><br/>
 
-  <img src="https://komarev.com/ghpvc/?username=zerabyte88&color=blueviolet&style=for-the-badge" alt="Profile Views" />
+  <img src="https://hits.sh/github.com/zerabyte88.svg?style=for-the-badge&label=PROFILE%20VIEWS&extraCount=478&color=blueviolet" alt="Profile Views" />
   <a href="https://github.com/zerabyte88" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
   <a href="https://www.instagram.com/nanda.rifanie" target="_blank"><img src="https://img.shields.io/badge/Instagram-E11D48?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" /></a>
 
@@ -56,9 +56,9 @@ Saat ini saya sedang fokus mengerjakan dan mengembangkan project web **HS15**, m
 
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/zerabyte88/zerabyte88/output/github-contribution-grid-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/zerabyte88/zerabyte88/output/github-contribution-grid-snake.svg">
-    <img alt="Snake Animation" src="https://raw.githubusercontent.com/zerabyte88/zerabyte88/output/github-contribution-grid-snake.svg" width="100%">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/zerabyte88/zerabyte88/output/galaga-contribution-graph-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/zerabyte88/zerabyte88/output/galaga-contribution-graph.svg">
+    <img alt="Galaga Contribution Graph" src="https://raw.githubusercontent.com/zerabyte88/zerabyte88/output/galaga-contribution-graph.svg" width="100%">
   </picture>
 </div>
 
