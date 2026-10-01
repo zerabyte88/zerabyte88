@@ -31,7 +31,6 @@
 <div align="center">
 
 ### STATISTICS
-
   <img src="https://streak-stats.demolab.com?user=zerabyte88&theme=vision-friendly-dark&hide_border=true" alt="Streak GitHub" />
 </div>
 
@@ -40,7 +39,6 @@
 <div align="center">
 
 ### CONTRIBUTIONS
-<br/>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/zerabyte88/zerabyte88/output/galaga-contribution-graph-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/zerabyte88/zerabyte88/output/galaga-contribution-graph.svg">
