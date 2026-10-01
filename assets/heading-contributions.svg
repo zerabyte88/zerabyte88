@@ -63,9 +63,9 @@
     </circle>
 
     <!-- Glowing Background Aura Layer -->
-    <text x="250" y="26" text-anchor="middle"
-      font-family="'Consolas', 'Courier New', Monaco, monospace"
-      font-size="19" font-weight="800" letter-spacing="6"
+    <text x="250" y="27" text-anchor="middle"
+      font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+      font-size="19" font-weight="900" letter-spacing="3.5"
       fill="url(#coGrad)" filter="url(#coGlow)">
       <animate attributeName="opacity"
         values="0.4;0.9;0.4"
@@ -77,9 +77,9 @@
     </text>
 
     <!-- Sharp Foreground Text Layer -->
-    <text x="250" y="26" text-anchor="middle"
-      font-family="'Consolas', 'Courier New', Monaco, monospace"
-      font-size="19" font-weight="800" letter-spacing="6"
+    <text x="250" y="27" text-anchor="middle"
+      font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+      font-size="19" font-weight="900" letter-spacing="3.5"
       fill="url(#coGrad)">
       CONTRIBUTIONS
     </text>
