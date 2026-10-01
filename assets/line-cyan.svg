@@ -134,10 +134,5 @@
       <circle cx="0" cy="0" r="0.6" fill="#ffffff"/>
     </g>
 
-    <!-- 8. Sweeping Shooting Star / Energy Comet Pulse -->
-    <circle cy="20" r="2.2" fill="#ffffff" filter="url(#sharpGlow)">
-      <animate attributeName="cx" values="100;900;100" dur="4.2s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1; 0.4 0 0.2 1"/>
-      <animate attributeName="opacity" values="0;1;0" dur="4.2s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1; 0.4 0 0.2 1"/>
-    </circle>
   </g>
 </svg>

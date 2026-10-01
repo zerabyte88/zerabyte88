@@ -11,47 +11,6 @@
       <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
     </linearGradient>
 
-    <!-- Meteor 1: Cyan / Electric Blue (Steep angle Left-to-Right) -->
-    <linearGradient id="meteorCyan" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
-      <stop offset="30%" stop-color="#00f5d4" stop-opacity="0.85"/>
-      <stop offset="100%" stop-color="#7aa2f7" stop-opacity="0"/>
-    </linearGradient>
-
-    <!-- Meteor 2: Pink / Nebula Violet (Steep angle Right-to-Left) -->
-    <linearGradient id="meteorPink" x1="100%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
-      <stop offset="35%" stop-color="#f72585" stop-opacity="0.8"/>
-      <stop offset="100%" stop-color="#7209b7" stop-opacity="0"/>
-    </linearGradient>
-
-    <!-- Meteor 3: Sky Blue / Cobalt (Shallow angle Left-to-Right High) -->
-    <linearGradient id="meteorBlue" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
-      <stop offset="35%" stop-color="#38bdf8" stop-opacity="0.85"/>
-      <stop offset="100%" stop-color="#1e40af" stop-opacity="0"/>
-    </linearGradient>
-
-    <!-- Meteor 4: Nebula Violet / Purple (Steep plunge Right-to-Left Mid) -->
-    <linearGradient id="meteorViolet" x1="100%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
-      <stop offset="30%" stop-color="#c084fc" stop-opacity="0.85"/>
-      <stop offset="100%" stop-color="#7928ca" stop-opacity="0"/>
-    </linearGradient>
-
-    <!-- Meteor 5: Golden Starlight (Shallow swift streak Left-to-Right Low) -->
-    <linearGradient id="meteorGold" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
-      <stop offset="35%" stop-color="#ffd166" stop-opacity="0.85"/>
-      <stop offset="100%" stop-color="#ff9f1c" stop-opacity="0"/>
-    </linearGradient>
-
-    <!-- Meteor 6: Emerald Neon (Steep plunge Mid to Right) -->
-    <linearGradient id="meteorEmerald" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
-      <stop offset="30%" stop-color="#10b981" stop-opacity="0.85"/>
-      <stop offset="100%" stop-color="#059669" stop-opacity="0"/>
-    </linearGradient>
 
     <!-- Realistic Planet Saturn Gradients -->
     <radialGradient id="saturnBodyRealistic" cx="35%" cy="30%" r="70%">
@@ -84,21 +43,8 @@
       <stop offset="100%" stop-color="#020617" stop-opacity="0.95"/>
     </radialGradient>
 
-    <!-- Rocket Jet Flame Gradients -->
-    <linearGradient id="rocketFlameGrad" x1="100%" y1="0%" x2="0%" y2="0%">
-      <stop offset="0%" stop-color="#ffffff"/>
-      <stop offset="30%" stop-color="#00f5d4"/>
-      <stop offset="70%" stop-color="#3b82f6"/>
-      <stop offset="100%" stop-color="#7aa2f7" stop-opacity="0"/>
-    </linearGradient>
 
-    <linearGradient id="rocketFlameCore" x1="100%" y1="0%" x2="0%" y2="0%">
-      <stop offset="0%" stop-color="#ffffff"/>
-      <stop offset="45%" stop-color="#ffd166"/>
-      <stop offset="100%" stop-color="#f43f5e" stop-opacity="0"/>
-    </linearGradient>
-
-    <!-- Glow Filter for Shooting Stars and Celestial Halos -->
+    <!-- Glow Filter for Celestial Halos -->
     <filter id="starGlow" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="2.5" result="blur"/>
       <feMerge>
@@ -335,75 +281,6 @@
       </g>
     </g>
 
-    <!-- ============================================== -->
-    <!-- 3. UNSTOPPABLE SHOOTING STARS (LINEAR SPEED)   -->
-    <!-- ============================================== -->
-
-    <!-- Meteor 1: Steep diagonal Left -> Right (Cyan-White) -->
-    <g>
-      <animateTransform attributeName="transform" type="translate"
-        values="-90 -30; 700 350"
-        dur="3.8s"
-        repeatCount="indefinite"
-        calcMode="linear"/>
-      <line x1="0" y1="0" x2="-62" y2="-32" stroke="url(#meteorCyan)" stroke-width="2.3" stroke-linecap="round"/>
-      <circle cx="0" cy="0" r="2.6" fill="#ffffff" filter="url(#starGlow)"/>
-    </g>
-
-    <!-- Meteor 2: Steep diagonal Right -> Left (Pink-Violet) -->
-    <g>
-      <animateTransform attributeName="transform" type="translate"
-        values="890 -40; 100 360"
-        dur="5.5s"
-        repeatCount="indefinite"
-        calcMode="linear"/>
-      <line x1="0" y1="0" x2="66" y2="-35" stroke="url(#meteorPink)" stroke-width="2.2" stroke-linecap="round"/>
-      <circle cx="0" cy="0" r="2.4" fill="#ffffff" filter="url(#starGlow)"/>
-    </g>
-
-    <!-- Meteor 3: Fast shallow streak across upper third (Electric Blue) -->
-    <g>
-      <animateTransform attributeName="transform" type="translate"
-        values="-120 30; 920 160"
-        dur="4.6s"
-        repeatCount="indefinite"
-        calcMode="linear"/>
-      <line x1="0" y1="0" x2="-84" y2="-11" stroke="url(#meteorBlue)" stroke-width="2.0" stroke-linecap="round"/>
-      <circle cx="0" cy="0" r="2.3" fill="#ffffff" filter="url(#starGlow)"/>
-    </g>
-
-    <!-- Meteor 4: Sharp steep drop cutting across right side (Violet-Cyan) -->
-    <g>
-      <animateTransform attributeName="transform" type="translate"
-        values="690 -50; 370 370"
-        dur="6.8s"
-        repeatCount="indefinite"
-        calcMode="linear"/>
-      <line x1="0" y1="0" x2="38" y2="-53" stroke="url(#meteorViolet)" stroke-width="2.2" stroke-linecap="round"/>
-      <circle cx="0" cy="0" r="2.4" fill="#ffffff" filter="url(#starGlow)"/>
-    </g>
-
-    <!-- Meteor 5: Low-altitude swift streak across bottom (Gold) -->
-    <g>
-      <animateTransform attributeName="transform" type="translate"
-        values="-100 190; 900 330"
-        dur="5.2s"
-        repeatCount="indefinite"
-        calcMode="linear"/>
-      <line x1="0" y1="0" x2="-69" y2="-10" stroke="url(#meteorGold)" stroke-width="2.0" stroke-linecap="round"/>
-      <circle cx="0" cy="0" r="2.2" fill="#ffffff" filter="url(#starGlow)"/>
-    </g>
-
-    <!-- Meteor 6: Steep plunge Mid to Right (Emerald Green) -->
-    <g>
-      <animateTransform attributeName="transform" type="translate"
-        values="380 -50; 880 280"
-        dur="4.9s"
-        repeatCount="indefinite"
-        calcMode="linear"/>
-      <line x1="0" y1="0" x2="-60" y2="-39" stroke="url(#meteorEmerald)" stroke-width="2.1" stroke-linecap="round"/>
-      <circle cx="0" cy="0" r="2.3" fill="#ffffff" filter="url(#starGlow)"/>
-    </g>
 
     <!-- ============================================== -->
     <!-- 4. CATEGORY HEADINGS                           -->
@@ -553,74 +430,7 @@
       </rect>
     </g>
 
-    <!-- ============================================== -->
-    <!-- 7. CRUISING COSMIC ROCKET SHIP (RIGHT TO LEFT) -->
-    <!-- ============================================== -->
-    <g>
-      <!-- Horizontal sweep across bottom margin from right to left (clear of all badges & text) -->
-      <animateTransform attributeName="transform" type="translate"
-        values="860 297; -70 297"
-        dur="7.8s"
-        repeatCount="indefinite"
-        calcMode="linear"/>
 
-      <!-- Mirrored & scaled down for 800px canvas -->
-      <g transform="scale(-0.85, 0.85) rotate(-2)">
-        <!-- Ion Thruster Stardust Exhaust Trail -->
-        <circle cx="-28" cy="0" r="1.6" fill="#00f5d4" opacity="0.4" filter="url(#starGlow)">
-          <animate attributeName="cx" values="-24; -42" dur="0.8s" repeatCount="indefinite"/>
-          <animate attributeName="opacity" values="0.6; 0" dur="0.8s" repeatCount="indefinite"/>
-        </circle>
-        <circle cx="-19" cy="1" r="1.2" fill="#38bdf8" opacity="0.5">
-          <animate attributeName="cx" values="-18; -35" dur="0.6s" repeatCount="indefinite"/>
-          <animate attributeName="opacity" values="0.7; 0" dur="0.6s" repeatCount="indefinite"/>
-        </circle>
-        <circle cx="-15" cy="-1" r="1.4" fill="#ffffff" opacity="0.6">
-          <animate attributeName="cx" values="-14; -28" dur="0.5s" repeatCount="indefinite"/>
-          <animate attributeName="opacity" values="0.8; 0" dur="0.5s" repeatCount="indefinite"/>
-        </circle>
-
-        <!-- Outer Thruster Jet Flame (Flickering Pulse) -->
-        <polygon points="-7,-4 -28,0 -7,4" fill="url(#rocketFlameGrad)">
-          <animate attributeName="points"
-            values="-7,-4 -28,0 -7,4; -7,-3.5 -22,0 -7,3.5; -7,-4.5 -32,0 -7,4.5; -7,-4 -28,0 -7,4"
-            dur="0.25s"
-            repeatCount="indefinite"/>
-        </polygon>
-
-        <!-- Inner Core Jet Flame -->
-        <polygon points="-7,-2 -17,0 -7,2" fill="url(#rocketFlameCore)">
-          <animate attributeName="points"
-            values="-7,-2 -17,0 -7,2; -7,-1.8 -13,0 -7,1.8; -7,-2.2 -19,0 -7,2.2; -7,-2 -17,0 -7,2"
-            dur="0.2s"
-            repeatCount="indefinite"/>
-        </polygon>
-
-        <!-- Thruster Engine Nozzle -->
-        <rect x="-8" y="-3" width="3" height="6" rx="0.8" fill="#334155" stroke="#64748b" stroke-width="0.5"/>
-
-        <!-- Top Stabilizer Fin -->
-        <polygon points="-5,-4.5 -12,-10.5 0,-4.5" fill="#0284c7" stroke="#38bdf8" stroke-width="0.5"/>
-
-        <!-- Bottom Stabilizer Fin -->
-        <polygon points="-5,4.5 -12,10.5 0,4.5" fill="#0284c7" stroke="#38bdf8" stroke-width="0.5"/>
-
-        <!-- Sleek Aerodynamic Rocket Body -->
-        <path d="M -6 -5 L 11 -5 Q 24 0 11 5 L -6 5 Z" fill="#f8fafc" stroke="#94a3b8" stroke-width="0.6"/>
-
-        <!-- Cyan Nose Cone Accent -->
-        <path d="M 11 -5 Q 24 0 11 5 Z" fill="#00f5d4"/>
-
-        <!-- Midline Azure Racing Stripe -->
-        <rect x="-3" y="-0.6" width="12" height="1.2" fill="#38bdf8" opacity="0.8"/>
-
-        <!-- Circular Porthole Window / Cockpit -->
-        <circle cx="5" cy="0" r="2.5" fill="#0284c7" stroke="#ffffff" stroke-width="0.6"/>
-        <circle cx="5" cy="0" r="1.8" fill="#38bdf8"/>
-        <!-- Window Reflection Glint -->
-        <circle cx="5.7" cy="-0.7" r="0.7" fill="#ffffff"/>
-      </g>
-    </g>
 
   </g>
 </svg>
