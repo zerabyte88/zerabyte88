@@ -78,21 +78,22 @@
       0%, 100% { opacity: 1; }
       50% { opacity: 0; }
     }
+    @keyframes typingFloat {
+      0%, 100% {
+        transform: translateY(2.2px);
+      }
+      50% {
+        transform: translateY(-2.2px);
+      }
+    }
+    .floating-typing {
+      animation: typingFloat 3.2s ease-in-out infinite;
+      will-change: transform;
+    }
   </style>
 
   <!-- ============================================== -->
-  <!-- ZERO-GRAVITY GENTLE FLOAT ROOT CONTAINER       -->
-  <!-- ============================================== -->
-  <g>
-    <animateTransform attributeName="transform" type="translate"
-      values="0 1.8; 0 -1.8; 0 1.8"
-      dur="3.8s"
-      repeatCount="indefinite"
-      calcMode="spline"
-      keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
-
-    <!-- ============================================== -->
-    <!-- DENSE TWINKLING STARDUST (BINTIK BINTANG)     -->
+  <!-- DENSE TWINKLING STARDUST (STATIC BACKGROUND)   -->
     <!-- ============================================== -->
     <g fill="#ffffff">
       <!-- Left Stardust Cluster -->
@@ -188,9 +189,21 @@
     </path>
 
     <!-- ============================================== -->
-    <!-- PHRASE 1: WEB DEVELOPER & UI/UX DESIGNER       -->
+    <!-- ZERO-GRAVITY FLOATING PHRASES CONTAINER (GPU)  -->
     <!-- ============================================== -->
-    <g>
+    <g class="floating-typing">
+      <animateTransform attributeName="transform" type="translate"
+        values="0 2.2; 0 -2.2; 0 2.2"
+        keyTimes="0; 0.5; 1"
+        dur="3.2s"
+        repeatCount="indefinite"
+        calcMode="spline"
+        keySplines="0.42 0 0.58 1; 0.42 0 0.58 1"/>
+
+      <!-- ============================================== -->
+      <!-- PHRASE 1: WEB DEVELOPER & UI/UX DESIGNER       -->
+      <!-- ============================================== -->
+      <g>
       <animate attributeName="opacity"
         values="1; 1; 0; 0; 0"
         keyTimes="0; 0.220; 0.245; 0.250; 1"

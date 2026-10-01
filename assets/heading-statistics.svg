@@ -13,9 +13,9 @@
       </stop>
     </linearGradient>
 
-    <!-- Star Glow Filter -->
-    <filter id="stGlow" x="-30%" y="-50%" width="160%" height="200%">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
+    <!-- Optimized Star Glow Filter (Lightweight & Smooth) -->
+    <filter id="stGlow" x="-20%" y="-30%" width="140%" height="160%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
@@ -23,14 +23,30 @@
     </filter>
   </defs>
 
+  <style>
+    @keyframes headingFloat {
+      0%, 100% {
+        transform: translateY(2.5px);
+      }
+      50% {
+        transform: translateY(-2.5px);
+      }
+    }
+    .floating-layer {
+      animation: headingFloat 3.2s ease-in-out infinite;
+      will-change: transform;
+    }
+  </style>
+
   <!-- Zero-Gravity Gentle Float Animation -->
-  <g>
+  <g class="floating-layer">
     <animateTransform attributeName="transform" type="translate"
-      values="0 1.5; 0 -1.5; 0 1.5"
-      dur="4s"
+      values="0 2.5; 0 -2.5; 0 2.5"
+      keyTimes="0; 0.5; 1"
+      dur="3.2s"
       repeatCount="indefinite"
       calcMode="spline"
-      keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+      keySplines="0.42 0 0.58 1; 0.42 0 0.58 1"/>
 
     <!-- Ambient Twinkling Cosmic Dots -->
     <circle cx="149" cy="24" r="1.8" fill="#00f5d4">
