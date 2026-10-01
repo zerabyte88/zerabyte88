@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 52" width="100%" height="52">
+  <defs>
+    <!-- Gradient matching space-text.svg -->
+    <linearGradient id="headGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#00f5d4"/>
+      <stop offset="35%"  stop-color="#38bdf8"/>
+      <stop offset="70%"  stop-color="#7aa2f7"/>
+      <stop offset="100%" stop-color="#00f5d4"/>
+    </linearGradient>
+    <!-- Soft glow filter -->
+    <filter id="glow1" x="-20%" y="-40%" width="140%" height="180%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Bracket decorators -->
+  <text x="118" y="36" text-anchor="middle"
+    font-family="'Courier New', Courier, monospace"
+    font-size="22" font-weight="700" letter-spacing="1"
+    fill="url(#headGrad1)" opacity="0.7">⟦</text>
+  <text x="382" y="36" text-anchor="middle"
+    font-family="'Courier New', Courier, monospace"
+    font-size="22" font-weight="700" letter-spacing="1"
+    fill="url(#headGrad1)" opacity="0.7">⟧</text>
+
+  <!-- Glow layer -->
+  <text x="250" y="36" text-anchor="middle"
+    font-family="'Courier New', Courier, monospace"
+    font-size="18" font-weight="700" letter-spacing="8"
+    fill="url(#headGrad1)" filter="url(#glow1)" opacity="0.5">
+    TECH STACK
+  </text>
+  <!-- Crisp layer -->
+  <text x="250" y="36" text-anchor="middle"
+    font-family="'Courier New', Courier, monospace"
+    font-size="18" font-weight="700" letter-spacing="8"
+    fill="url(#headGrad1)">
+    TECH STACK
+  </text>
+
+  <!-- Underline accent -->
+  <line x1="148" y1="42" x2="352" y2="42" stroke="url(#headGrad1)" stroke-width="1.2" opacity="0.5" stroke-dasharray="4 3"/>
+</svg>
