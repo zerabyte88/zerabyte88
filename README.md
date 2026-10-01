@@ -20,8 +20,8 @@
 ---
 
 <div align="center">
-  
-### TECH STACK
+
+  <img src="./assets/heading-tech-stack.svg" width="400" alt="Tech Stack" />
 
   <img src="./assets/tech-shimmer.svg" width="100%" alt="Tech Stack" />
 </div>
@@ -30,7 +30,8 @@
 
 <div align="center">
 
-### STATISTICS
+  <img src="./assets/heading-statistics.svg" width="400" alt="Statistics" />
+
   <img src="https://streak-stats.demolab.com?user=zerabyte88&theme=vision-friendly-dark&hide_border=true" alt="Streak GitHub" />
 </div>
 
@@ -38,7 +39,8 @@
 
 <div align="center">
 
-### CONTRIBUTIONS
+  <img src="./assets/heading-contributions.svg" width="400" alt="Contributions" />
+
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/zerabyte88/zerabyte88/output/galaga-contribution-graph-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/zerabyte88/zerabyte88/output/galaga-contribution-graph.svg">
