@@ -9,27 +9,30 @@
     </linearGradient>
 
 
-    <!-- Realistic Planet Saturn Gradients -->
+    <!-- Realistic Planet Saturn Gradients (Natural Butterscotch & Golden Sand) -->
     <radialGradient id="saturnBodyRealistic" cx="35%" cy="30%" r="70%">
-      <stop offset="0%" stop-color="#93c5fd"/>
-      <stop offset="35%" stop-color="#3b82f6"/>
-      <stop offset="70%" stop-color="#1e40af"/>
-      <stop offset="100%" stop-color="#0b132b"/>
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="30%" stop-color="#fde047"/>
+      <stop offset="60%" stop-color="#ca8a04"/>
+      <stop offset="85%" stop-color="#a16207"/>
+      <stop offset="100%" stop-color="#451a03"/>
     </radialGradient>
 
+    <!-- Realistic Saturn Dust & Ice Rings (Cream, Golden Sand & Ivory) -->
     <linearGradient id="saturnRing" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00f5d4" stop-opacity="0"/>
-      <stop offset="30%" stop-color="#00f5d4" stop-opacity="0.95"/>
-      <stop offset="70%" stop-color="#c084fc" stop-opacity="0.95"/>
-      <stop offset="100%" stop-color="#c084fc" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#fef08a" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#fef9c3" stop-opacity="0.95"/>
+      <stop offset="50%" stop-color="#fde047" stop-opacity="0.85"/>
+      <stop offset="80%" stop-color="#ca8a04" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#a16207" stop-opacity="0"/>
     </linearGradient>
 
-    <!-- Realistic Planet Neptune Gradient -->
+    <!-- Realistic Planet Neptune Gradient (Deep Royal Cobalt Blue) -->
     <radialGradient id="neptuneBodyRealistic" cx="35%" cy="30%" r="70%">
-      <stop offset="0%" stop-color="#7dd3fc"/>
-      <stop offset="25%" stop-color="#0284c7"/>
-      <stop offset="60%" stop-color="#0369a1"/>
-      <stop offset="100%" stop-color="#0c2340"/>
+      <stop offset="0%" stop-color="#60a5fa"/>
+      <stop offset="25%" stop-color="#2563eb"/>
+      <stop offset="65%" stop-color="#1d4ed8"/>
+      <stop offset="100%" stop-color="#0f172a"/>
     </radialGradient>
 
     <!-- Neptune Thin Vertical Ice Ring Gradient -->
@@ -48,26 +51,44 @@
       <stop offset="100%" stop-color="#020617" stop-opacity="0.95"/>
     </radialGradient>
 
-    <!-- Laser Line Gradients -->
-    <linearGradient id="laserLeft" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#7aa2f7" stop-opacity="0"/>
-      <stop offset="80%" stop-color="#00f5d4" stop-opacity="0.8"/>
-      <stop offset="100%" stop-color="#00f5d4" stop-opacity="1"/>
+    <!-- Gargantua Black Hole Accretion Disk Gradient (Fiery Gold & Molten Amber) -->
+    <linearGradient id="accretionDiskGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#b45309" stop-opacity="0"/>
+      <stop offset="15%" stop-color="#ea580c" stop-opacity="0.75"/>
+      <stop offset="30%" stop-color="#f59e0b" stop-opacity="0.95"/>
+      <stop offset="42%" stop-color="#fef08a" stop-opacity="1"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="58%" stop-color="#fef08a" stop-opacity="1"/>
+      <stop offset="70%" stop-color="#f59e0b" stop-opacity="0.9"/>
+      <stop offset="85%" stop-color="#ea580c" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#78350f" stop-opacity="0"/>
     </linearGradient>
 
-    <linearGradient id="laserRight" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#c084fc" stop-opacity="1"/>
-      <stop offset="20%" stop-color="#7aa2f7" stop-opacity="0.8"/>
-      <stop offset="100%" stop-color="#7aa2f7" stop-opacity="0"/>
+    <!-- Asymmetric Relativistic Doppler Beaming (Approaching Left is Brighter/Hotter) -->
+    <linearGradient id="dopplerDiskGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fef08a" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#fde047" stop-opacity="0.9"/>
+      <stop offset="40%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="50%" stop-color="#fef08a" stop-opacity="0.95"/>
+      <stop offset="75%" stop-color="#ea580c" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#9a3412" stop-opacity="0"/>
     </linearGradient>
 
+    <!-- Gravitational Lensing Arc Gradient (Vertical Bent Light) -->
+    <linearGradient id="lensingArcGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.2"/>
+      <stop offset="35%" stop-color="#ea580c" stop-opacity="0.8"/>
+      <stop offset="75%" stop-color="#fde047" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="1"/>
+    </linearGradient>
 
-    <!-- Center Orb 3D Gradient -->
-    <radialGradient id="centerOrbGrad" cx="35%" cy="30%" r="70%">
-      <stop offset="0%" stop-color="#ffffff"/>
-      <stop offset="30%" stop-color="#00f5d4"/>
-      <stop offset="70%" stop-color="#3b82f6"/>
-      <stop offset="100%" stop-color="#1e1b4b"/>
+    <!-- Ambient Spacetime Distortion Radial Glow -->
+    <radialGradient id="spacetimeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="35%" stop-color="#ea580c" stop-opacity="0.35"/>
+      <stop offset="65%" stop-color="#f59e0b" stop-opacity="0.15"/>
+      <stop offset="90%" stop-color="#fbbf24" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
     </radialGradient>
 
     <!-- Glow Filters -->
@@ -87,16 +108,74 @@
       </feMerge>
     </filter>
 
+    <!-- Arctic Glacial Frost Flowing Wave Gradient (Matched with Header & Tech Stack) -->
+    <linearGradient id="footerTextGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f8fafc">
+        <animate attributeName="stop-color"
+          values="#f8fafc; #93c5fd; #7dd3fc; #a5f3fc; #f8fafc"
+          keyTimes="0; 0.25; 0.5; 0.75; 1"
+          dur="6s" repeatCount="indefinite"
+          calcMode="spline" keySplines="0.42 0 0.58 1; 0.42 0 0.58 1; 0.42 0 0.58 1; 0.42 0 0.58 1"/>
+      </stop>
+      <stop offset="25%" stop-color="#a5f3fc">
+        <animate attributeName="stop-color"
+          values="#a5f3fc; #f8fafc; #93c5fd; #7dd3fc; #a5f3fc"
+          keyTimes="0; 0.25; 0.5; 0.75; 1"
+          dur="6s" repeatCount="indefinite"
+          calcMode="spline" keySplines="0.42 0 0.58 1; 0.42 0 0.58 1; 0.42 0 0.58 1; 0.42 0 0.58 1"/>
+      </stop>
+      <stop offset="50%" stop-color="#7dd3fc">
+        <animate attributeName="stop-color"
+          values="#7dd3fc; #a5f3fc; #f8fafc; #93c5fd; #7dd3fc"
+          keyTimes="0; 0.25; 0.5; 0.75; 1"
+          dur="6s" repeatCount="indefinite"
+          calcMode="spline" keySplines="0.42 0 0.58 1; 0.42 0 0.58 1; 0.42 0 0.58 1; 0.42 0 0.58 1"/>
+      </stop>
+      <stop offset="75%" stop-color="#93c5fd">
+        <animate attributeName="stop-color"
+          values="#93c5fd; #7dd3fc; #a5f3fc; #f8fafc; #93c5fd"
+          keyTimes="0; 0.25; 0.5; 0.75; 1"
+          dur="6s" repeatCount="indefinite"
+          calcMode="spline" keySplines="0.42 0 0.58 1; 0.42 0 0.58 1; 0.42 0 0.58 1; 0.42 0 0.58 1"/>
+      </stop>
+      <stop offset="100%" stop-color="#f8fafc">
+        <animate attributeName="stop-color"
+          values="#f8fafc; #93c5fd; #7dd3fc; #a5f3fc; #f8fafc"
+          keyTimes="0; 0.25; 0.5; 0.75; 1"
+          dur="6s" repeatCount="indefinite"
+          calcMode="spline" keySplines="0.42 0 0.58 1; 0.42 0 0.58 1; 0.42 0 0.58 1; 0.42 0 0.58 1"/>
+      </stop>
+    </linearGradient>
+
+    <!-- Diamond Ice Glint Sweep Gradient -->
+    <linearGradient id="footerShimmerSweepGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="38%" stop-color="#a5f3fc" stop-opacity="0.35"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="62%" stop-color="#93c5fd" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Mask for Footer Quote Shimmer Sweep -->
+    <mask id="footerTextMask">
+      <text x="600" y="114" text-anchor="middle"
+        font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+        font-size="21" font-weight="700" letter-spacing="0.8"
+        fill="#ffffff">
+        “Across the sea of space, the stars are other suns.” - Carl Sagan
+      </text>
+    </mask>
+
     <clipPath id="footerClip">
       <rect x="0" y="0" width="1200" height="150"/>
     </clipPath>
 
     <clipPath id="saturnClipFooter">
-      <circle cx="0" cy="0" r="19"/>
+      <circle cx="0" cy="0" r="26"/>
     </clipPath>
 
     <clipPath id="neptuneClipFooter">
-      <circle cx="0" cy="0" r="18"/>
+      <circle cx="0" cy="0" r="25"/>
     </clipPath>
   </defs>
 
@@ -192,146 +271,186 @@
     <!-- 2. REALISTIC CELESTIAL PLANETS                 -->
     <!-- ============================================== -->
 
-    <!-- Planet 1: Realistic Ringed Saturn (Left Side) -->
+    <!-- Planet 1: Realistic Ringed Saturn (Left Side - Enlarged) -->
     <g transform="translate(160, 75)">
-      <!-- Ambient Halo Glow -->
-      <circle cx="0" cy="0" r="26" fill="#00f5d4" opacity="0.12" filter="url(#starGlow)"/>
+      <!-- Ambient Golden Halo Glow -->
+      <circle cx="0" cy="0" r="35" fill="#eab308" opacity="0.15" filter="url(#starGlow)"/>
 
       <!-- Back of Planetary Ring -->
-      <path d="M -44 -5 A 46 14 0 0 1 44 -5" stroke="url(#saturnRing)" stroke-width="4.2" fill="none" opacity="0.6"/>
+      <path d="M -60 -7 A 63 19 0 0 1 60 -7" stroke="url(#saturnRing)" stroke-width="5.6" fill="none" opacity="0.6"/>
 
-      <!-- Saturn Gas Giant Sphere -->
-      <circle cx="0" cy="0" r="19" fill="url(#saturnBodyRealistic)"/>
+      <!-- Saturn Gas Giant Sphere (Radius 26) -->
+      <circle cx="0" cy="0" r="26" fill="url(#saturnBodyRealistic)"/>
 
       <!-- Atmospheric Cloud Bands (Clipped to sphere) -->
       <g clip-path="url(#saturnClipFooter)">
-        <!-- Band 1: Golden Ammonia Belt -->
-        <rect x="-19" y="-8" width="38" height="4" fill="#fde68a" opacity="0.35"/>
-        <!-- Band 2: Cyan Jetstream -->
-        <rect x="-19" y="-2" width="38" height="3" fill="#00f5d4" opacity="0.25"/>
-        <!-- Band 3: Deep Azure Belt -->
-        <rect x="-19" y="2" width="38" height="5" fill="#1e40af" opacity="0.4"/>
-        <!-- Band 4: Polar Vortex -->
-        <ellipse cx="0" cy="-17" rx="8" ry="3" fill="#1e3a8a" opacity="0.6"/>
+        <!-- Band 1: Equatorial Pale Buttercream Zone -->
+        <rect x="-26" y="-11" width="52" height="5" fill="#fef08a" opacity="0.45"/>
+        <!-- Band 2: North Temperate Amber Belt -->
+        <rect x="-26" y="-3" width="52" height="4" fill="#b45309" opacity="0.35"/>
+        <!-- Band 3: South Tropical Caramel Belt -->
+        <rect x="-26" y="3" width="52" height="6" fill="#d97706" opacity="0.4"/>
+        <!-- Band 4: Polar Hexagonal Vortex -->
+        <ellipse cx="0" cy="-23" rx="11" ry="4" fill="#78350f" opacity="0.55"/>
         <!-- 3D Spherical Night Shadow -->
-        <circle cx="0" cy="0" r="19" fill="url(#sphericalShadow)"/>
+        <circle cx="0" cy="0" r="26" fill="url(#sphericalShadow)"/>
       </g>
 
-      <!-- Atmosphere Edge Highlight -->
-      <path d="M -13.5 -13.5 A 19 19 0 0 1 13.5 13.5 A 17 17 0 0 0 -13.5 -13.5 Z" fill="#7aa2f7" opacity="0.5"/>
+      <!-- Atmosphere Golden Edge Highlight -->
+      <path d="M -18.5 -18.5 A 26 26 0 0 1 18.5 18.5 A 23.5 23.5 0 0 0 -18.5 -18.5 Z" fill="#fef08a" opacity="0.55"/>
 
       <!-- Front of Planetary Ring with Cassini Division -->
-      <path d="M -46 0 A 48 15 0 0 0 48 0" stroke="url(#saturnRing)" stroke-width="4.8" fill="none">
+      <path d="M -63 0 A 66 20 0 0 0 63 0" stroke="url(#saturnRing)" stroke-width="6.5" fill="none">
         <animate attributeName="opacity" values="0.8;1;0.8" dur="4s" repeatCount="indefinite"/>
       </path>
       <!-- Cassini Gap (Dark Division) -->
-      <path d="M -42 1 A 44 14 0 0 0 42 1" stroke="#050714" stroke-width="0.9" fill="none" opacity="0.9"/>
+      <path d="M -58 1.5 A 61 19 0 0 0 58 1.5" stroke="#050714" stroke-width="1.2" fill="none" opacity="0.9"/>
     </g>
 
-    <!-- Planet 2: Deep Azure Ice Giant Neptune with Vertical Ring (Right Side) -->
+    <!-- Planet 2: Deep Azure Ice Giant Neptune with Vertical Ring (Right Side - Enlarged) -->
     <g transform="translate(1040, 75)">
       <!-- Deep Blue Corona Halo -->
-      <circle cx="0" cy="0" r="26" fill="#0284c7" opacity="0.18" filter="url(#starGlow)"/>
+      <circle cx="0" cy="0" r="35" fill="#0284c7" opacity="0.18" filter="url(#starGlow)"/>
 
       <!-- Back of Vertical Tilted Thin Ice Ring -->
       <g transform="rotate(-18)">
-        <path d="M 0 -36 A 8 36 0 0 1 0 36" stroke="url(#neptuneRingGrad)" stroke-width="2.2" fill="none" opacity="0.65"/>
+        <path d="M 0 -48 A 11 48 0 0 1 0 48" stroke="url(#neptuneRingGrad)" stroke-width="2.8" fill="none" opacity="0.65"/>
       </g>
 
-      <!-- Neptune Ice Giant Sphere -->
-      <circle cx="0" cy="0" r="18" fill="url(#neptuneBodyRealistic)"/>
+      <!-- Neptune Ice Giant Sphere (Radius 25) -->
+      <circle cx="0" cy="0" r="25" fill="url(#neptuneBodyRealistic)"/>
 
       <!-- Atmospheric Bands & Great Dark Spot (Clipped to sphere) -->
       <g clip-path="url(#neptuneClipFooter)">
         <!-- High-Altitude Methane Cloud Bands -->
-        <rect x="-18" y="-12" width="36" height="3" fill="#bae6fd" opacity="0.4"/>
-        <rect x="-18" y="-4" width="36" height="4" fill="#0369a1" opacity="0.5"/>
-        <rect x="-18" y="5" width="36" height="3" fill="#38bdf8" opacity="0.45"/>
-        <rect x="-18" y="11" width="36" height="4" fill="#0c4a6e" opacity="0.55"/>
+        <rect x="-25" y="-16" width="50" height="4" fill="#bae6fd" opacity="0.4"/>
+        <rect x="-25" y="-5" width="50" height="5" fill="#0369a1" opacity="0.5"/>
+        <rect x="-25" y="7" width="50" height="4" fill="#38bdf8" opacity="0.45"/>
+        <rect x="-25" y="15" width="50" height="5" fill="#0c4a6e" opacity="0.55"/>
 
         <!-- Great Dark Spot (Badai Raksasa Neptunus) -->
-        <ellipse cx="4" cy="1" rx="5" ry="3" fill="#082f49" opacity="0.9"/>
+        <ellipse cx="6" cy="1" rx="7" ry="4" fill="#082f49" opacity="0.9"/>
         <!-- White Companion Cirrus Clouds (Scooter Clouds) -->
-        <path d="M 0 -1 Q 5 -3 9 0 Q 5 2 0 -1 Z" fill="#ffffff" opacity="0.75"/>
+        <path d="M 0 -2 Q 7 -4 13 0 Q 7 3 0 -2 Z" fill="#ffffff" opacity="0.75"/>
 
         <!-- 3D Spherical Night Shadow -->
-        <circle cx="0" cy="0" r="18" fill="url(#sphericalShadow)"/>
+        <circle cx="0" cy="0" r="25" fill="url(#sphericalShadow)"/>
       </g>
 
       <!-- Atmosphere Cyan Edge Highlight -->
-      <path d="M -13 -13 A 18 18 0 0 1 13 13 A 16 16 0 0 0 -13 -13 Z" fill="#38bdf8" opacity="0.65"/>
+      <path d="M -18 -18 A 25 25 0 0 1 18 18 A 22.5 22.5 0 0 0 -18 -18 Z" fill="#38bdf8" opacity="0.65"/>
 
       <!-- Front of Vertical Tilted Thin Ice Ring -->
       <g transform="rotate(-18)">
-        <path d="M 0 36 A 8 36 0 0 1 0 -36" stroke="url(#neptuneRingGrad)" stroke-width="2.2" fill="none">
+        <path d="M 0 48 A 11 48 0 0 1 0 -48" stroke="url(#neptuneRingGrad)" stroke-width="2.8" fill="none">
           <animate attributeName="opacity" values="0.75;1;0.75" dur="3s" repeatCount="indefinite"/>
         </path>
       </g>
 
       <!-- Sparkling Ice Crystals around Ring -->
-      <circle cx="-6" cy="-22" r="1" fill="#00f5d4">
+      <circle cx="-8" cy="-30" r="1.3" fill="#00f5d4">
         <animate attributeName="opacity" values="0.2;1;0.2" dur="1.8s" repeatCount="indefinite"/>
       </circle>
-      <circle cx="6" cy="22" r="1" fill="#7dd3fc">
+      <circle cx="8" cy="30" r="1.3" fill="#7dd3fc">
         <animate attributeName="opacity" values="0.2;1;0.2" dur="2.4s" repeatCount="indefinite"/>
       </circle>
     </g>
 
 
     <!-- ============================================== -->
-    <!-- 4. CENTERPIECE: PULSAR SINGULARITY & LASERS    -->
+    <!-- 4. CENTERPIECE: GARGANTUA SUPERMASSIVE BLACK HOLE -->
     <!-- ============================================== -->
-    <g filter="url(#coreGlow)">
-      <!-- Left Laser Line -->
-      <line x1="330" y1="48" x2="545" y2="48" stroke="url(#laserLeft)" stroke-width="1.8" stroke-linecap="round">
-        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
-      </line>
+    <g transform="translate(600, 48)">
+      <!-- 1. Ambient Gravitational Lensing Halo & Spacetime Warp -->
+      <circle cx="0" cy="0" r="48" fill="url(#spacetimeGlow)"/>
 
-      <!-- Right Laser Line -->
-      <line x1="655" y1="48" x2="870" y2="48" stroke="url(#laserRight)" stroke-width="1.8" stroke-linecap="round">
-        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
-      </line>
+      <!-- 2. Concentric Spacetime Gravitational Wave Ripples -->
+      <ellipse cx="0" cy="0" rx="68" ry="17" fill="none" stroke="#f59e0b" stroke-width="0.8" opacity="0.2" stroke-dasharray="3,3">
+        <animate attributeName="rx" values="68;74;68" dur="4s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.15;0.3;0.15" dur="4s" repeatCount="indefinite"/>
+      </ellipse>
+      <ellipse cx="0" cy="0" rx="82" ry="21" fill="none" stroke="#ea580c" stroke-width="0.6" opacity="0.15" stroke-dasharray="2,4">
+        <animate attributeName="rx" values="82;88;82" dur="5s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.1;0.22;0.1" dur="5s" repeatCount="indefinite"/>
+      </ellipse>
 
-      <!-- Center Pulsar / Cosmic Core Singularity with Dual Quantum Rings -->
-      <g transform="translate(600, 48)">
-        <!-- Outer Quantum Ring (Clockwise, Tilted -25 deg) -->
-        <g transform="rotate(-25)">
-          <ellipse cx="0" cy="0" rx="23" ry="8" fill="none" stroke="#00f5d4" stroke-width="1.3">
-            <animateTransform attributeName="transform" type="rotate" values="0; 360" dur="8s" repeatCount="indefinite"/>
-          </ellipse>
-        </g>
-        <!-- Inner Counter-Rotating Quantum Ring (Counter-Clockwise, Tilted 35 deg) -->
-        <g transform="rotate(35)">
-          <ellipse cx="0" cy="0" rx="20" ry="7" fill="none" stroke="#c084fc" stroke-width="1.2">
-            <animateTransform attributeName="transform" type="rotate" values="360; 0" dur="5.5s" repeatCount="indefinite"/>
-          </ellipse>
-        </g>
-        <!-- Center Singularity Core -->
-        <circle cx="0" cy="0" r="9" fill="url(#centerOrbGrad)"/>
-        <!-- Radiant Singularity Pulse -->
-        <circle cx="0" cy="0" r="4" fill="#ffffff" filter="url(#coreGlow)">
-          <animate attributeName="r" values="3.2;5;3.2" dur="2s" repeatCount="indefinite"/>
+      <!-- 3. Upper Gravitational Lensing Arc (Light bent over the top of the event horizon) -->
+      <g filter="url(#coreGlow)">
+        <path d="M -44 0 C -44 -40 44 -40 44 0 C 35 -30 -35 -30 -44 0 Z" fill="url(#lensingArcGrad)" opacity="0.85">
+          <animate attributeName="opacity" values="0.75;0.95;0.75" dur="3.2s" repeatCount="indefinite"/>
+        </path>
+      </g>
+
+      <!-- 4. Lower Gravitational Lensing Arc (Light bent under the bottom) -->
+      <g filter="url(#coreGlow)">
+        <path d="M -38 0 C -38 34 38 34 38 0 C 30 25 -30 25 -38 0 Z" fill="url(#lensingArcGrad)" opacity="0.65" transform="scale(1, -1)">
+          <animate attributeName="opacity" values="0.55;0.75;0.55" dur="3.2s" repeatCount="indefinite"/>
+        </path>
+      </g>
+
+      <!-- 5. Back Side of Equatorial Accretion Disk (Behind Horizon) -->
+      <g filter="url(#coreGlow)">
+        <ellipse cx="0" cy="-2" rx="64" ry="12" fill="none" stroke="url(#accretionDiskGrad)" stroke-width="4.5" opacity="0.7"/>
+      </g>
+
+      <!-- 6. Photon Sphere (Intensely Bright Razor Ring at Shadow Boundary) -->
+      <circle cx="0" cy="0" r="17.2" fill="none" stroke="#ffffff" stroke-width="1.4" opacity="0.95" filter="url(#coreGlow)">
+        <animate attributeName="stroke-width" values="1.2;1.8;1.2" dur="2.4s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="0" cy="0" r="18.5" fill="none" stroke="#fde047" stroke-width="0.8" opacity="0.75"/>
+
+      <!-- 7. EVENT HORIZON: Pure Pitch-Black Void Shadow (Inti Lubang Hitam) -->
+      <circle cx="0" cy="0" r="16.5" fill="#000000"/>
+
+      <!-- 8. Front Side of Equatorial Accretion Disk with Relativistic Doppler Beaming -->
+      <g filter="url(#coreGlow)">
+        <!-- Main blazing accretion belt crossing in front -->
+        <path d="M -72 0 C -52 14 52 14 72 0 C 56 7 -56 7 -72 0 Z" fill="url(#dopplerDiskGrad)" opacity="0.95"/>
+        <path d="M -68 0 C -48 10 48 10 68 0" stroke="url(#dopplerDiskGrad)" stroke-width="3" fill="none" opacity="0.9"/>
+        <!-- Hot core filaments inside accretion disk -->
+        <path d="M -55 1 C -35 8 35 8 55 1" stroke="#ffffff" stroke-width="1.2" fill="none" opacity="0.85">
+          <animate attributeName="opacity" values="0.7;1;0.7" dur="1.8s" repeatCount="indefinite"/>
+        </path>
+      </g>
+
+      <!-- 9. Swirling Infalling Relativistic Matter (Sparks spiraling around the shadow) -->
+      <g>
+        <circle cx="-32" cy="-8" r="1.2" fill="#ffffff">
+          <animateTransform attributeName="transform" type="rotate" values="0 0 0; 360 0 0" dur="4s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0.2;1;0.2" dur="2s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="28" cy="10" r="1.3" fill="#fde047">
+          <animateTransform attributeName="transform" type="rotate" values="0 0 0; 360 0 0" dur="5s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0.3;0.9;0.3" dur="2.5s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="-45" cy="5" r="1.0" fill="#f97316">
+          <animateTransform attributeName="transform" type="rotate" values="0 0 0; 360 0 0" dur="6.5s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0.2;0.8;0.2" dur="3s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="48" cy="-6" r="1.1" fill="#ea580c">
+          <animateTransform attributeName="transform" type="rotate" values="0 0 0; 360 0 0" dur="5.5s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0.2;0.8;0.2" dur="2.8s" repeatCount="indefinite"/>
         </circle>
       </g>
     </g>
 
-    <!-- Floating Upward Cosmic Dust Particles -->
+    <!-- Infalling Stardust Matter Spiraling Toward Black Hole -->
     <g>
-      <circle cx="570" cy="58" r="1.4" fill="#00f5d4">
-        <animateTransform attributeName="transform" type="translate" values="0 0; 0 -25" dur="3.2s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0; 0.9; 0" dur="3.2s" repeatCount="indefinite"/>
+      <circle cx="560" cy="54" r="1.2" fill="#fde047">
+        <animateTransform attributeName="transform" type="translate" values="0 0; 28 -4" dur="2.8s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.8;0;0.8" dur="2.8s" repeatCount="indefinite"/>
       </circle>
-      <circle cx="630" cy="58" r="1.4" fill="#c084fc">
-        <animateTransform attributeName="transform" type="translate" values="0 0; 0 -25" dur="3.8s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0; 0.9; 0" dur="3.8s" repeatCount="indefinite"/>
+      <circle cx="640" cy="54" r="1.2" fill="#ea580c">
+        <animateTransform attributeName="transform" type="translate" values="0 0; -28 -4" dur="3.2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.8;0;0.8" dur="3.2s" repeatCount="indefinite"/>
       </circle>
-      <circle cx="590" cy="62" r="1.2" fill="#ffffff">
-        <animateTransform attributeName="transform" type="translate" values="0 0; 0 -20" dur="2.8s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0; 0.8; 0" dur="2.8s" repeatCount="indefinite"/>
+      <circle cx="585" cy="22" r="1.1" fill="#ffffff">
+        <animateTransform attributeName="transform" type="translate" values="0 0; 10 18" dur="2.5s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.7;0;0.7" dur="2.5s" repeatCount="indefinite"/>
       </circle>
-      <circle cx="615" cy="62" r="1.2" fill="#7aa2f7">
-        <animateTransform attributeName="transform" type="translate" values="0 0; 0 -20" dur="3.5s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0; 0.8; 0" dur="3.5s" repeatCount="indefinite"/>
+      <circle cx="615" cy="74" r="1.1" fill="#f59e0b">
+        <animateTransform attributeName="transform" type="translate" values="0 0; -10 -16" dur="2.7s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.7;0;0.7" dur="2.7s" repeatCount="indefinite"/>
       </circle>
     </g>
 
@@ -339,15 +458,41 @@
     <!-- 5. SPACE TRAVEL & COSMIC QUOTE                 -->
     <!-- ============================================== -->
     <g>
-      <!-- Soft Cosmic Glow Layer -->
-      <text x="600" y="114" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="21" font-weight="700" letter-spacing="0.8" fill="#00f5d4" opacity="0.4" filter="url(#coreGlow)">
-        ✦ “Across the sea of space, the stars are other suns.” - Carl Sagan ✦
+      <animateTransform attributeName="transform" type="translate"
+        values="0 1.8; 0 -1.8; 0 1.8"
+        keyTimes="0; 0.5; 1"
+        dur="3.2s"
+        repeatCount="indefinite"
+        calcMode="spline"
+        keySplines="0.42 0 0.58 1; 0.42 0 0.58 1"/>
+
+      <!-- Ambient Glow Behind Text -->
+      <text x="600" y="114" text-anchor="middle"
+        font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+        font-size="21" font-weight="700" letter-spacing="0.8"
+        fill="url(#footerTextGrad)" filter="url(#starGlow)" opacity="0.65">
+        “Across the sea of space, the stars are other suns.” - Carl Sagan
       </text>
-      <!-- Crisp Foreground Text -->
-      <text x="600" y="114" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="21" font-weight="700" letter-spacing="0.8" fill="#00f5d4" opacity="0.95">
-        <animate attributeName="opacity" values="0.85;1;0.85" dur="3.5s" repeatCount="indefinite"/>
-        ✦ “Across the sea of space, the stars are other suns.” - Carl Sagan ✦
+
+      <!-- Crisp Foreground Text with Arctic Glacial Frost Flowing Gradient -->
+      <text x="600" y="114" text-anchor="middle"
+        font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+        font-size="21" font-weight="700" letter-spacing="0.8"
+        fill="url(#footerTextGrad)">
+        “Across the sea of space, the stars are other suns.” - Carl Sagan
       </text>
+
+      <!-- Diamond Ice Glint Sweep Layer -->
+      <g mask="url(#footerTextMask)">
+        <rect x="200" y="90" width="280" height="40" fill="url(#footerShimmerSweepGrad)">
+          <animate attributeName="x"
+            values="150; 850"
+            dur="3.2s"
+            repeatCount="indefinite"
+            calcMode="spline"
+            keySplines="0.4 0 0.2 1"/>
+        </rect>
+      </g>
     </g>
 
 
