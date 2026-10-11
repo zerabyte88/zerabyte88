@@ -59,13 +59,83 @@
       <stop offset="100%" stop-color="#020617" stop-opacity="0.95"/>
     </radialGradient>
 
-    <!-- Title Gradient -->
+    <!-- Arctic Glacial Frost Flowing Wave Gradient -->
     <linearGradient id="spaceTitleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00f5d4"/>
-      <stop offset="35%" stop-color="#7aa2f7"/>
-      <stop offset="70%" stop-color="#c084fc"/>
-      <stop offset="100%" stop-color="#f43f5e"/>
+      <stop offset="0%" stop-color="#f8fafc">
+        <animate attributeName="stop-color"
+          values="#f8fafc; #93c5fd; #7dd3fc; #a5f3fc; #f8fafc"
+          keyTimes="0; 0.25; 0.5; 0.75; 1"
+          dur="6s" repeatCount="indefinite"
+          calcMode="spline" keySplines="0.42 0 0.58 1; 0.42 0 0.58 1; 0.42 0 0.58 1; 0.42 0 0.58 1"/>
+      </stop>
+      <stop offset="25%" stop-color="#a5f3fc">
+        <animate attributeName="stop-color"
+          values="#a5f3fc; #f8fafc; #93c5fd; #7dd3fc; #a5f3fc"
+          keyTimes="0; 0.25; 0.5; 0.75; 1"
+          dur="6s" repeatCount="indefinite"
+          calcMode="spline" keySplines="0.42 0 0.58 1; 0.42 0 0.58 1; 0.42 0 0.58 1; 0.42 0 0.58 1"/>
+      </stop>
+      <stop offset="50%" stop-color="#7dd3fc">
+        <animate attributeName="stop-color"
+          values="#7dd3fc; #a5f3fc; #f8fafc; #93c5fd; #7dd3fc"
+          keyTimes="0; 0.25; 0.5; 0.75; 1"
+          dur="6s" repeatCount="indefinite"
+          calcMode="spline" keySplines="0.42 0 0.58 1; 0.42 0 0.58 1; 0.42 0 0.58 1; 0.42 0 0.58 1"/>
+      </stop>
+      <stop offset="75%" stop-color="#93c5fd">
+        <animate attributeName="stop-color"
+          values="#93c5fd; #7dd3fc; #a5f3fc; #f8fafc; #93c5fd"
+          keyTimes="0; 0.25; 0.5; 0.75; 1"
+          dur="6s" repeatCount="indefinite"
+          calcMode="spline" keySplines="0.42 0 0.58 1; 0.42 0 0.58 1; 0.42 0 0.58 1; 0.42 0 0.58 1"/>
+      </stop>
+      <stop offset="100%" stop-color="#f8fafc">
+        <animate attributeName="stop-color"
+          values="#f8fafc; #93c5fd; #7dd3fc; #a5f3fc; #f8fafc"
+          keyTimes="0; 0.25; 0.5; 0.75; 1"
+          dur="6s" repeatCount="indefinite"
+          calcMode="spline" keySplines="0.42 0 0.58 1; 0.42 0 0.58 1; 0.42 0 0.58 1; 0.42 0 0.58 1"/>
+      </stop>
     </linearGradient>
+
+    <!-- Diamond Ice Glint Sweep Gradient (GitPulse Mobile Effect) -->
+    <linearGradient id="titleShimmerSweepGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="38%" stop-color="#a5f3fc" stop-opacity="0.35"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="62%" stop-color="#93c5fd" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Masks for Quote Shimmer Sweeps -->
+    <mask id="quoteMask1">
+      <text x="0" y="0" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="900" letter-spacing="5" fill="#ffffff">
+        MALAS NGODING?
+      </text>
+    </mask>
+
+    <mask id="quoteMask2">
+      <text x="0" y="0" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="40" font-weight="900" letter-spacing="4" fill="#ffffff">
+        BUKA FACEBOOK SOLUSINYA
+      </text>
+    </mask>
+
+    <!-- Solar Flare & Corona Gradients -->
+    <radialGradient id="sunCoronaGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="30%" stop-color="#ffbe0b" stop-opacity="0.8"/>
+      <stop offset="60%" stop-color="#fb5607" stop-opacity="0.4"/>
+      <stop offset="85%" stop-color="#ff006e" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#ff006e" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="sunCoreGrad" cx="38%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="25%" stop-color="#ffea79"/>
+      <stop offset="55%" stop-color="#ffbe0b"/>
+      <stop offset="80%" stop-color="#fb5607"/>
+      <stop offset="100%" stop-color="#c1121f"/>
+    </radialGradient>
     <!-- Star Glow Filters -->
     <filter id="starGlow" x="-30%" y="-30%" width="160%" height="160%">
       <feGaussianBlur stdDeviation="3" result="blur"/>
@@ -79,13 +149,9 @@
       <feGaussianBlur stdDeviation="25"/>
     </filter>
 
-    <!-- Rounded Banner Clip -->
+    <!-- Canvas Clip -->
     <clipPath id="headerClip">
-      <rect x="0" y="0" width="1200" height="260" rx="16"/>
-    </clipPath>
-
-    <clipPath id="saturnClipHeader">
-      <circle cx="0" cy="0" r="24"/>
+      <rect x="0" y="0" width="1200" height="260"/>
     </clipPath>
 
     <clipPath id="terraClipHeader">
@@ -93,45 +159,65 @@
     </clipPath>
   </defs>
 
+  <style>
+    @keyframes titleFloat {
+      0%, 100% {
+        transform: translateY(3.5px);
+      }
+      50% {
+        transform: translateY(-3.5px);
+      }
+    }
+    .floating-title {
+      animation: titleFloat 3.2s ease-in-out infinite;
+      will-change: transform;
+    }
+  </style>
+
   <g clip-path="url(#headerClip)">
-    <!-- Base Deep Space Background -->
-    <rect width="1200" height="260" fill="url(#spaceGradient)"/>
 
 
-    <!-- Celestial Body 1: Realistic Ringed Saturn (Left Side) -->
-    <g transform="translate(160, 80)">
-      <!-- Ambient Halo Glow -->
-      <circle cx="0" cy="0" r="32" fill="#00f5d4" opacity="0.12" filter="url(#starGlow)"/>
+    <!-- Celestial Body 1: Blazing Radiant Sun with Pulsing Flares (Left Side) -->
+    <g transform="translate(160, 85)">
+      <!-- Pulsing Solar Flare Corona Glow -->
+      <circle cx="0" cy="0" r="48" fill="url(#sunCoronaGrad)">
+        <animate attributeName="r" values="46;53;46" dur="3s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.75;1;0.75" dur="3s" repeatCount="indefinite"/>
+      </circle>
 
-      <!-- Back of Planetary Ring -->
-      <path d="M -56 -6 A 58 17 0 0 1 56 -6" stroke="url(#saturnRing)" stroke-width="5" fill="none" opacity="0.6"/>
-
-      <!-- Saturn Gas Giant Sphere -->
-      <circle cx="0" cy="0" r="24" fill="url(#saturnBodyRealistic)"/>
-
-      <!-- Atmospheric Cloud Bands (Clipped to sphere) -->
-      <g clip-path="url(#saturnClipHeader)">
-        <!-- Band 1: Golden Ammonia Belt -->
-        <rect x="-24" y="-10" width="48" height="5" fill="#fde68a" opacity="0.35"/>
-        <!-- Band 2: Cyan Jetstream -->
-        <rect x="-24" y="-3" width="48" height="4" fill="#00f5d4" opacity="0.25"/>
-        <!-- Band 3: Deep Azure Belt -->
-        <rect x="-24" y="3" width="48" height="6" fill="#1e40af" opacity="0.4"/>
-        <!-- Band 4: Polar Vortex -->
-        <ellipse cx="0" cy="-21" rx="10" ry="3.5" fill="#1e3a8a" opacity="0.6"/>
-        <!-- 3D Spherical Night Shadow -->
-        <circle cx="0" cy="0" r="24" fill="url(#sphericalShadow)"/>
+      <!-- Outer Rotating Solar Flares (Clockwise) -->
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="22s" repeatCount="indefinite"/>
+        <path d="M 0 -36 Q 6 -46 0 -50 Q -6 -46 0 -36 Z" fill="#ffbe0b" opacity="0.85"/>
+        <path d="M 25 -25 Q 36 -32 40 -24 Q 32 -18 25 -25 Z" fill="#fb5607" opacity="0.8"/>
+        <path d="M 36 0 Q 46 6 50 0 Q 46 -6 36 0 Z" fill="#ffbe0b" opacity="0.85"/>
+        <path d="M 25 25 Q 32 36 24 39 Q 18 31 25 25 Z" fill="#fb5607" opacity="0.8"/>
+        <path d="M 0 36 Q -6 46 0 50 Q 6 46 0 36 Z" fill="#ffbe0b" opacity="0.85"/>
+        <path d="M -25 25 Q -36 32 -39 24 Q -31 18 -25 25 Z" fill="#fb5607" opacity="0.8"/>
+        <path d="M -36 0 Q -46 -6 -50 0 Q -46 6 -36 0 Z" fill="#ffbe0b" opacity="0.85"/>
+        <path d="M -25 -25 Q -32 -36 -24 -39 Q -18 -31 -25 -25 Z" fill="#fb5607" opacity="0.8"/>
       </g>
 
-      <!-- Atmosphere Edge Highlight -->
-      <path d="M -17 -17 A 24 24 0 0 1 17 17 A 21.5 21.5 0 0 0 -17 -17 Z" fill="#7aa2f7" opacity="0.5"/>
+      <!-- Inner Counter-Rotating Solar Tongues (Counter-Clockwise) -->
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="360 0 0" to="0 0 0" dur="15s" repeatCount="indefinite"/>
+        <path d="M 13 -32 Q 22 -39 18 -31 Z" fill="#ffd166" opacity="0.75"/>
+        <path d="M 32 13 Q 39 22 31 18 Z" fill="#ffd166" opacity="0.75"/>
+        <path d="M -13 32 Q -22 39 -18 31 Z" fill="#ffd166" opacity="0.75"/>
+        <path d="M -32 -13 Q -39 -22 -31 -18 Z" fill="#ffd166" opacity="0.75"/>
+      </g>
 
-      <!-- Front of Planetary Ring with Cassini Division -->
-      <path d="M -58 0 A 60 18 0 0 0 58 0" stroke="url(#saturnRing)" stroke-width="5.5" fill="none">
-        <animate attributeName="opacity" values="0.8;1;0.8" dur="4s" repeatCount="indefinite"/>
-      </path>
-      <!-- Cassini Gap (Dark Division) -->
-      <path d="M -54 1 A 56 17 0 0 0 54 1" stroke="#050714" stroke-width="1.1" fill="none" opacity="0.9"/>
+      <!-- Solar Photosphere Sphere -->
+      <circle cx="0" cy="0" r="28" fill="url(#sunCoreGrad)" filter="url(#starGlow)"/>
+
+      <!-- Magnetic Loop Prominences -->
+      <path d="M -14 -22 Q -22 -30 -8 -25" stroke="#ffffff" stroke-width="1.2" fill="none" opacity="0.85"/>
+      <path d="M 17 17 Q 26 24 21 11" stroke="#ffffff" stroke-width="1.2" fill="none" opacity="0.85"/>
+
+      <!-- Intense Core Energy Center -->
+      <circle cx="-3" cy="-4" r="10" fill="#ffffff" opacity="0.35" filter="url(#starGlow)">
+        <animate attributeName="opacity" values="0.25;0.5;0.25" dur="2s" repeatCount="indefinite"/>
+      </circle>
     </g>
 
     <!-- Celestial Body 2: Realistic Blue Marble Exoplanet with Orbiting Satellite (Right Side) -->
@@ -287,26 +373,95 @@
 
 
     <!-- ================================================================= -->
-    <!-- ✏️ EDIT JUDUL & SUB-JUDUL DI BAWAH INI (GAMPANG BANGET):           -->
     <!-- ================================================================= -->
-    <g transform="translate(600, 115)">
+    <!-- MAIN TITLE: SPACE QUOTES CYCLING (SHIMMER SWEEP + ZERO-G FLOAT)   -->
+    <!-- ================================================================= -->
+    <g transform="translate(600, 135)">
+      <g class="floating-title">
+        <animateTransform attributeName="transform" type="translate"
+          values="0 3.5; 0 -3.5; 0 3.5"
+          keyTimes="0; 0.5; 1"
+          dur="3.2s"
+          repeatCount="indefinite"
+          calcMode="spline"
+          keySplines="0.42 0 0.58 1; 0.42 0 0.58 1"/>
 
-      <!-- 1. JUDUL UTAMA (GANTI TEKS DI BAWAH INI JIKA INGIN MENGUBAH JUDUL): -->
-      <!-- Ambient Glow Behind Text -->
-      <text x="0" y="10" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="900" letter-spacing="5" fill="url(#spaceTitleGrad)" filter="url(#starGlow)" opacity="0.6">
-        <animate attributeName="opacity" values="0.4;0.8;0.4" dur="3.5s" repeatCount="indefinite"/>
-        WELCOME TO MY PROFILE
-      </text>
+        <!-- TEXT 1: MALAS NGODING? (SEAMLESS ZERO-GAP FADE) -->
+        <g>
+          <animate attributeName="opacity"
+            values="1; 1; 0; 0; 1"
+            keyTimes="0; 0.422; 0.500; 0.922; 1"
+            dur="6.4s"
+            repeatCount="indefinite"
+            calcMode="spline"
+            keySplines="0 0 1 1; 0.4 0 0.2 1; 0 0 1 1; 0.4 0 0.2 1"/>
 
-      <!-- Crisp Main Text -->
-      <text x="0" y="10" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="900" letter-spacing="5" fill="url(#spaceTitleGrad)">
-        WELCOME TO MY PROFILE
-      </text>
+          <!-- Ambient Glow Behind Text -->
+          <text x="0" y="0" text-anchor="middle"
+            font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+            font-size="44" font-weight="900" letter-spacing="5"
+            fill="url(#spaceTitleGrad)" filter="url(#starGlow)" opacity="0.65">
+            MALAS NGODING?
+          </text>
+          <!-- Crisp Foreground Text -->
+          <text x="0" y="0" text-anchor="middle"
+            font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+            font-size="44" font-weight="900" letter-spacing="5"
+            fill="url(#spaceTitleGrad)">
+            MALAS NGODING?
+          </text>
 
-      <!-- 2. SUB-JUDUL / NAMA (GANTI TEKS DI BAWAH INI JIKA INGIN MENGUBAH SUB-JUDUL): -->
-      <text x="0" y="42" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" letter-spacing="3.5" fill="#94a3b8" opacity="0.9">
-        ★ NANDA ALREZEL RIFANIE ★
-      </text>
+          <!-- Shimmer Glint Sweep (GitPulse Mobile Effect) -->
+          <g mask="url(#quoteMask1)">
+            <rect x="-650" y="-35" width="300" height="70" fill="url(#titleShimmerSweepGrad)">
+              <animate attributeName="x"
+                values="-650; 650"
+                dur="3.2s"
+                repeatCount="indefinite"
+                calcMode="spline"
+                keySplines="0.4 0 0.2 1"/>
+            </rect>
+          </g>
+        </g>
+
+        <!-- TEXT 2: BUKA FACEBOOK SOLUSINYA -->
+        <g>
+          <animate attributeName="opacity"
+            values="0; 0; 1; 1; 0"
+            keyTimes="0; 0.422; 0.500; 0.922; 1"
+            dur="6.4s"
+            repeatCount="indefinite"
+            calcMode="spline"
+            keySplines="0 0 1 1; 0.4 0 0.2 1; 0 0 1 1; 0.4 0 0.2 1"/>
+
+          <!-- Ambient Glow Behind Text -->
+          <text x="0" y="0" text-anchor="middle"
+            font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+            font-size="40" font-weight="900" letter-spacing="4"
+            fill="url(#spaceTitleGrad)" filter="url(#starGlow)" opacity="0.65">
+            BUKA FACEBOOK SOLUSINYA
+          </text>
+          <!-- Crisp Foreground Text -->
+          <text x="0" y="0" text-anchor="middle"
+            font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+            font-size="40" font-weight="900" letter-spacing="4"
+            fill="url(#spaceTitleGrad)">
+            BUKA FACEBOOK SOLUSINYA
+          </text>
+
+          <!-- Shimmer Glint Sweep (GitPulse Mobile Effect) -->
+          <g mask="url(#quoteMask2)">
+            <rect x="-650" y="-35" width="300" height="70" fill="url(#titleShimmerSweepGrad)">
+              <animate attributeName="x"
+                values="-650; 650"
+                dur="3.2s"
+                repeatCount="indefinite"
+                calcMode="spline"
+                keySplines="0.4 0 0.2 1"/>
+            </rect>
+          </g>
+        </g>
+      </g>
     </g>
     <!-- ================================================================= -->
 

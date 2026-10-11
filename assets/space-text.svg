@@ -1,12 +1,71 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 36" width="100%" height="100%">
   <defs>
-    <!-- Space Cyan & Electric Blue Gradient (Matches Theme Perfectly) -->
+    <!-- Arctic Glacial Frost Flowing Wave Gradient -->
     <linearGradient id="cosmicThemeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00f5d4"/>
-      <stop offset="30%" stop-color="#38bdf8"/>
-      <stop offset="70%" stop-color="#7aa2f7"/>
-      <stop offset="100%" stop-color="#00f5d4"/>
+      <stop offset="0%" stop-color="#f8fafc">
+        <animate attributeName="stop-color"
+          values="#f8fafc; #93c5fd; #7dd3fc; #a5f3fc; #f8fafc"
+          keyTimes="0; 0.25; 0.5; 0.75; 1"
+          dur="6s" repeatCount="indefinite"
+          calcMode="spline" keySplines="0.42 0 0.58 1; 0.42 0 0.58 1; 0.42 0 0.58 1; 0.42 0 0.58 1"/>
+      </stop>
+      <stop offset="25%" stop-color="#a5f3fc">
+        <animate attributeName="stop-color"
+          values="#a5f3fc; #f8fafc; #93c5fd; #7dd3fc; #a5f3fc"
+          keyTimes="0; 0.25; 0.5; 0.75; 1"
+          dur="6s" repeatCount="indefinite"
+          calcMode="spline" keySplines="0.42 0 0.58 1; 0.42 0 0.58 1; 0.42 0 0.58 1; 0.42 0 0.58 1"/>
+      </stop>
+      <stop offset="50%" stop-color="#7dd3fc">
+        <animate attributeName="stop-color"
+          values="#7dd3fc; #a5f3fc; #f8fafc; #93c5fd; #7dd3fc"
+          keyTimes="0; 0.25; 0.5; 0.75; 1"
+          dur="6s" repeatCount="indefinite"
+          calcMode="spline" keySplines="0.42 0 0.58 1; 0.42 0 0.58 1; 0.42 0 0.58 1; 0.42 0 0.58 1"/>
+      </stop>
+      <stop offset="75%" stop-color="#93c5fd">
+        <animate attributeName="stop-color"
+          values="#93c5fd; #7dd3fc; #a5f3fc; #f8fafc; #93c5fd"
+          keyTimes="0; 0.25; 0.5; 0.75; 1"
+          dur="6s" repeatCount="indefinite"
+          calcMode="spline" keySplines="0.42 0 0.58 1; 0.42 0 0.58 1; 0.42 0 0.58 1; 0.42 0 0.58 1"/>
+      </stop>
+      <stop offset="100%" stop-color="#f8fafc">
+        <animate attributeName="stop-color"
+          values="#f8fafc; #93c5fd; #7dd3fc; #a5f3fc; #f8fafc"
+          keyTimes="0; 0.25; 0.5; 0.75; 1"
+          dur="6s" repeatCount="indefinite"
+          calcMode="spline" keySplines="0.42 0 0.58 1; 0.42 0 0.58 1; 0.42 0 0.58 1; 0.42 0 0.58 1"/>
+      </stop>
     </linearGradient>
+
+    <!-- Diamond Ice Glint Sweep Gradient (GitPulse Mobile Effect) -->
+    <linearGradient id="shimmerSweepGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="38%" stop-color="#a5f3fc" stop-opacity="0.35"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="62%" stop-color="#93c5fd" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Masks for Shimmer Sweep -->
+    <mask id="quoteMask1">
+      <text x="250" y="24" text-anchor="middle"
+        font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+        font-size="20" font-weight="900" letter-spacing="3.5"
+        fill="#ffffff">
+        MALAS NGODING?
+      </text>
+    </mask>
+
+    <mask id="quoteMask2">
+      <text x="250" y="24" text-anchor="middle"
+        font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+        font-size="19" font-weight="900" letter-spacing="2.8"
+        fill="#ffffff">
+        BUKA FACEBOOK SOLUSINYA
+      </text>
+    </mask>
 
     <!-- Optimized Star & Ambient Glow Filter -->
     <filter id="starGlow" x="-20%" y="-20%" width="140%" height="140%">
@@ -71,6 +130,13 @@
         fill="url(#cosmicThemeGrad)">
         MALAS NGODING?
       </text>
+
+      <!-- Shimmer Glint Sweep (GitPulse Mobile Effect) -->
+      <g mask="url(#quoteMask1)">
+        <rect x="-150" y="0" width="130" height="36" fill="url(#shimmerSweepGrad)">
+          <animate attributeName="x" values="-150; 520" dur="3.2s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+        </rect>
+      </g>
     </g>
 
     <!-- ============================================== -->
@@ -99,6 +165,13 @@
         fill="url(#cosmicThemeGrad)">
         BUKA FACEBOOK SOLUSINYA
       </text>
+
+      <!-- Shimmer Glint Sweep (GitPulse Mobile Effect) -->
+      <g mask="url(#quoteMask2)">
+        <rect x="-150" y="0" width="130" height="36" fill="url(#shimmerSweepGrad)">
+          <animate attributeName="x" values="-150; 520" dur="3.2s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+        </rect>
+      </g>
     </g>
   </g>
 </svg>

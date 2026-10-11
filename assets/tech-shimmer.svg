@@ -12,27 +12,20 @@
     </linearGradient>
 
 
-    <!-- Realistic Planet Saturn Gradients -->
-    <radialGradient id="saturnBodyRealistic" cx="35%" cy="30%" r="70%">
-      <stop offset="0%" stop-color="#93c5fd"/>
-      <stop offset="35%" stop-color="#3b82f6"/>
-      <stop offset="70%" stop-color="#1e40af"/>
-      <stop offset="100%" stop-color="#0b132b"/>
+    <!-- Realistic Planet Mars Gradients -->
+    <radialGradient id="marsBodyRealistic" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#fdba74"/>
+      <stop offset="30%" stop-color="#ea580c"/>
+      <stop offset="65%" stop-color="#b91c1c"/>
+      <stop offset="100%" stop-color="#450a0a"/>
     </radialGradient>
 
-    <linearGradient id="saturnRing" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00f5d4" stop-opacity="0"/>
-      <stop offset="25%" stop-color="#00f5d4" stop-opacity="0.95"/>
-      <stop offset="75%" stop-color="#c084fc" stop-opacity="0.95"/>
-      <stop offset="100%" stop-color="#c084fc" stop-opacity="0"/>
-    </linearGradient>
-
-    <!-- Realistic Ocean Base Radial Gradient -->
-    <radialGradient id="oceanSphereGrad" cx="35%" cy="30%" r="70%">
-      <stop offset="0%" stop-color="#38bdf8"/>
-      <stop offset="25%" stop-color="#0284c7"/>
-      <stop offset="65%" stop-color="#0369a1"/>
-      <stop offset="100%" stop-color="#082f49"/>
+    <!-- Realistic Planet Jupiter Gradients -->
+    <radialGradient id="jupiterBodyRealistic" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#fef3c7"/>
+      <stop offset="30%" stop-color="#f59e0b"/>
+      <stop offset="65%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#451a03"/>
     </radialGradient>
 
     <!-- 3D Spherical Night Shadow (Terminator) -->
@@ -70,8 +63,9 @@
       <rect x="416" y="182" width="95" height="28" rx="4" fill="#ffffff"/>
 
       <!-- Row 4: Tools -->
-      <rect x="294" y="256" width="85" height="28" rx="4" fill="#ffffff"/>
-      <rect x="391" y="256" width="115" height="28" rx="4" fill="#ffffff"/>
+      <rect x="211" y="256" width="85" height="28" rx="4" fill="#ffffff"/>
+      <rect x="310" y="256" width="115" height="28" rx="4" fill="#ffffff"/>
+      <rect x="439" y="256" width="150" height="28" rx="4" fill="#ffffff"/>
     </mask>
 
     <clipPath id="canvasClip">
@@ -174,107 +168,108 @@
     <!-- 2. CELESTIAL PLANETS                           -->
     <!-- ============================================== -->
 
-    <!-- Planet 1: Realistic Ringed Saturn (Upper-Right) -->
+    <!-- Planet 1: Giant Striped Jupiter with Great Red Spot (Upper-Right) -->
     <g transform="translate(715, 95)">
-      <clipPath id="saturnClipTech">
-        <circle cx="0" cy="0" r="20"/>
+      <clipPath id="jupiterClipTech">
+        <circle cx="0" cy="0" r="24"/>
       </clipPath>
 
-      <!-- Ambient Glow -->
-      <circle cx="0" cy="0" r="26" fill="#00f5d4" opacity="0.12" filter="url(#starGlow)"/>
+      <!-- Ambient Golden Corona Glow -->
+      <circle cx="0" cy="0" r="32" fill="#f59e0b" opacity="0.14" filter="url(#starGlow)"/>
 
-      <!-- Back of Planetary Ring -->
-      <path d="M -46 -5 A 48 14 0 0 1 46 -5" stroke="url(#saturnRing)" stroke-width="4.5" fill="none" opacity="0.6"/>
+      <!-- Base Gas Giant Sphere -->
+      <circle cx="0" cy="0" r="24" fill="url(#jupiterBodyRealistic)"/>
 
-      <!-- Saturn Gas Giant Sphere -->
-      <circle cx="0" cy="0" r="20" fill="url(#saturnBodyRealistic)"/>
+      <!-- Swirling Atmospheric Bands (Clipped to sphere) -->
+      <g clip-path="url(#jupiterClipTech)">
+        <!-- North Polar Region -->
+        <rect x="-24" y="-24" width="48" height="8" fill="#78350f" opacity="0.45"/>
+        <rect x="-24" y="-16" width="48" height="5" fill="#fef3c7" opacity="0.5"/>
+        <!-- North Temperate Belt -->
+        <rect x="-24" y="-11" width="48" height="6" fill="#b45309" opacity="0.6"/>
+        <!-- Equatorial Zone (Caramel/Cream) -->
+        <rect x="-24" y="-5" width="48" height="8" fill="#fef3c7" opacity="0.65"/>
+        <!-- South Equatorial Belt (Terracotta) -->
+        <rect x="-24" y="3" width="48" height="8" fill="#9a3412" opacity="0.7"/>
+        <!-- South Tropical Zone -->
+        <rect x="-24" y="11" width="48" height="6" fill="#fef3c7" opacity="0.45"/>
+        <!-- South Polar Region -->
+        <rect x="-24" y="17" width="48" height="7" fill="#78350f" opacity="0.45"/>
 
-      <!-- Atmospheric Cloud Bands (Clipped to sphere) -->
-      <g clip-path="url(#saturnClipTech)">
-        <!-- Band 1: Golden Ammonia Belt -->
-        <rect x="-20" y="-8" width="40" height="4" fill="#fde68a" opacity="0.35"/>
-        <!-- Band 2: Cyan Jetstream -->
-        <rect x="-20" y="-2" width="40" height="3" fill="#00f5d4" opacity="0.25"/>
-        <!-- Band 3: Deep Azure Belt -->
-        <rect x="-20" y="3" width="40" height="5" fill="#1e40af" opacity="0.4"/>
-        <!-- Band 4: Polar Vortex -->
-        <ellipse cx="0" cy="-18" rx="8" ry="3" fill="#1e3a8a" opacity="0.6"/>
+        <!-- Wavy Atmospheric Currents -->
+        <path d="M -24 -8 Q -12 -6 0 -8 Q 12 -10 24 -8" stroke="#d97706" stroke-width="1.8" fill="none" opacity="0.75"/>
+        <path d="M -24 7 Q -12 5 0 7 Q 12 9 24 7" stroke="#78350f" stroke-width="1.8" fill="none" opacity="0.75"/>
+
+        <!-- Great Red Spot (Bintik Merah Raksasa) with Gentle Swirl Pulse -->
+        <g transform="translate(8, 7)">
+          <ellipse cx="0" cy="0" rx="6.5" ry="4" fill="#dc2626" opacity="0.95">
+            <animate attributeName="rx" values="6.5;7.2;6.5" dur="3.6s" repeatCount="indefinite"/>
+          </ellipse>
+          <ellipse cx="0" cy="0" rx="4" ry="2.2" fill="#991b1b"/>
+          <circle cx="-1" cy="0" r="1.3" fill="#f87171" opacity="0.8"/>
+        </g>
+
         <!-- 3D Spherical Shadow -->
-        <circle cx="0" cy="0" r="20" fill="url(#sphericalShadow)"/>
+        <circle cx="0" cy="0" r="24" fill="url(#sphericalShadow)"/>
       </g>
 
-      <!-- Atmosphere Edge Highlight -->
-      <path d="M -14 -14 A 20 20 0 0 1 14 14 A 18 18 0 0 0 -14 -14 Z" fill="#7aa2f7" opacity="0.5"/>
-
-      <!-- Front of Planetary Ring with Cassini Division -->
-      <path d="M -48 0 A 50 15 0 0 0 48 0" stroke="url(#saturnRing)" stroke-width="5" fill="none">
-        <animate attributeName="opacity" values="0.8;1;0.8" dur="4s" repeatCount="indefinite"/>
-      </path>
-      <!-- Cassini Gap (Dark Division) -->
-      <path d="M -44 1 A 46 14 0 0 0 44 1" stroke="#050714" stroke-width="0.9" fill="none" opacity="0.9"/>
+      <!-- Atmosphere Sunlit Rim -->
+      <path d="M -17 -17 A 24 24 0 0 1 17 17 A 22 22 0 0 0 -17 -17 Z" fill="#fde68a" opacity="0.6"/>
     </g>
 
-    <!-- Planet 2: Realistic Blue Marble Exoplanet with Orbiting Satellite (Lower-Left) -->
+    <!-- Planet 2: Red Planet Mars with Orbiting Scout Probe (Lower-Left) -->
     <g transform="translate(95, 205)">
-      <!-- Clip path for the planet surface -->
-      <clipPath id="terraClipTech">
-        <circle cx="0" cy="0" r="22"/>
+      <clipPath id="marsClipTech">
+        <circle cx="0" cy="0" r="21"/>
       </clipPath>
 
-      <!-- 1. Atmospheric Corona Glow -->
-      <circle cx="0" cy="0" r="28" fill="#00f5d4" opacity="0.15" filter="url(#starGlow)"/>
-      <circle cx="0" cy="0" r="24" fill="#38bdf8" opacity="0.3" filter="url(#starGlow)"/>
+      <!-- Martian Red Ambient Halo -->
+      <circle cx="0" cy="0" r="27" fill="#ef4444" opacity="0.12" filter="url(#starGlow)"/>
 
-      <!-- 2. Ocean Base Sphere -->
-      <circle cx="0" cy="0" r="22" fill="url(#oceanSphereGrad)"/>
+      <!-- Base Rust-Red Sphere -->
+      <circle cx="0" cy="0" r="21" fill="url(#marsBodyRealistic)"/>
 
-      <!-- 3. Continents & Landmasses (Clipped to sphere) -->
-      <g clip-path="url(#terraClipTech)">
-        <!-- Northern Continent -->
-        <path d="M -16 -8 Q -10 -16 -2 -14 Q 5 -12 8 -6 Q 10 2 2 4 Q -5 5 -10 1 Q -15 0 -16 -8 Z" fill="#10b981"/>
-        <path d="M -12 -10 Q -6 -14 0 -11 Q -3 -5 -8 -4 Z" fill="#34d399"/>
-        <!-- Southern Continent -->
-        <path d="M -5 6 Q 4 5 9 10 Q 7 16 0 17 Q -8 16 -7 10 Z" fill="#059669"/>
-        <path d="M -2 8 Q 3 7 6 12 Q 2 15 -3 13 Z" fill="#34d399"/>
-        <!-- Eastern Archipelago -->
-        <circle cx="14" cy="-2" r="2.2" fill="#10b981"/>
-        <circle cx="16" cy="4" r="1.5" fill="#059669"/>
-        <circle cx="-13" cy="8" r="1.6" fill="#10b981"/>
+      <!-- Surface Details & Craters (Clipped to sphere) -->
+      <g clip-path="url(#marsClipTech)">
         <!-- North Polar Ice Cap -->
-        <ellipse cx="0" cy="-20" rx="9" ry="3.5" fill="#f8fafc" opacity="0.9"/>
+        <ellipse cx="0" cy="-19" rx="8" ry="3" fill="#f8fafc" opacity="0.95"/>
         <!-- South Polar Ice Cap -->
-        <ellipse cx="0" cy="20" rx="8" ry="3" fill="#f8fafc" opacity="0.85"/>
+        <ellipse cx="0" cy="19" rx="6" ry="2.5" fill="#f8fafc" opacity="0.85"/>
 
-        <!-- 4. Atmospheric Swirling Storm & Cloud Belts -->
-        <path d="M -22 -4 Q -12 -9 0 -5 Q 12 -1 22 -6 Q 14 0 0 -2 Q -12 -4 -22 -4 Z" fill="#ffffff" opacity="0.55"/>
-        <path d="M -20 5 Q -10 2 2 7 Q 14 11 22 8 Q 12 7 0 4 Q -10 2 -20 5 Z" fill="#ffffff" opacity="0.5"/>
-        <path d="M -8 -13 Q -2 -16 6 -11 Q 2 -12 -4 -11 Z" fill="#ffffff" opacity="0.6"/>
+        <!-- Valles Marineris & Dark Basins -->
+        <path d="M -15 -6 Q -8 -11 0 -7 Q 8 -11 15 -5 Q 12 0 6 3 Q -5 2 -12 -1 Z" fill="#7c2d12" opacity="0.85"/>
+        <path d="M -12 6 Q -2 4 8 9 Q 14 6 16 11 Q 8 15 0 14 Q -10 12 -12 6 Z" fill="#991b1b" opacity="0.8"/>
+        <path d="M -17 3 Q -10 5 -5 10 Q -12 11 -17 3 Z" fill="#7c2d12" opacity="0.75"/>
 
-        <!-- 5. 3D Day/Night Terminator Spherical Shadow -->
-        <circle cx="0" cy="0" r="22" fill="url(#sphericalShadow)"/>
+        <!-- Olympus Mons Shield Volcano Crater -->
+        <circle cx="-6" cy="-2" r="3" fill="#7f1d1d"/>
+        <circle cx="-6" cy="-2" r="1.2" fill="#450a0a"/>
+
+        <!-- Surface Dust Haze -->
+        <path d="M -20 0 Q -10 -4 5 1 Q 16 -3 20 0 Q 12 3 -5 2 Q -16 5 -20 0 Z" fill="#f97316" opacity="0.35"/>
+
+        <!-- 3D Spherical Shadow -->
+        <circle cx="0" cy="0" r="21" fill="url(#sphericalShadow)"/>
       </g>
 
-      <!-- 6. Rayleigh Scattering Sunlit Atmospheric Rim -->
-      <path d="M -15.5 -15.5 A 22 22 0 0 1 15.5 15.5 A 20.5 20.5 0 0 0 -15.5 -15.5 Z" fill="#00f5d4" opacity="0.8"/>
+      <!-- Thin Atmospheric Edge Scattering -->
+      <path d="M -15 -15 A 21 21 0 0 1 15 15 A 19.5 19.5 0 0 0 -15 -15 Z" fill="#f87171" opacity="0.65"/>
 
-      <!-- 7. Orbiting Space Satellite with Solar Panels -->
+      <!-- Orbiting Mars Scout Probe with Blinking Telemetry Beacon -->
       <g>
-        <ellipse rx="38" ry="16" fill="none" stroke="#00f5d4" stroke-width="0.8" opacity="0.3" stroke-dasharray="3,3" transform="rotate(-25)"/>
-        <!-- Satellite Motion Group -->
+        <ellipse rx="36" ry="15" fill="none" stroke="#f87171" stroke-width="0.75" opacity="0.28" stroke-dasharray="2.5,2.5" transform="rotate(-15)"/>
         <g>
-          <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="10s" repeatCount="indefinite"/>
-          <g transform="translate(38, 0)">
-            <!-- Central Probe Body -->
-            <rect x="-3" y="-3" width="6" height="6" rx="1" fill="#e2e8f0" stroke="#94a3b8" stroke-width="0.5"/>
-            <!-- Left Blue Solar Wing -->
-            <rect x="-11" y="-2.2" width="7" height="4.4" rx="0.5" fill="#0284c7" stroke="#38bdf8" stroke-width="0.5"/>
-            <!-- Right Blue Solar Wing -->
-            <rect x="4" y="-2.2" width="7" height="4.4" rx="0.5" fill="#0284c7" stroke="#38bdf8" stroke-width="0.5"/>
-            <!-- Communication Antenna Mast -->
-            <line x1="0" y1="-3" x2="0" y2="-6" stroke="#ffffff" stroke-width="0.7"/>
-            <!-- Beacon Light -->
-            <circle cx="0" cy="-6" r="1.3" fill="#00f5d4" filter="url(#starGlow)">
-              <animate attributeName="opacity" values="0.3;1;0.3" dur="1.2s" repeatCount="indefinite"/>
+          <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="9s" repeatCount="indefinite"/>
+          <g transform="translate(36, 0)">
+            <!-- Scout Probe Body -->
+            <polygon points="-2.5,-2 2.5,-1 2.5,1 -2.5,2" fill="#e2e8f0" stroke="#71717a" stroke-width="0.4"/>
+            <!-- Gold Solar Shield -->
+            <rect x="-1" y="-3.5" width="2" height="7" rx="0.3" fill="#eab308" opacity="0.9"/>
+            <!-- High-Gain Antenna Mast -->
+            <line x1="0" y1="0" x2="-4" y2="-4" stroke="#ffffff" stroke-width="0.6"/>
+            <!-- Red Telemetry Beacon Light -->
+            <circle cx="0" cy="0" r="1.5" fill="#ef4444" filter="url(#starGlow)">
+              <animate attributeName="opacity" values="0.15;1;0.15" dur="0.9s" repeatCount="indefinite"/>
             </circle>
           </g>
         </g>
@@ -393,8 +388,8 @@
       </g>
 
       <!-- ============ ROW 4: TOOLS ============ -->
-      <!-- GIT (x: 294, width: 85) -->
-      <g transform="translate(294, 256)">
+      <!-- GIT (x: 211, width: 85) -->
+      <g transform="translate(211, 256)">
         <rect width="85" height="28" rx="4" fill="#f05032"/>
         <rect width="28" height="28" rx="4" fill="#bf361c"/>
         <rect x="24" width="4" height="28" fill="#f05032"/>
@@ -404,8 +399,8 @@
         <text x="54" y="18.5" fill="#ffffff" text-anchor="middle">GIT</text>
       </g>
 
-      <!-- VS CODE (x: 391, width: 115) -->
-      <g transform="translate(391, 256)">
+      <!-- VS CODE (x: 310, width: 115) -->
+      <g transform="translate(310, 256)">
         <rect width="115" height="28" rx="4" fill="#0078d4"/>
         <rect width="28" height="28" rx="4" fill="#005394"/>
         <rect x="24" width="4" height="28" fill="#0078d4"/>
@@ -413,6 +408,17 @@
           <path fill="#ffffff" d="M23.15 2.587L18.21.21a1.494 1.494 0 0 0-1.705.29l-9.46 8.63-4.12-3.128a.999.999 0 0 0-1.276.057L.327 7.261A1 1 0 0 0 .326 8.74L3.899 12 .326 15.26a1 1 0 0 0 .001 1.479L1.65 17.94a.999.999 0 0 0 1.276.057l4.12-3.128 9.46 8.63a1.492 1.492 0 0 0 1.704.29l4.942-2.377A1.5 1.5 0 0 0 24 20.06V3.939a1.5 1.5 0 0 0-.85-1.352zm-5.146 14.861L10.826 12l7.178-5.448v10.896z"/>
         </svg>
         <text x="70" y="18.5" fill="#ffffff" text-anchor="middle">VS CODE</text>
+      </g>
+
+      <!-- ANDROID STUDIO (x: 439, width: 150) -->
+      <g transform="translate(439, 256)">
+        <rect width="150" height="28" rx="4" fill="#3ddc84"/>
+        <rect width="28" height="28" rx="4" fill="#2bb673"/>
+        <rect x="24" width="4" height="28" fill="#3ddc84"/>
+        <svg x="6.5" y="6.5" width="15" height="15" viewBox="0 0 24 24">
+          <path fill="#ffffff" d="M12.28 0a12.28 12.28 0 0 0-4.66.92l3.43 5.94a5.9 5.9 0 0 1 1.23-.13c3.27 0 5.92 2.65 5.92 5.92a5.9 5.9 0 0 1-.84 3.03l3.29 5.7c2.4-2.3 3.9-5.5 3.9-9.05 0-6.78-5.5-12.33-12.27-12.33zm-4.9.98a12.28 12.28 0 0 0-7.38 11.3c0 3.5 1.48 6.7 3.86 9l3.29-5.7a5.9 5.9 0 0 1-.83-3.02c0-2.8 1.94-5.13 4.54-5.75L7.38.98zm2.46 4.26l-3.3 5.72c.6 1.43 1.63 2.6 2.94 3.37l3.3-5.71a3.64 3.64 0 0 1-2.94-3.38zm6.54 3.38a3.64 3.64 0 0 1-2.93 3.38l3.3 5.7c1.3-.76 2.34-1.93 2.94-3.36l-3.31-5.72zm-7.66 4.96a5.9 5.9 0 0 1 3.55-.83l-3.43-5.94a12.28 12.28 0 0 0-3.4 2.4l3.28 5.68zm4.43.83a3.64 3.64 0 0 1-1.46.3c-.5 0-1-.1-1.45-.3l-3.3 5.72a12.28 12.28 0 0 0 9.5 0l-3.29-5.72z"/>
+        </svg>
+        <text x="89" y="18.5" fill="#000000" text-anchor="middle">ANDROID STUDIO</text>
       </g>
     </g>
 

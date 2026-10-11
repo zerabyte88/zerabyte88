@@ -1,17 +1,62 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 44" width="100%" height="100%">
   <defs>
-    <!-- Fluid Cosmic Gradient matching space-text.svg -->
+    <!-- Arctic Glacial Frost Flowing Wave Gradient -->
     <linearGradient id="coGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00f5d4">
-        <animate attributeName="stop-color" values="#00f5d4;#38bdf8;#7aa2f7;#00f5d4" dur="6s" repeatCount="indefinite"/>
+      <stop offset="0%" stop-color="#f8fafc">
+        <animate attributeName="stop-color"
+          values="#f8fafc; #93c5fd; #7dd3fc; #a5f3fc; #f8fafc"
+          keyTimes="0; 0.25; 0.5; 0.75; 1"
+          dur="6s" repeatCount="indefinite"
+          calcMode="spline" keySplines="0.42 0 0.58 1; 0.42 0 0.58 1; 0.42 0 0.58 1; 0.42 0 0.58 1"/>
       </stop>
-      <stop offset="50%" stop-color="#38bdf8">
-        <animate attributeName="stop-color" values="#38bdf8;#7aa2f7;#00f5d4;#38bdf8" dur="6s" repeatCount="indefinite"/>
+      <stop offset="25%" stop-color="#a5f3fc">
+        <animate attributeName="stop-color"
+          values="#a5f3fc; #f8fafc; #93c5fd; #7dd3fc; #a5f3fc"
+          keyTimes="0; 0.25; 0.5; 0.75; 1"
+          dur="6s" repeatCount="indefinite"
+          calcMode="spline" keySplines="0.42 0 0.58 1; 0.42 0 0.58 1; 0.42 0 0.58 1; 0.42 0 0.58 1"/>
       </stop>
-      <stop offset="100%" stop-color="#7aa2f7">
-        <animate attributeName="stop-color" values="#7aa2f7;#00f5d4;#38bdf8;#7aa2f7" dur="6s" repeatCount="indefinite"/>
+      <stop offset="50%" stop-color="#7dd3fc">
+        <animate attributeName="stop-color"
+          values="#7dd3fc; #a5f3fc; #f8fafc; #93c5fd; #7dd3fc"
+          keyTimes="0; 0.25; 0.5; 0.75; 1"
+          dur="6s" repeatCount="indefinite"
+          calcMode="spline" keySplines="0.42 0 0.58 1; 0.42 0 0.58 1; 0.42 0 0.58 1; 0.42 0 0.58 1"/>
+      </stop>
+      <stop offset="75%" stop-color="#93c5fd">
+        <animate attributeName="stop-color"
+          values="#93c5fd; #7dd3fc; #a5f3fc; #f8fafc; #93c5fd"
+          keyTimes="0; 0.25; 0.5; 0.75; 1"
+          dur="6s" repeatCount="indefinite"
+          calcMode="spline" keySplines="0.42 0 0.58 1; 0.42 0 0.58 1; 0.42 0 0.58 1; 0.42 0 0.58 1"/>
+      </stop>
+      <stop offset="100%" stop-color="#f8fafc">
+        <animate attributeName="stop-color"
+          values="#f8fafc; #93c5fd; #7dd3fc; #a5f3fc; #f8fafc"
+          keyTimes="0; 0.25; 0.5; 0.75; 1"
+          dur="6s" repeatCount="indefinite"
+          calcMode="spline" keySplines="0.42 0 0.58 1; 0.42 0 0.58 1; 0.42 0 0.58 1; 0.42 0 0.58 1"/>
       </stop>
     </linearGradient>
+
+    <!-- Diamond Ice Glint Sweep Gradient (GitPulse Mobile Effect) -->
+    <linearGradient id="shimmerSweepGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="38%" stop-color="#a5f3fc" stop-opacity="0.35"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="62%" stop-color="#93c5fd" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Mask for Shimmer Sweep -->
+    <mask id="coTextMask">
+      <text x="250" y="27" text-anchor="middle"
+        font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+        font-size="19" font-weight="900" letter-spacing="3.5"
+        fill="#ffffff">
+        CONTRIBUTIONS
+      </text>
+    </mask>
 
     <!-- Optimized Star Glow Filter (Lightweight & Smooth) -->
     <filter id="coGlow" x="-20%" y="-30%" width="140%" height="160%">
@@ -83,6 +128,18 @@
       fill="url(#coGrad)">
       CONTRIBUTIONS
     </text>
+
+    <!-- Shimmer Glint Sweep Layer (GitPulse Mobile Effect) -->
+    <g mask="url(#coTextMask)">
+      <rect x="-150" y="0" width="130" height="44" fill="url(#shimmerSweepGrad)">
+        <animate attributeName="x"
+          values="-150; 520"
+          dur="3.2s"
+          repeatCount="indefinite"
+          calcMode="spline"
+          keySplines="0.4 0 0.2 1"/>
+      </rect>
+    </g>
 
     <!-- Sci-Fi HUD Underline Accent -->
     <line x1="145" y1="35" x2="355" y2="35"

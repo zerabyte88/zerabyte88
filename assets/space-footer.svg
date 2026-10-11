@@ -24,13 +24,21 @@
       <stop offset="100%" stop-color="#c084fc" stop-opacity="0"/>
     </linearGradient>
 
-    <!-- Realistic Ocean Base Radial Gradient -->
-    <radialGradient id="oceanSphereGrad" cx="35%" cy="30%" r="70%">
-      <stop offset="0%" stop-color="#38bdf8"/>
+    <!-- Realistic Planet Neptune Gradient -->
+    <radialGradient id="neptuneBodyRealistic" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#7dd3fc"/>
       <stop offset="25%" stop-color="#0284c7"/>
-      <stop offset="65%" stop-color="#0369a1"/>
-      <stop offset="100%" stop-color="#082f49"/>
+      <stop offset="60%" stop-color="#0369a1"/>
+      <stop offset="100%" stop-color="#0c2340"/>
     </radialGradient>
+
+    <!-- Neptune Thin Vertical Ice Ring Gradient -->
+    <linearGradient id="neptuneRingGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00f5d4" stop-opacity="0"/>
+      <stop offset="25%" stop-color="#38bdf8" stop-opacity="0.95"/>
+      <stop offset="75%" stop-color="#00f5d4" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#00f5d4" stop-opacity="0"/>
+    </linearGradient>
 
     <!-- 3D Spherical Night Shadow (Terminator) -->
     <radialGradient id="sphericalShadow" cx="30%" cy="30%" r="75%">
@@ -80,21 +88,19 @@
     </filter>
 
     <clipPath id="footerClip">
-      <rect x="0" y="0" width="1200" height="150" rx="16"/>
-    </clipPath>
-
-    <clipPath id="terraClipFooter">
-      <circle cx="0" cy="0" r="19"/>
+      <rect x="0" y="0" width="1200" height="150"/>
     </clipPath>
 
     <clipPath id="saturnClipFooter">
+      <circle cx="0" cy="0" r="19"/>
+    </clipPath>
+
+    <clipPath id="neptuneClipFooter">
       <circle cx="0" cy="0" r="18"/>
     </clipPath>
   </defs>
 
   <g clip-path="url(#footerClip)">
-    <!-- Base Deep Space Background (Matched with Header & Tech Stack) -->
-    <rect width="1200" height="150" fill="url(#spaceGradient)"/>
 
 
 
@@ -186,107 +192,94 @@
     <!-- 2. REALISTIC CELESTIAL PLANETS                 -->
     <!-- ============================================== -->
 
-    <!-- Planet 1: Realistic Blue Marble Exoplanet with Orbiting Satellite (Left Side) -->
+    <!-- Planet 1: Realistic Ringed Saturn (Left Side) -->
     <g transform="translate(160, 75)">
-      <!-- 1. Atmospheric Corona Glow -->
-      <circle cx="0" cy="0" r="26" fill="#00f5d4" opacity="0.15" filter="url(#starGlow)"/>
-      <circle cx="0" cy="0" r="21" fill="#38bdf8" opacity="0.3" filter="url(#starGlow)"/>
-
-      <!-- 2. Ocean Base Sphere -->
-      <circle cx="0" cy="0" r="19" fill="url(#oceanSphereGrad)"/>
-
-      <!-- 3. Continents & Landmasses (Clipped to sphere) -->
-      <g clip-path="url(#terraClipFooter)">
-        <!-- Northern Continent -->
-        <path d="M -14 -7 Q -8 -14 -2 -12 Q 4 -10 7 -5 Q 8 2 2 4 Q -4 4 -8 1 Q -13 0 -14 -7 Z" fill="#10b981"/>
-        <path d="M -10 -9 Q -5 -12 0 -10 Q -2 -5 -7 -4 Z" fill="#34d399"/>
-        <!-- Southern Continent -->
-        <path d="M -5 5 Q 4 4 8 8 Q 6 14 0 15 Q -7 14 -6 8 Z" fill="#059669"/>
-        <path d="M -2 7 Q 2 6 5 11 Q 1 13 -2 12 Z" fill="#34d399"/>
-        <!-- Eastern Archipelago -->
-        <circle cx="12" cy="-2" r="1.8" fill="#10b981"/>
-        <circle cx="14" cy="3" r="1.3" fill="#059669"/>
-        <circle cx="-11" cy="7" r="1.4" fill="#10b981"/>
-        <!-- North Polar Ice Cap -->
-        <ellipse cx="0" cy="-17" rx="8" ry="3" fill="#f8fafc" opacity="0.9"/>
-        <!-- South Polar Ice Cap -->
-        <ellipse cx="0" cy="17" rx="7" ry="2.5" fill="#f8fafc" opacity="0.85"/>
-
-        <!-- 4. Atmospheric Swirling Storm & Cloud Belts -->
-        <path d="M -19 -4 Q -10 -8 0 -4 Q 10 -1 19 -5 Q 12 0 0 -2 Q -10 -4 -19 -4 Z" fill="#ffffff" opacity="0.55"/>
-        <path d="M -17 5 Q -8 2 2 6 Q 12 9 19 7 Q 11 6 0 4 Q -8 2 -17 5 Z" fill="#ffffff" opacity="0.5"/>
-        <path d="M -7 -11 Q -2 -14 5 -9 Q 2 -11 -3 -9 Z" fill="#ffffff" opacity="0.6"/>
-
-        <!-- 5. 3D Day/Night Terminator Spherical Shadow -->
-        <circle cx="0" cy="0" r="19" fill="url(#sphericalShadow)"/>
-      </g>
-
-      <!-- 6. Rayleigh Scattering Sunlit Atmospheric Rim -->
-      <path d="M -13.5 -13.5 A 19 19 0 0 1 13.5 13.5 A 17.5 17.5 0 0 0 -13.5 -13.5 Z" fill="#00f5d4" opacity="0.8"/>
-
-      <!-- 7. Orbiting Space Satellite with Solar Panels -->
-      <g>
-        <ellipse rx="33" ry="14" fill="none" stroke="#00f5d4" stroke-width="0.8" opacity="0.3" stroke-dasharray="3,3" transform="rotate(-20)"/>
-        <!-- Satellite Motion Group -->
-        <g>
-          <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="10s" repeatCount="indefinite"/>
-          <g transform="translate(33, 0)">
-            <!-- Central Probe Body -->
-            <rect x="-3" y="-3" width="6" height="6" rx="1" fill="#e2e8f0" stroke="#94a3b8" stroke-width="0.5"/>
-            <!-- Left Blue Solar Wing -->
-            <rect x="-10" y="-2" width="6.5" height="4" rx="0.5" fill="#0284c7" stroke="#38bdf8" stroke-width="0.5"/>
-            <!-- Right Blue Solar Wing -->
-            <rect x="3.5" y="-2" width="6.5" height="4" rx="0.5" fill="#0284c7" stroke="#38bdf8" stroke-width="0.5"/>
-            <!-- Communication Antenna Mast -->
-            <line x1="0" y1="-3" x2="0" y2="-5.5" stroke="#ffffff" stroke-width="0.7"/>
-            <!-- Beacon Light -->
-            <circle cx="0" cy="-5.5" r="1.2" fill="#00f5d4" filter="url(#starGlow)">
-              <animate attributeName="opacity" values="0.3;1;0.3" dur="1.2s" repeatCount="indefinite"/>
-            </circle>
-          </g>
-        </g>
-      </g>
-    </g>
-
-    <!-- Planet 2: Realistic Ringed Saturn (Right Side) -->
-    <g transform="translate(1040, 75)">
       <!-- Ambient Halo Glow -->
-      <circle cx="0" cy="0" r="25" fill="#00f5d4" opacity="0.12" filter="url(#starGlow)"/>
+      <circle cx="0" cy="0" r="26" fill="#00f5d4" opacity="0.12" filter="url(#starGlow)"/>
 
       <!-- Back of Planetary Ring -->
-      <path d="M -42 -5 A 44 13 0 0 1 42 -5" stroke="url(#saturnRing)" stroke-width="4" fill="none" opacity="0.6"/>
+      <path d="M -44 -5 A 46 14 0 0 1 44 -5" stroke="url(#saturnRing)" stroke-width="4.2" fill="none" opacity="0.6"/>
 
       <!-- Saturn Gas Giant Sphere -->
-      <circle cx="0" cy="0" r="18" fill="url(#saturnBodyRealistic)"/>
+      <circle cx="0" cy="0" r="19" fill="url(#saturnBodyRealistic)"/>
 
       <!-- Atmospheric Cloud Bands (Clipped to sphere) -->
       <g clip-path="url(#saturnClipFooter)">
         <!-- Band 1: Golden Ammonia Belt -->
-        <rect x="-18" y="-7" width="36" height="3.5" fill="#fde68a" opacity="0.35"/>
+        <rect x="-19" y="-8" width="38" height="4" fill="#fde68a" opacity="0.35"/>
         <!-- Band 2: Cyan Jetstream -->
-        <rect x="-18" y="-2" width="36" height="3" fill="#00f5d4" opacity="0.25"/>
+        <rect x="-19" y="-2" width="38" height="3" fill="#00f5d4" opacity="0.25"/>
         <!-- Band 3: Deep Azure Belt -->
-        <rect x="-18" y="2" width="36" height="4.5" fill="#1e40af" opacity="0.4"/>
+        <rect x="-19" y="2" width="38" height="5" fill="#1e40af" opacity="0.4"/>
         <!-- Band 4: Polar Vortex -->
-        <ellipse cx="0" cy="-16" rx="7" ry="2.5" fill="#1e3a8a" opacity="0.6"/>
+        <ellipse cx="0" cy="-17" rx="8" ry="3" fill="#1e3a8a" opacity="0.6"/>
+        <!-- 3D Spherical Night Shadow -->
+        <circle cx="0" cy="0" r="19" fill="url(#sphericalShadow)"/>
+      </g>
+
+      <!-- Atmosphere Edge Highlight -->
+      <path d="M -13.5 -13.5 A 19 19 0 0 1 13.5 13.5 A 17 17 0 0 0 -13.5 -13.5 Z" fill="#7aa2f7" opacity="0.5"/>
+
+      <!-- Front of Planetary Ring with Cassini Division -->
+      <path d="M -46 0 A 48 15 0 0 0 48 0" stroke="url(#saturnRing)" stroke-width="4.8" fill="none">
+        <animate attributeName="opacity" values="0.8;1;0.8" dur="4s" repeatCount="indefinite"/>
+      </path>
+      <!-- Cassini Gap (Dark Division) -->
+      <path d="M -42 1 A 44 14 0 0 0 42 1" stroke="#050714" stroke-width="0.9" fill="none" opacity="0.9"/>
+    </g>
+
+    <!-- Planet 2: Deep Azure Ice Giant Neptune with Vertical Ring (Right Side) -->
+    <g transform="translate(1040, 75)">
+      <!-- Deep Blue Corona Halo -->
+      <circle cx="0" cy="0" r="26" fill="#0284c7" opacity="0.18" filter="url(#starGlow)"/>
+
+      <!-- Back of Vertical Tilted Thin Ice Ring -->
+      <g transform="rotate(-18)">
+        <path d="M 0 -36 A 8 36 0 0 1 0 36" stroke="url(#neptuneRingGrad)" stroke-width="2.2" fill="none" opacity="0.65"/>
+      </g>
+
+      <!-- Neptune Ice Giant Sphere -->
+      <circle cx="0" cy="0" r="18" fill="url(#neptuneBodyRealistic)"/>
+
+      <!-- Atmospheric Bands & Great Dark Spot (Clipped to sphere) -->
+      <g clip-path="url(#neptuneClipFooter)">
+        <!-- High-Altitude Methane Cloud Bands -->
+        <rect x="-18" y="-12" width="36" height="3" fill="#bae6fd" opacity="0.4"/>
+        <rect x="-18" y="-4" width="36" height="4" fill="#0369a1" opacity="0.5"/>
+        <rect x="-18" y="5" width="36" height="3" fill="#38bdf8" opacity="0.45"/>
+        <rect x="-18" y="11" width="36" height="4" fill="#0c4a6e" opacity="0.55"/>
+
+        <!-- Great Dark Spot (Badai Raksasa Neptunus) -->
+        <ellipse cx="4" cy="1" rx="5" ry="3" fill="#082f49" opacity="0.9"/>
+        <!-- White Companion Cirrus Clouds (Scooter Clouds) -->
+        <path d="M 0 -1 Q 5 -3 9 0 Q 5 2 0 -1 Z" fill="#ffffff" opacity="0.75"/>
+
         <!-- 3D Spherical Night Shadow -->
         <circle cx="0" cy="0" r="18" fill="url(#sphericalShadow)"/>
       </g>
 
-      <!-- Atmosphere Edge Highlight -->
-      <path d="M -13 -13 A 18 18 0 0 1 13 13 A 16 16 0 0 0 -13 -13 Z" fill="#7aa2f7" opacity="0.5"/>
+      <!-- Atmosphere Cyan Edge Highlight -->
+      <path d="M -13 -13 A 18 18 0 0 1 13 13 A 16 16 0 0 0 -13 -13 Z" fill="#38bdf8" opacity="0.65"/>
 
-      <!-- Front of Planetary Ring with Cassini Division -->
-      <path d="M -44 0 A 46 14 0 0 0 44 0" stroke="url(#saturnRing)" stroke-width="4.5" fill="none">
-        <animate attributeName="opacity" values="0.8;1;0.8" dur="4s" repeatCount="indefinite"/>
-      </path>
-      <!-- Cassini Gap (Dark Division) -->
-      <path d="M -40 1 A 42 13 0 0 0 40 1" stroke="#050714" stroke-width="0.8" fill="none" opacity="0.9"/>
+      <!-- Front of Vertical Tilted Thin Ice Ring -->
+      <g transform="rotate(-18)">
+        <path d="M 0 36 A 8 36 0 0 1 0 -36" stroke="url(#neptuneRingGrad)" stroke-width="2.2" fill="none">
+          <animate attributeName="opacity" values="0.75;1;0.75" dur="3s" repeatCount="indefinite"/>
+        </path>
+      </g>
+
+      <!-- Sparkling Ice Crystals around Ring -->
+      <circle cx="-6" cy="-22" r="1" fill="#00f5d4">
+        <animate attributeName="opacity" values="0.2;1;0.2" dur="1.8s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="6" cy="22" r="1" fill="#7dd3fc">
+        <animate attributeName="opacity" values="0.2;1;0.2" dur="2.4s" repeatCount="indefinite"/>
+      </circle>
     </g>
 
 
     <!-- ============================================== -->
-    <!-- 4. CENTERPIECE: COSMIC CORE & LASER BEAMS      -->
+    <!-- 4. CENTERPIECE: PULSAR SINGULARITY & LASERS    -->
     <!-- ============================================== -->
     <g filter="url(#coreGlow)">
       <!-- Left Laser Line -->
@@ -299,15 +292,26 @@
         <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
       </line>
 
-      <!-- Center Planet / Core Orb with Rotating Ring -->
+      <!-- Center Pulsar / Cosmic Core Singularity with Dual Quantum Rings -->
       <g transform="translate(600, 48)">
-        <!-- Rotating Orbital Ring -->
-        <ellipse cx="0" cy="0" rx="22" ry="7.5" fill="none" stroke="#00f5d4" stroke-width="1.4">
-          <animateTransform attributeName="transform" type="rotate" values="0; 360" dur="10s" repeatCount="indefinite"/>
-        </ellipse>
-        <!-- Center Realistic Core Orb -->
+        <!-- Outer Quantum Ring (Clockwise, Tilted -25 deg) -->
+        <g transform="rotate(-25)">
+          <ellipse cx="0" cy="0" rx="23" ry="8" fill="none" stroke="#00f5d4" stroke-width="1.3">
+            <animateTransform attributeName="transform" type="rotate" values="0; 360" dur="8s" repeatCount="indefinite"/>
+          </ellipse>
+        </g>
+        <!-- Inner Counter-Rotating Quantum Ring (Counter-Clockwise, Tilted 35 deg) -->
+        <g transform="rotate(35)">
+          <ellipse cx="0" cy="0" rx="20" ry="7" fill="none" stroke="#c084fc" stroke-width="1.2">
+            <animateTransform attributeName="transform" type="rotate" values="360; 0" dur="5.5s" repeatCount="indefinite"/>
+          </ellipse>
+        </g>
+        <!-- Center Singularity Core -->
         <circle cx="0" cy="0" r="9" fill="url(#centerOrbGrad)"/>
-        <circle cx="0" cy="0" r="3.2" fill="#ffffff"/>
+        <!-- Radiant Singularity Pulse -->
+        <circle cx="0" cy="0" r="4" fill="#ffffff" filter="url(#coreGlow)">
+          <animate attributeName="r" values="3.2;5;3.2" dur="2s" repeatCount="indefinite"/>
+        </circle>
       </g>
     </g>
 
