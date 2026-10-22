@@ -120,22 +120,55 @@
       </text>
     </mask>
 
-    <!-- Solar Flare & Corona Gradients -->
-    <radialGradient id="sunCoronaGrad" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95"/>
-      <stop offset="30%" stop-color="#ffbe0b" stop-opacity="0.8"/>
-      <stop offset="60%" stop-color="#fb5607" stop-opacity="0.4"/>
-      <stop offset="85%" stop-color="#ff006e" stop-opacity="0.15"/>
-      <stop offset="100%" stop-color="#ff006e" stop-opacity="0"/>
+    <!-- ===== SUN: Redesigned Astrophotography Solar Stack ===== -->
+
+    <!-- 1. Far ambient light wash (soft solar glow fills nearby space) -->
+    <radialGradient id="sunAmbientWash" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"  stop-color="#fff7ed" stop-opacity="0.18"/>
+      <stop offset="35%" stop-color="#f97316" stop-opacity="0.08"/>
+      <stop offset="70%" stop-color="#c2410c" stop-opacity="0.02"/>
+      <stop offset="100%" stop-color="#c2410c" stop-opacity="0"/>
     </radialGradient>
 
-    <radialGradient id="sunCoreGrad" cx="38%" cy="35%" r="65%">
-      <stop offset="0%" stop-color="#ffffff"/>
-      <stop offset="25%" stop-color="#ffea79"/>
-      <stop offset="55%" stop-color="#ffbe0b"/>
-      <stop offset="80%" stop-color="#fb5607"/>
-      <stop offset="100%" stop-color="#c1121f"/>
+    <!-- 2. Outer soft coronal halo (yellow-gold atmospheric envelope) -->
+    <radialGradient id="sunCorona" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"  stop-color="#fef9c3" stop-opacity="0.85"/>
+      <stop offset="28%" stop-color="#fcd34d" stop-opacity="0.5"/>
+      <stop offset="55%" stop-color="#f97316" stop-opacity="0.18"/>
+      <stop offset="75%" stop-color="#9a3412" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#431407" stop-opacity="0"/>
     </radialGradient>
+
+    <!-- 3. Chromospheric layer (thin pinkish-orange atmosphere hugging disk) -->
+    <radialGradient id="sunChromosphere" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"  stop-color="#fde68a" stop-opacity="0.7"/>
+      <stop offset="50%" stop-color="#fb923c" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#9a3412" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- 4. Photosphere with true limb darkening (white core → deep orange-red edge) -->
+    <radialGradient id="sunPhotosphere" cx="40%" cy="38%" r="65%">
+      <stop offset="0%"  stop-color="#ffffff"/>
+      <stop offset="12%" stop-color="#fefce8"/>
+      <stop offset="30%" stop-color="#fef08a"/>
+      <stop offset="52%" stop-color="#fbbf24"/>
+      <stop offset="72%" stop-color="#f97316"/>
+      <stop offset="88%" stop-color="#b91c1c"/>
+      <stop offset="96%" stop-color="#7f1d1d"/>
+      <stop offset="100%" stop-color="#3b0a0a"/>
+    </radialGradient>
+
+    <!-- 5. Sunspot penumbra (dark reddish-brown with soft edge) -->
+    <radialGradient id="sunspotPenumbra" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"  stop-color="#1c0a00"/>
+      <stop offset="55%" stop-color="#7c2d12" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#ea580c" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Clip path: locks sunspots inside the photosphere disk -->
+    <clipPath id="sunDiskClip">
+      <circle cx="0" cy="0" r="28"/>
+    </clipPath>
     <!-- Star Glow Filters -->
     <filter id="starGlow" x="-30%" y="-30%" width="160%" height="160%">
       <feGaussianBlur stdDeviation="3" result="blur"/>
@@ -177,47 +210,130 @@
   <g clip-path="url(#headerClip)">
 
 
-    <!-- Celestial Body 1: Blazing Radiant Sun with Pulsing Flares (Left Side) -->
+    <!-- ===== Celestial Body 1: SDO Astrophotography Solar Dynamo (Left Side) ===== -->
     <g transform="translate(160, 85)">
-      <!-- Pulsing Solar Flare Corona Glow -->
-      <circle cx="0" cy="0" r="48" fill="url(#sunCoronaGrad)">
-        <animate attributeName="r" values="46;53;46" dur="3s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0.75;1;0.75" dur="3s" repeatCount="indefinite"/>
+
+      <!-- Layer 0 – Far ambient solar wash: warms the surrounding space subtly -->
+      <circle cx="0" cy="0" r="155" fill="url(#sunAmbientWash)"/>
+
+      <!-- Layer 1 – Outer coronal halo: large diffuse gold envelope, breathing slowly -->
+      <circle cx="0" cy="0" r="58" fill="url(#sunCorona)">
+        <animate attributeName="r"
+          values="55;63;55" dur="6s" repeatCount="indefinite"
+          calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/>
+        <animate attributeName="opacity"
+          values="0.7;1;0.7" dur="6s" repeatCount="indefinite"
+          calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/>
       </circle>
 
-      <!-- Outer Rotating Solar Flares (Clockwise) -->
-      <g>
-        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="22s" repeatCount="indefinite"/>
-        <path d="M 0 -36 Q 6 -46 0 -50 Q -6 -46 0 -36 Z" fill="#ffbe0b" opacity="0.85"/>
-        <path d="M 25 -25 Q 36 -32 40 -24 Q 32 -18 25 -25 Z" fill="#fb5607" opacity="0.8"/>
-        <path d="M 36 0 Q 46 6 50 0 Q 46 -6 36 0 Z" fill="#ffbe0b" opacity="0.85"/>
-        <path d="M 25 25 Q 32 36 24 39 Q 18 31 25 25 Z" fill="#fb5607" opacity="0.8"/>
-        <path d="M 0 36 Q -6 46 0 50 Q 6 46 0 36 Z" fill="#ffbe0b" opacity="0.85"/>
-        <path d="M -25 25 Q -36 32 -39 24 Q -31 18 -25 25 Z" fill="#fb5607" opacity="0.8"/>
-        <path d="M -36 0 Q -46 -6 -50 0 Q -46 6 -36 0 Z" fill="#ffbe0b" opacity="0.85"/>
-        <path d="M -25 -25 Q -32 -36 -24 -39 Q -18 -31 -25 -25 Z" fill="#fb5607" opacity="0.8"/>
-      </g>
-
-      <!-- Inner Counter-Rotating Solar Tongues (Counter-Clockwise) -->
-      <g>
-        <animateTransform attributeName="transform" type="rotate" from="360 0 0" to="0 0 0" dur="15s" repeatCount="indefinite"/>
-        <path d="M 13 -32 Q 22 -39 18 -31 Z" fill="#ffd166" opacity="0.75"/>
-        <path d="M 32 13 Q 39 22 31 18 Z" fill="#ffd166" opacity="0.75"/>
-        <path d="M -13 32 Q -22 39 -18 31 Z" fill="#ffd166" opacity="0.75"/>
-        <path d="M -32 -13 Q -39 -22 -31 -18 Z" fill="#ffd166" opacity="0.75"/>
-      </g>
-
-      <!-- Solar Photosphere Sphere -->
-      <circle cx="0" cy="0" r="28" fill="url(#sunCoreGrad)" filter="url(#starGlow)"/>
-
-      <!-- Magnetic Loop Prominences -->
-      <path d="M -14 -22 Q -22 -30 -8 -25" stroke="#ffffff" stroke-width="1.2" fill="none" opacity="0.85"/>
-      <path d="M 17 17 Q 26 24 21 11" stroke="#ffffff" stroke-width="1.2" fill="none" opacity="0.85"/>
-
-      <!-- Intense Core Energy Center -->
-      <circle cx="-3" cy="-4" r="10" fill="#ffffff" opacity="0.35" filter="url(#starGlow)">
-        <animate attributeName="opacity" values="0.25;0.5;0.25" dur="2s" repeatCount="indefinite"/>
+      <!-- Layer 2 – Chromospheric halo: tighter orange-pink shell around disk -->
+      <circle cx="0" cy="0" r="36" fill="url(#sunChromosphere)">
+        <animate attributeName="r"
+          values="34;38;34" dur="4s" repeatCount="indefinite"
+          calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/>
+        <animate attributeName="opacity"
+          values="0.85;1;0.85" dur="4s" repeatCount="indefinite"
+          calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/>
       </circle>
+
+      <!-- Layer 3 – Solar Prominences: 3 organic arcing plasma tongues, very slow drift -->
+      <g>
+        <animateTransform attributeName="transform" type="rotate"
+          from="0 0 0" to="360 0 0" dur="80s" repeatCount="indefinite"/>
+        <!-- Top-left eruptive prominence -->
+        <path d="M -17 -26 C -30 -44 -12 -50 -8 -36 C -10 -33 -14 -30 -17 -26 Z"
+          fill="#fb923c" opacity="0">
+          <animate attributeName="opacity" values="0;0.8;0.55;0.85;0" dur="8s" repeatCount="indefinite"
+            calcMode="spline" keySplines="0.2 0 0.8 1;0.2 0 0.8 1;0.2 0 0.8 1;0.2 0 0.8 1"/>
+        </path>
+        <!-- Top-right arch prominence -->
+        <path d="M 15 -25 C 32 -38 36 -22 26 -20 C 22 -22 18 -22 15 -25 Z"
+          fill="#fcd34d" opacity="0">
+          <animate attributeName="opacity" values="0;0;0.7;0.5;0.8;0" dur="10s" repeatCount="indefinite"
+            calcMode="spline" keySplines="0.2 0 0.8 1;0.2 0 0.8 1;0.2 0 0.8 1;0.2 0 0.8 1;0.2 0 0.8 1"/>
+        </path>
+        <!-- Bottom-right spicule jet -->
+        <path d="M 22 18 C 36 28 30 38 20 32 C 20 28 20 24 22 18 Z"
+          fill="#f97316" opacity="0">
+          <animate attributeName="opacity" values="0.6;0;0;0.75;0.6" dur="9s" repeatCount="indefinite"
+            calcMode="spline" keySplines="0.2 0 0.8 1;0.2 0 0.8 1;0.2 0 0.8 1;0.2 0 0.8 1"/>
+        </path>
+      </g>
+
+      <!-- Layer 4 – Counter-drift minor filament streamers -->
+      <g>
+        <animateTransform attributeName="transform" type="rotate"
+          from="360 0 0" to="0 0 0" dur="60s" repeatCount="indefinite"/>
+        <path d="M 26 -6 C 38 -10 40 2 30 4 C 28 2 26 0 26 -6 Z"
+          fill="#fde68a" opacity="0">
+          <animate attributeName="opacity" values="0;0.65;0.4;0.7;0" dur="7s" repeatCount="indefinite"
+            calcMode="spline" keySplines="0.2 0 0.8 1;0.2 0 0.8 1;0.2 0 0.8 1;0.2 0 0.8 1"/>
+        </path>
+        <path d="M -26 8 C -38 14 -36 -2 -28 -2 C -28 2 -28 6 -26 8 Z"
+          fill="#fb923c" opacity="0">
+          <animate attributeName="opacity" values="0.5;0;0.6;0.35;0.5" dur="6s" repeatCount="indefinite"
+            calcMode="spline" keySplines="0.2 0 0.8 1;0.2 0 0.8 1;0.2 0 0.8 1;0.2 0 0.8 1"/>
+        </path>
+      </g>
+
+      <!-- Layer 5 – Photosphere disk: the visible solar surface with limb darkening -->
+      <circle cx="0" cy="0" r="28" fill="url(#sunPhotosphere)" filter="url(#starGlow)"/>
+
+      <!-- Layer 6 – Sunspots clipped strictly inside the disk -->
+      <g clip-path="url(#sunDiskClip)">
+        <!-- Primary sunspot group: penumbra + dark umbra core -->
+        <ellipse cx="9" cy="7" rx="5" ry="3.5" fill="url(#sunspotPenumbra)" transform="rotate(-18 9 7)"/>
+        <ellipse cx="9" cy="7" rx="2.5" ry="1.7" fill="#130600" transform="rotate(-18 9 7)"/>
+        <!-- Secondary companion spot -->
+        <ellipse cx="16" cy="11" rx="3.2" ry="2.2" fill="url(#sunspotPenumbra)"/>
+        <ellipse cx="16" cy="11" rx="1.4" ry="1.0" fill="#130600"/>
+        <!-- Bright faculae ribbon between the spots -->
+        <path d="M 6 5 Q 11 10 17 8" stroke="#fffde7" stroke-width="0.9"
+          fill="none" opacity="0.8"/>
+      </g>
+
+      <!-- Layer 7 – Coronal loops anchored to active sunspot region -->
+      <!-- Main arch from primary spot over the limb -->
+      <path d="M 8 6 Q 20 -6 28 8" stroke="#fef9c3" stroke-width="1.6"
+        fill="none" stroke-linecap="round" filter="url(#starGlow)" opacity="0">
+        <animate attributeName="opacity" values="0;0.9;0.65;1;0" dur="5s" repeatCount="indefinite"
+          calcMode="spline" keySplines="0.2 0 0.8 1;0.2 0 0.8 1;0.2 0 0.8 1;0.2 0 0.8 1"/>
+      </path>
+      <!-- Secondary loop from companion spot -->
+      <path d="M 14 10 Q 26 2 30 14" stroke="#fde047" stroke-width="1.2"
+        fill="none" stroke-linecap="round" opacity="0">
+        <animate attributeName="opacity" values="0.5;0;0.8;0.55;0.5" dur="7s" repeatCount="indefinite"
+          calcMode="spline" keySplines="0.2 0 0.8 1;0.2 0 0.8 1;0.2 0 0.8 1;0.2 0 0.8 1"/>
+      </path>
+      <!-- High-latitude polar loop prominence -->
+      <path d="M -12 -23 Q -24 -34 -7 -28" stroke="#fcd34d" stroke-width="1.1"
+        fill="none" stroke-linecap="round" filter="url(#starGlow)" opacity="0">
+        <animate attributeName="opacity" values="0;0.75;0.5;0.85;0" dur="6s" repeatCount="indefinite"
+          calcMode="spline" keySplines="0.2 0 0.8 1;0.2 0 0.8 1;0.2 0 0.8 1;0.2 0 0.8 1"/>
+      </path>
+
+      <!-- Layer 8 – Subtle granulation texture (plasma convection cells) -->
+      <path d="M -16 3 Q -8 -7 2 -3 Q 14 1 20 -9" stroke="#ffffff"
+        stroke-width="1.5" stroke-linecap="round" fill="none">
+        <animate attributeName="opacity" values="0.08;0.22;0.08" dur="5s" repeatCount="indefinite"
+          calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/>
+      </path>
+      <path d="M -13 13 Q -4 7 7 12 Q 16 17 20 11" stroke="#fef08a"
+        stroke-width="1.2" stroke-linecap="round" fill="none">
+        <animate attributeName="opacity" values="0.06;0.18;0.06" dur="4.2s" repeatCount="indefinite"
+          calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/>
+      </path>
+
+      <!-- Layer 9 – Chromospheric edge ring -->
+      <circle cx="0" cy="0" r="28" fill="none"
+        stroke="#fde68a" stroke-width="1.2" opacity="0.5"/>
+
+      <!-- Layer 10 – Incandescent core hot-spot (nuclear fusion center) -->
+      <circle cx="-3" cy="-4" r="11" fill="#ffffff" filter="url(#starGlow)">
+        <animate attributeName="opacity" values="0.25;0.42;0.25" dur="3.5s" repeatCount="indefinite"
+          calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/>
+      </circle>
+
     </g>
 
     <!-- Celestial Body 2: Realistic Blue Marble Exoplanet with Orbiting Satellite (Right Side) -->
