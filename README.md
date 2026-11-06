@@ -20,7 +20,9 @@
 
 <div align="center">
   <img src="./assets/heading-statistics.svg" width="400" alt="Statistics" />
-  <img src="https://streak-stats.demolab.com?user=zerabyte88&theme=vision-friendly-dark&hide_border=true" alt="Streak GitHub" />
+  <img src="https://ghstats.dev/api/langs?username=zerabyte88&hide_border=true&layout=grid" alt="Top Languages" />
+<img src="https://ghstats.dev/api/card?username=zerabyte88&theme=ayu&show_ring=false&hide_border=true&hide_title=true&border_radius=0&hide=stars%2Cprs%2Cissues%2Cfollowers&order=contributions%2Ccommits%2Cweek%2Cavg%2Ctrend%2Chours%2Cstreak%2Cactive_day%2Crepos%2Cgrade" alt="GitHub Stats Card" />
+
 </div>
 
 ---
