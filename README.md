@@ -4,7 +4,7 @@
   <br/><br/>
 
   <!-- BADGES -->
-  <img src="https://hits.sh/github/zerabyte88.svg?style=for-the-badge&label=PROFILE%20VIEWS&extraCount=478&color=db2777&labelColor=141933" alt="Profile Views" />&nbsp;
+  <img src="https://komarev.com/ghpvc/?username=zerabyte88&style=for-the-badge&color=db2777&label=PROFILE+VIEWS" alt="Profile Views" />&nbsp;
   <a href="https://www.instagram.com/nanda.rifanie" target="_blank"><img src="https://img.shields.io/badge/Instagram-141933?style=for-the-badge&logo=instagram&logoColor=f9a8d4" alt="Instagram" /></a>
 </div>
 
