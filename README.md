@@ -1,43 +1,55 @@
 <div align="center">
   <!-- HEADER -->
-  <img src="./assets/space-header.svg" width="100%" alt="Space & Stars Header" />
+  <img src="./assets/zen-header.svg" width="100%" alt="Zen Night Sakura Header" />
   <br/><br/>
 
   <!-- BADGES -->
-  <img src="https://hits.sh/github.com/zerabyte88.svg?style=for-the-badge&label=PROFILE%20VIEWS&extraCount=478&color=blueviolet" alt="Profile Views" />&nbsp;
-  <a href="https://github.com/zerabyte88" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>&nbsp;
-  <a href="https://www.instagram.com/nanda.rifanie" target="_blank"><img src="https://img.shields.io/badge/Instagram-E11D48?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" /></a>
+  <img src="https://hits.sh/github/zerabyte88.svg?style=for-the-badge&label=PROFILE%20VIEWS&extraCount=478&color=db2777&labelColor=141933" alt="Profile Views" />&nbsp;
+  <a href="https://www.instagram.com/nanda.rifanie" target="_blank"><img src="https://img.shields.io/badge/Instagram-141933?style=for-the-badge&logo=instagram&logoColor=f9a8d4" alt="Instagram" /></a>
 </div>
 
 ---
 
 <div align="center">
-  <img src="./assets/heading-tech-stack.svg" width="400" alt="Tech Stack" />
-  <img src="./assets/tech-shimmer.svg" width="100%" alt="Tech Stack" />
-</div>
-
----
-
-<div align="center">
-  <img src="./assets/heading-statistics.svg" width="400" alt="Statistics" />
-  <img src="https://ghstats.dev/api/langs?username=zerabyte88&hide_border=true&layout=grid" alt="Top Languages" />
-  <img src="https://ghstats.dev/api/card?username=zerabyte88&show_ring=false&hide_border=true&hide_title=true&border_radius=0&hide=stars%2Cprs%2Cissues%2Cfollowers&order=contributions%2Ccommits%2Cweek%2Cavg%2Ctrend%2Chours%2Cstreak%2Cactive_day%2Crepos%2Cgrade" alt="GitHub Stats Card" />
-
-</div>
-
----
-
-<div align="center">
-  <img src="./assets/heading-contributions.svg" width="400" alt="Contributions" />
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/zerabyte88/zerabyte88/output/galaga-contribution-graph-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/zerabyte88/zerabyte88/output/galaga-contribution-graph.svg">
-    <img alt="Galaga Contribution Graph" src="https://raw.githubusercontent.com/zerabyte88/zerabyte88/output/galaga-contribution-graph.svg" width="100%">
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/zen-heading-tech-stack-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/zen-heading-tech-stack-light.svg" />
+    <img src="./assets/zen-heading-tech-stack-dark.svg" width="400" alt="Tech Stack" />
+  </picture>
+  <br/>
+  <img src="./assets/zen-tech-stack.svg" width="100%" alt="Tech Stack" />
+</div>
+
+---
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/zen-heading-statistics-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/zen-heading-statistics-light.svg" />
+    <img src="./assets/zen-heading-statistics-dark.svg" width="400" alt="Statistics" />
+  </picture>
+  <br/>
+  <img src="https://streak-stats.demolab.com?user=zerabyte88&background=111428&border=312E81&stroke=312E81&ring=F9A8D4&fire=FDE68A&currStreakNum=FFF1F2&sideNums=FFF1F2&currStreakLabel=FBCFE8&sideLabels=F9A8D4&dates=A5B4FC&border_radius=12" alt="GitHub Streak" />
+</div>
+
+---
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/zen-heading-contributions-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/zen-heading-contributions-light.svg" />
+    <img src="./assets/zen-heading-contributions-dark.svg" width="400" alt="Contributions" />
+  </picture>
+  <br/>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/zerabyte88/zerabyte88/output/zen-contrib-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/zerabyte88/zerabyte88/output/zen-contrib-light.svg" />
+    <img src="https://raw.githubusercontent.com/zerabyte88/zerabyte88/output/zen-contrib-dark.svg" width="100%" alt="Zen Sakura Contribution Graph" />
   </picture>
 </div>
 
 ---
 
 <div align="center">
-  <img src="./assets/space-footer.svg" width="100%" alt="Space & Stars Footer" />
+  <img src="./assets/zen-footer.svg" width="100%" alt="Zen Night Sakura Footer" />
 </div>
